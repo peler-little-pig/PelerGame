@@ -1,8 +1,8 @@
 from Block.CornerBlock import *
 from Block.DoorBlock import *
-from Space.Room import *
-from Space.WidthCross import *
-from Space.World import *
+from Space.RoomSpace import *
+from Space.WidthCrossSpace import *
+from Space.WorldSpace import *
 
 
 def room_loader(file: str, input_x=0, input_y=0):
@@ -38,7 +38,9 @@ def width_cross_loader(file: str, input_x=0, input_y=0):
         data = f.readlines()
         for d in data:
             for s in d:
-                if s == '#':
+                if s == '!':
+                    width_cross.corner_block_list.append(CornerBlock(x, y))
+                elif s == '#':
                     width_cross.base_block_list.append(BaseBlock(x, y))
                 x += Value.BLOCK_SIZE
             y += Value.BLOCK_SIZE

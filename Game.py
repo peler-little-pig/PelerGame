@@ -2,7 +2,7 @@ import sys
 from pygame.locals import *
 from Actor.GoodActor import *
 from Thing.BaseThing import *
-from Space.PMapLoader import *
+from Space.SpaceLoader import *
 
 
 class Game(object):
@@ -10,7 +10,7 @@ class Game(object):
         self.init()
 
         self.actor = GoodActor()
-        self.room = world_loader('./map/test.pindex')
+        self.room = room_loader('./map/test.proom')
 
     def init(self):
         pygame.init()

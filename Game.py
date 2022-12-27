@@ -10,7 +10,7 @@ class Game(object):
         self.init()
 
         self.actor = GoodActor()
-        self.room = room_loader('./map/test.proom')
+        self.room = room_loader('map/test2.proom')
 
     def init(self):
         pygame.init()

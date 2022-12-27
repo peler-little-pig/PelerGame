@@ -32,28 +32,28 @@ class WidthCross(Space):
         return True
 
     def move_up(self, good_actor: GoodActor):
-        if self.can_move_up(good_actor):
-            for block in self.base_block_list:
+        # if self.can_move_up(good_actor):
+            for block in self.mix():
                 block.move_ip(0, Value.MOVE_SPEED)
 
     def move_down(self, good_actor: GoodActor):
-        if self.can_move_down(good_actor):
-            for block in self.base_block_list:
+        # if self.can_move_down(good_actor):
+            for block in self.mix():
                 block.move_ip(0, -Value.MOVE_SPEED)
 
     def move_left(self, good_actor: GoodActor):
-        if self.can_move_left(good_actor):
-            for block in self.base_block_list:
+        # if self.can_move_left(good_actor):
+            for block in self.mix():
                 block.move_ip(Value.MOVE_SPEED, 0)
 
     def move_right(self, good_actor: GoodActor):
-        if self.can_move_right(good_actor):
-            for block in self.base_block_list:
+        # if self.can_move_right(good_actor):
+            for block in self.mix():
                 block.move_ip(-Value.MOVE_SPEED, 0)
 
-    # def is_in_this_space(self, good_actor: GoodActor):
-    #     return good_actor.top > self.base_block_list[0].bottom \
-    #            and good_actor.bottom < self.corner_block_list[2].bottom \
-    #            and good_actor.left > self.corner_block_list[0].right \
-    #            and good_actor.right < self.corner_block_list[1].left
+    def is_in_this_space(self, good_actor: GoodActor):
+        return not (good_actor.top < self.corner_block_list[0].top
+                    or good_actor.bottom > self.corner_block_list[2].bottom
+                    or good_actor.left < self.corner_block_list[0].left-Value.NORMAL_ACTOR_SIZE_TUPLE[0]
+                    or good_actor.right > self.corner_block_list[1].right+Value.NORMAL_ACTOR_SIZE_TUPLE[0])
 

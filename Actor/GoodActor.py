@@ -1,5 +1,4 @@
 from Actor.BaseActor import *
-from Value import *
 
 
 class GoodActor(BaseActor):

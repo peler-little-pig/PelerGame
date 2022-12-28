@@ -1,5 +1,5 @@
-from Actor.BaseActor import *
-
+import pygame
+from Value import *
 
 class BaseEgg(pygame.rect.Rect):
     def __init__(self, left: float, top: float, width: float, height: float) -> None:

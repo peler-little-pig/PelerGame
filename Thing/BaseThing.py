@@ -1,7 +1,4 @@
 from typing import List
-
-import pygame
-from Actor.BaseActor import *
 from Egg.BaseEgg import *
 from Value import *
 

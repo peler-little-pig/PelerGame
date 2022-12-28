@@ -1,6 +1,5 @@
-import pygame
 from Thing.BaseThing import *
-from  Value import *
+from Value import *
 
 
 class BaseActor(pygame.rect.Rect):

@@ -13,3 +13,6 @@ class BaseActor(pygame.rect.Rect):
     def draw(self):
         pygame.draw.rect(Value.surface, (0, 0, 255), self)
         self.thing.draw()
+
+    def process(self):
+        self.thing.process()

@@ -23,3 +23,7 @@ class Value(staticmethod):
     is_key_d_down = False
     is_mouse_down = False
 
+    is_move_up = False
+    is_move_down = False
+    is_move_left = False
+    is_move_right = False

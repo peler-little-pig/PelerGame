@@ -48,17 +48,9 @@ class Game(object):
             elif event.type == MOUSEBUTTONUP:
                 Value.is_mouse_down = False
 
-        if Value.is_key_w_down:
-            self.room.move_up(self.good_actor)
-        if Value.is_key_s_down:
-            self.room.move_down(self.good_actor)
-        if Value.is_key_a_down:
-            self.room.move_left(self.good_actor)
-        if Value.is_key_d_down:
-            self.room.move_right(self.good_actor)
-
-        if Value.is_mouse_down:
-            self.good_actor.fire()
+    def process(self):
+        self.room.process(self.good_actor)
+        self.good_actor.process()
 
     def draw(self):
         self.room.draw()
@@ -70,6 +62,7 @@ class Game(object):
 
             self.event()
             self.draw()
+            self.process()
 
             pygame.display.update()
             Value.fps_clock.tick(Value.FPS)

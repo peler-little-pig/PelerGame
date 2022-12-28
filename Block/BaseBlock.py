@@ -1,7 +1,6 @@
 import pygame
 from Value import *
 
-
 class BaseBlock(pygame.rect.Rect):
     def __init__(self, left: float, top: float) -> None:
         super().__init__(left, top, *Value.BLOCK_SIZE_TUPLE)

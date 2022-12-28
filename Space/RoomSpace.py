@@ -4,12 +4,12 @@ from Block.CornerBlock import CornerBlock
 from Block.DoorBlock import DoorBlock
 from Space.BaseSpace import *
 
-from Value import Value
+from Value import *
 
 
-class Room(Space):
-    def __init__(self):
-        super().__init__()
+class RoomSpace(Space):
+    def __init__(self, name):
+        super().__init__(name)
 
         self.base_block_list: List[BaseBlock] = []
         self.corner_block_list: List[CornerBlock] = []
@@ -27,7 +27,7 @@ class Room(Space):
         for block in self.mix():
             block.draw()
 
-    def can_move_up(self, good_actor: GoodActor):
+    def can_move_up(self, good_actor:GoodActor):
         if self.top_door_block_list:
             return (not good_actor.top < self.corner_block_list[0].bottom) \
                    or (good_actor.left > self.top_door_block_list[0].left
@@ -35,7 +35,7 @@ class Room(Space):
         else:
             return not good_actor.top < self.corner_block_list[0].bottom
 
-    def can_move_down(self, good_actor: GoodActor):
+    def can_move_down(self, good_actor:GoodActor):
         if self.bottom_door_block_list:
             return (not good_actor.bottom > self.corner_block_list[2].top) \
                    or (good_actor.left > self.bottom_door_block_list[0].left
@@ -43,7 +43,7 @@ class Room(Space):
         else:
             return not good_actor.bottom > self.corner_block_list[2].top
 
-    def can_move_left(self, good_actor: GoodActor):
+    def can_move_left(self, good_actor:GoodActor):
         if self.left_door_block_list:
             return (not good_actor.left < self.corner_block_list[0].right) \
                    or (good_actor.top > self.left_door_block_list[0].top
@@ -51,7 +51,7 @@ class Room(Space):
         else:
             return not good_actor.left < self.corner_block_list[0].right
 
-    def can_move_right(self, good_actor: GoodActor):
+    def can_move_right(self, good_actor:GoodActor):
         if self.right_door_block_list:
             return (not good_actor.right > self.corner_block_list[1].left) \
                    or (good_actor.top > self.right_door_block_list[0].top
@@ -59,27 +59,27 @@ class Room(Space):
         else:
             return not good_actor.right > self.corner_block_list[1].left
 
-    def move_up(self, good_actor: GoodActor):
+    def move_up(self, good_actor:GoodActor):
         # if self.can_move_up(good_actor):
         for block in self.mix():
             block.move_ip(0, Value.MOVE_SPEED)
 
-    def move_down(self, good_actor: GoodActor):
+    def move_down(self, good_actor:GoodActor):
         # if self.can_move_down(good_actor):
         for block in self.mix():
             block.move_ip(0, -Value.MOVE_SPEED)
 
-    def move_left(self, good_actor: GoodActor):
+    def move_left(self, good_actor:GoodActor):
         # if self.can_move_left(good_actor):
         for block in self.mix():
             block.move_ip(Value.MOVE_SPEED, 0)
 
-    def move_right(self, good_actor: GoodActor):
+    def move_right(self, good_actor:GoodActor):
         # if self.can_move_right(good_actor):
         for block in self.mix():
             block.move_ip(-Value.MOVE_SPEED, 0)
 
-    def is_in_this_space(self, good_actor: GoodActor):
+    def is_in_this_space(self, good_actor:GoodActor):
         return not (good_actor.top < self.corner_block_list[0].top
                     or good_actor.bottom > self.corner_block_list[2].bottom
                     or good_actor.left < self.corner_block_list[0].left

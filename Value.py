@@ -13,7 +13,7 @@ class Value(staticmethod):
 
     BASE_BLOCK_COLOR = (0, 100, 0)
     CORNER_BLOCK_COLOR = (255, 0, 0)
-    DOOR_BLOCK_COLOR = (0,255,0)
+    DOOR_BLOCK_COLOR = (0, 255, 0)
 
     NORMAL_ACTOR_SIZE_TUPLE = (50, 70)
 
@@ -21,5 +21,5 @@ class Value(staticmethod):
     is_key_s_down = False
     is_key_a_down = False
     is_key_d_down = False
+    is_mouse_down = False
 
-    is_fighting = False

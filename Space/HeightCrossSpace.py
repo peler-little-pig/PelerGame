@@ -6,7 +6,7 @@ from Space.BaseSpace import *
 from Value import *
 
 
-class WidthCrossSpace(Space):
+class HeightCrossSpace(Space):
     def __init__(self, name):
         super().__init__(name)
 
@@ -21,16 +21,16 @@ class WidthCrossSpace(Space):
             block.draw()
 
     def can_move_up(self, good_actor:GoodActor):
-        return good_actor.top > self.corner_block_list[0].bottom
+        return True
 
     def can_move_down(self, good_actor:GoodActor):
-        return good_actor.bottom < self.corner_block_list[3].top
+        return True
 
     def can_move_left(self, good_actor:GoodActor):
-        return True
+        return good_actor.left > self.corner_block_list[0].right
 
     def can_move_right(self, good_actor:GoodActor):
-        return True
+        return good_actor.right < self.corner_block_list[1].left
 
     def move_up(self, good_actor:GoodActor):
         # if self.can_move_up(good_actor):
@@ -53,7 +53,7 @@ class WidthCrossSpace(Space):
             block.move_ip(-Value.MOVE_SPEED, 0)
 
     def is_in_this_space(self, good_actor:GoodActor):
-        return not (good_actor.top < self.corner_block_list[0].top
-                    or good_actor.bottom > self.corner_block_list[2].bottom
-                    or good_actor.left < self.corner_block_list[0].left - Value.NORMAL_ACTOR_SIZE_TUPLE[0]
-                    or good_actor.right > self.corner_block_list[1].right + Value.NORMAL_ACTOR_SIZE_TUPLE[0])
+        return not (good_actor.top < self.corner_block_list[0].top - Value.NORMAL_ACTOR_SIZE_TUPLE[1]
+                    or good_actor.bottom > self.corner_block_list[2].bottom + Value.NORMAL_ACTOR_SIZE_TUPLE[1]
+                    or good_actor.left < self.corner_block_list[0].left
+                    or good_actor.right > self.corner_block_list[1].right)

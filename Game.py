@@ -1,16 +1,15 @@
 import sys
 from pygame.locals import *
-from Actor.GoodActor import *
-from Thing.BaseThing import *
 from Space.SpaceLoader import *
+from Value import *
 
 
 class Game(object):
     def __init__(self):
         self.init()
-
-        self.actor = GoodActor()
-        self.room = room_loader('map/test2.proom')
+        
+        self.good_actor = GoodActor()
+        self.room = world_loader('./map/test.pworld')
 
     def init(self):
         pygame.init()
@@ -44,18 +43,26 @@ class Game(object):
                 if event.key == K_d:
                     Value.is_key_d_down = False
 
+            elif event.type == MOUSEBUTTONDOWN:
+                Value.is_mouse_down = True
+            elif event.type == MOUSEBUTTONUP:
+                Value.is_mouse_down = False
+
         if Value.is_key_w_down:
-            self.room.move_up(self.actor)
+            self.room.move_up(self.good_actor)
         if Value.is_key_s_down:
-            self.room.move_down(self.actor)
+            self.room.move_down(self.good_actor)
         if Value.is_key_a_down:
-            self.room.move_left(self.actor)
+            self.room.move_left(self.good_actor)
         if Value.is_key_d_down:
-            self.room.move_right(self.actor)
+            self.room.move_right(self.good_actor)
+
+        if Value.is_mouse_down:
+            self.good_actor.fire()
 
     def draw(self):
         self.room.draw()
-        self.actor.draw()
+        self.good_actor.draw()
 
     def loop(self):
         while True:

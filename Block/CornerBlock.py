@@ -1,12 +1,14 @@
 from Block.BaseBlock import *
+import pygame
 
 
 class CornerBlock(BaseBlock):
     def __init__(self, left: float, top: float):
         super().__init__(left, top)
+        self.image = pygame.image.load('./rec/image/corner_block/corner_block.png')
 
     def draw(self):
-        pygame.draw.rect(Value.surface, Value.CORNER_BLOCK_COLOR, self)
+        Value.surface.blit(self.image, self)
 
     def can_move_up(self, top: float):
         return self.bottom <= top

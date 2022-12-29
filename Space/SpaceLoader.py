@@ -15,7 +15,7 @@ def room_loader(file: str, input_x=0, input_y=0, name=''):
                 if s == '!':
                     room.corner_block_list.append(CornerBlock(x, y))
                 elif s == '#':
-                    room.base_block_list.append(BaseBlock(x, y))
+                    room.base_block_list.append(WallBlock(x, y))
                 elif s == 'T':
                     room.top_door_block_list.append(DoorBlock(x, y))
                 elif s == 'B':
@@ -44,7 +44,7 @@ def width_cross_loader(file: str, input_x=0, input_y=0, name=''):
                 if s == '!':
                     width_cross.corner_block_list.append(CornerBlock(x, y))
                 elif s == '#':
-                    width_cross.base_block_list.append(BaseBlock(x, y))
+                    width_cross.base_block_list.append(WallBlock(x, y))
                 x += Value.BLOCK_SIZE
             y += Value.BLOCK_SIZE
             x = X
@@ -65,7 +65,7 @@ def height_cross_loader(file: str, input_x=0, input_y=0, name=''):
                 if s == '!':
                     height_cross.corner_block_list.append(CornerBlock(x, y))
                 elif s == '#':
-                    height_cross.base_block_list.append(BaseBlock(x, y))
+                    height_cross.base_block_list.append(WallBlock(x, y))
                 x += Value.BLOCK_SIZE
             y += Value.BLOCK_SIZE
             x = X

@@ -9,7 +9,7 @@ from Space.HeightCrossSpace import *
 class WorldSpace(Space):
     def __init__(self, name):
         super().__init__(name)
-        self.area_list: List[RoomSpace, WidthCrossSpace, HeightCrossSpace] = []
+        self.area_list: List[RoomSpace, WidthCrossSpace, HeightCrossSpace,WallBlock] = []
 
     def draw(self):
         for area in self.area_list:

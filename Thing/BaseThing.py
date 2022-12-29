@@ -10,9 +10,9 @@ class BaseThing(pygame.rect.Rect):
         self.WAIT = 5
         self.wait = 0
 
-    def fire(self):
+    def fire(self, degree):
         if self.wait == 0:
-            egg = BaseEgg(self.left, self.top, self.width-30, self.height)
+            egg = BaseEgg(degree,self.left, self.top, self.width - 30, self.height)
             self.egg_list.append(egg)
             self.wait = self.WAIT
         else:
@@ -28,6 +28,8 @@ class BaseThing(pygame.rect.Rect):
 
     def process(self):
         if Value.is_mouse_down:
-            self.fire()
+            x_different = Value.mouse_down_x - self.x
+            y_different = self.y - Value.mouse_down_y
+            self.fire((x_different,y_different))
         for egg in self.egg_list:
             egg.process()

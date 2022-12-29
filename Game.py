@@ -7,7 +7,7 @@ from Value import *
 class Game(object):
     def __init__(self):
         self.init()
-        
+
         self.good_actor = GoodActor()
         self.room = world_loader('./map/test.pworld')
 
@@ -47,6 +47,8 @@ class Game(object):
                 Value.is_mouse_down = True
             elif event.type == MOUSEBUTTONUP:
                 Value.is_mouse_down = False
+            elif event.type == MOUSEMOTION:
+                Value.mouse_down_x, Value.mouse_down_y = event.pos
 
     def process(self):
         self.room.process(self.good_actor)

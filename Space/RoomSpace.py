@@ -2,6 +2,7 @@ from typing import List
 from Block.BaseBlock import BaseBlock
 from Block.CornerBlock import CornerBlock
 from Block.DoorBlock import DoorBlock
+from Block.WallBlock import WallBlock
 from Space.BaseSpace import *
 
 from Value import *

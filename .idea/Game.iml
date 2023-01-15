@@ -2,9 +2,34 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/Test" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/Actor" />
+        <option value="$MODULE_DIR$/Block" />
+        <option value="$MODULE_DIR$/Compute" />
+        <option value="$MODULE_DIR$/Data" />
+        <option value="$MODULE_DIR$/Egg" />
+        <option value="$MODULE_DIR$/InfoBar" />
+        <option value="$MODULE_DIR$/Space" />
+        <option value="$MODULE_DIR$/Thing" />
+        <option value="$MODULE_DIR$/Lib" />
+        <option value="$MODULE_DIR$/GUI" />
+      </list>
+    </option>
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/Map" />
+      </list>
+    </option>
   </component>
 </module>

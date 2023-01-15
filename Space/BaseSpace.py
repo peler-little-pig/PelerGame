@@ -1,40 +1,44 @@
-from Actor.GoodActor import *
+import pygame
 
 
-class Space(object):
+class BaseSpace(object):
     def __init__(self, name):
         super().__init__()
-        self.name = name
+        self.name:str = name
 
-    def mix(self):
+    def mix(self, **kwargs) -> list:
         ...
 
-    def draw(self):
+    def process(self, **kwargs):
+        for block in self.mix():
+            block.process()
+
+    def draw(self, **kwargs):
         ...
 
-    def can_move_up(self, good_actor: GoodActor):
+    def can_move_up(self):
         ...
 
-    def can_move_down(self, good_actor: GoodActor):
+    def can_move_down(self):
         ...
 
-    def can_move_left(self, good_actor: GoodActor):
+    def can_move_left(self):
         ...
 
-    def can_move_right(self, good_actor: GoodActor):
+    def can_move_right(self):
         ...
 
-    def move_up(self, good_actor: GoodActor):
+    def move_up(self):
         ...
 
-    def move_down(self, good_actor: GoodActor):
+    def move_down(self):
         ...
 
-    def move_left(self, good_actor: GoodActor):
+    def move_left(self):
         ...
 
-    def move_right(self, good_actor: GoodActor):
+    def move_right(self):
         ...
 
-    def is_in_this_space(self, good_actor: GoodActor):
+    def is_in_this_space(self):
         ...

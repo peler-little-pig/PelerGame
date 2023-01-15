@@ -5,10 +5,11 @@ import pygame
 class CornerBlock(BaseBlock):
     def __init__(self, left: float, top: float):
         super().__init__(left, top)
-        self.image = pygame.image.load('./rec/image/corner_block/corner_block.png')
+        self.image = pygame.image.load('./Res/image/corner_block/corner_block.png').convert()
 
     def draw(self):
-        Value.surface.blit(self.image, self)
+        # if self.is_need_draw():
+            ConstData.surface.blit(self.image, self)
 
     def can_move_up(self, top: float):
         return self.bottom <= top

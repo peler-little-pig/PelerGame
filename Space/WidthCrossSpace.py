@@ -1,12 +1,10 @@
-from typing import List
-
 from Block.BaseBlock import BaseBlock
 from Block.CornerBlock import CornerBlock
 from Space.BaseSpace import *
-from Value import *
+from Data.AllData import *
 
 
-class WidthCrossSpace(Space):
+class WidthCrossSpace(BaseSpace):
     def __init__(self, name):
         super().__init__(name)
 
@@ -20,40 +18,41 @@ class WidthCrossSpace(Space):
         for block in self.mix():
             block.draw()
 
-    def can_move_up(self, good_actor:GoodActor):
-        return good_actor.top > self.corner_block_list[0].bottom
+    def can_move_up(self):
+        return ShareData.good_actor.top > self.corner_block_list[0].bottom
 
-    def can_move_down(self, good_actor:GoodActor):
-        return good_actor.bottom < self.corner_block_list[3].top
+    def can_move_down(self):
+        return ShareData.good_actor.bottom < self.corner_block_list[3].top
 
-    def can_move_left(self, good_actor:GoodActor):
+    def can_move_left(self):
         return True
 
-    def can_move_right(self, good_actor:GoodActor):
+    def can_move_right(self):
         return True
 
-    def move_up(self, good_actor:GoodActor):
-        # if self.can_move_up(good_actor):
+    def move_up(self):
+        # if self.can_move_up(ShareData.good_actor):
         for block in self.mix():
-            block.move_ip(0, Value.MOVE_SPEED)
+            block.move_ip(0, ConstData.MOVE_SPEED)
 
-    def move_down(self, good_actor:GoodActor):
-        # if self.can_move_down(good_actor):
+    def move_down(self):
+        # if self.can_move_down(ShareData.good_actor):
         for block in self.mix():
-            block.move_ip(0, -Value.MOVE_SPEED)
+            block.move_ip(0, -ConstData.MOVE_SPEED)
 
-    def move_left(self, good_actor:GoodActor):
-        # if self.can_move_left(good_actor):
+    def move_left(self):
+        # if self.can_move_left(ShareData.good_actor):
         for block in self.mix():
-            block.move_ip(Value.MOVE_SPEED, 0)
+            block.move_ip(ConstData.MOVE_SPEED, 0)
 
-    def move_right(self, good_actor:GoodActor):
-        # if self.can_move_right(good_actor):
+    def move_right(self):
+        # if self.can_move_right(ShareData.good_actor):
         for block in self.mix():
-            block.move_ip(-Value.MOVE_SPEED, 0)
+            block.move_ip(-ConstData.MOVE_SPEED, 0)
 
-    def is_in_this_space(self, good_actor:GoodActor):
-        return not (good_actor.top < self.corner_block_list[0].top
-                    or good_actor.bottom > self.corner_block_list[2].bottom
-                    or good_actor.left < self.corner_block_list[0].left - Value.NORMAL_ACTOR_SIZE_TUPLE[0]
-                    or good_actor.right > self.corner_block_list[1].right + Value.NORMAL_ACTOR_SIZE_TUPLE[0])
+    def is_in_this_space(self):
+        return not (ShareData.good_actor.top < self.corner_block_list[0].top
+                    or ShareData.good_actor.bottom > self.corner_block_list[2].bottom
+                    or ShareData.good_actor.left < self.corner_block_list[0].left - ConstData.NORMAL_ACTOR_SIZE_TUPLE[0]
+                    or ShareData.good_actor.right > self.corner_block_list[1].right + ConstData.NORMAL_ACTOR_SIZE_TUPLE[
+                        0])

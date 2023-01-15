@@ -1,5 +1,5 @@
 from Thing.BaseThing import *
-from Value import *
+from Data.AllData import *
 
 
 class BaseActor(pygame.rect.Rect):
@@ -7,11 +7,7 @@ class BaseActor(pygame.rect.Rect):
         super().__init__(left, top, width, height)
         self.thing = BaseThing(self.x + 25, self.y + 35, 50, 30)
 
-    def fire(self):
-        self.thing.fire()
-
     def draw(self):
-        pygame.draw.rect(Value.surface, (0, 0, 255), self)
         self.thing.draw()
 
     def process(self):

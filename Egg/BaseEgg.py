@@ -52,7 +52,7 @@ class BaseEgg(object):
         if self.whose == SpecalData.BAD_ACTOR:
             if self.rect.colliderect(ShareData.good_actor):
                 if ShareData.good_actor.is_alive():
-                    ShareData.good_actor.blood_info_bar.value -= 1
+                    ShareData.good_actor.get_hurt(2.5)
                 return True
             return False
         else:

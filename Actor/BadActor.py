@@ -14,7 +14,7 @@ class BadActor(BaseActor):
         self.walk_around_wait = 0
 
         self.fire_to_good_WAIT = random.randint(60,150)
-        self.fire_to_good_wait = 0
+        self.fire_to_good_wait = self.fire_to_good_WAIT
 
         self.blood = 15
 
@@ -50,11 +50,12 @@ class BadActor(BaseActor):
         self.move_ip(self.move_x, self.move_y)
 
     def process(self):
-        if self.is_alive():
-            super().process()
-            self.thing.rotate(*ShareData.good_actor.center)
-            self.walk_around()
-            self.fire_to_good()
+        if active_area(self) == active_area(ShareData.good_actor):
+            if self.is_alive():
+                super().process()
+                self.thing.rotate(*ShareData.good_actor.center)
+                self.walk_around()
+                self.fire_to_good()
 
         if EventData.is_move_up:
             self.move_ip(0, ConstData.MOVE_SPEED)

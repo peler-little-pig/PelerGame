@@ -1,4 +1,3 @@
-from Game import *
 import pygame
 from pygame.locals import *
 from Data.AllData import *
@@ -13,7 +12,7 @@ class Game(object):
 
         self.good_actor = GoodActor()
         ShareData.good_actor = self.good_actor
-        self.world = world_loader('./Map/test.pworld')
+        self.world = world_loader('Map/00/test.pworld')
         ShareData.world = self.world
         self.bad_actor = bad_actor_group_loader()
         ShareData.bad_actor_group = self.bad_actor

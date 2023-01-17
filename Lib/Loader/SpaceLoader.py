@@ -3,6 +3,7 @@ from Space.WorldSpace import *
 from Block.GroundBlock import *
 from Space.WidthCrossSpace import *
 from Space.HeightCrossSpace import *
+from Block.NextBlock import *
 from Data.AllData import *
 def room_loader(file: str, input_x=0, input_y=0, name=''):
     room = RoomSpace(name)
@@ -28,6 +29,8 @@ def room_loader(file: str, input_x=0, input_y=0, name=''):
                     room.right_door_block_list.append(DoorBlock(x, y))
                 elif s == '@':
                     room.base_block_list.append(GroundBlock(x, y))
+                elif s == 'N':
+                    room.base_block_list.append(NextBlock(x, y))
                 x += ConstData.BLOCK_SIZE
             y += ConstData.BLOCK_SIZE
             x = X

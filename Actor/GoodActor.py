@@ -13,13 +13,20 @@ class GoodActor(BaseActor):
         self.left_image = pygame.transform.flip(self.right_image, True, False)
         self.image = self.right_image
 
-        self.blood_info_bar = BloodInfoBar(5)
-        self.protection_info_bar = ProtectionInfoBar(5)
-        self.energy_info_bar = EnergyInfoBar(300)
+        self.blood_max = 5
+        self.protection_max = 5
+        self.energy_max = 300
+
+        self.blood_info_bar = BloodInfoBar(self.blood_max)
+        self.protection_info_bar = ProtectionInfoBar(self.protection_max)
+        self.energy_info_bar = EnergyInfoBar(self.energy_max)
 
         ShareData.blood_info_bar = self.blood_info_bar
         ShareData.protection_info_bar = self.protection_info_bar
         ShareData.energy_info_bar = self.energy_info_bar
+
+        self.add_protection_WAIT = 60
+        self.add_protection_wait = 0
 
     def draw(self):
         ConstData.surface.blit(self.image, self)
@@ -40,6 +47,8 @@ class GoodActor(BaseActor):
             self.protection_info_bar.process()
             self.energy_info_bar.process()
 
+            self.add_protection()
+
             if EventData.is_move_left:
                 self.image = self.left_image
             if EventData.is_move_right:
@@ -47,3 +56,22 @@ class GoodActor(BaseActor):
 
     def is_alive(self):
         return self.blood_info_bar.value > 0
+
+    def get_hurt(self,hurt):
+        if self.protection_info_bar.value != 0:
+            if self.protection_info_bar.value >= hurt:
+                self.protection_info_bar.value -= hurt
+            else:
+                self.protection_info_bar.value = 0
+        else:
+            self.blood_info_bar.value -= hurt
+
+    def add_protection(self):
+        if self.add_protection_wait == 0:
+            if self.protection_info_bar.value + 1 > self.protection_max:
+                self.protection_info_bar.value = self.protection_max
+            else:
+                self.protection_info_bar.value += 1
+            self.add_protection_wait = self.add_protection_WAIT
+        else:
+            self.add_protection_wait -= 1

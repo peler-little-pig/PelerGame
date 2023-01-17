@@ -3,6 +3,7 @@ from Egg.BaseEgg import *
 import pygame
 from Data.AllData import *
 
+
 class BaseThing():
     def __init__(self, left: float, top: float, width: float, height: float) -> None:
         self.egg_list: List[BaseEgg] = []
@@ -15,9 +16,9 @@ class BaseThing():
 
         self.degree = 0
 
-    def fire(self):
+    def fire(self, x, y, whose):
         if self.wait == 0:
-            egg = BaseEgg(self.rect.right, self.rect.top, 15, 10)
+            egg = BaseEgg(self.rect.right, self.rect.top, 15, 10, x, y, whose)
             self.egg_list.append(egg)
             self.wait = self.WAIT
 
@@ -30,9 +31,9 @@ class BaseThing():
         for egg in self.egg_list:
             egg.draw()
 
-    def rotate(self):
+    def rotate(self, x, y):
         if EventData.is_mouse_move:
-            self.degree, _ = get_degree(self.rect.x, self.rect.y, EventData.mouse_x, EventData.mouse_y)
+            self.degree, _ = get_degree(self.rect.x, self.rect.y, x, y)
             self.image_rotate = pygame.transform.rotate(self.image, self.degree)
             self.rect = self.image.get_rect(center=self.rect.center)
 

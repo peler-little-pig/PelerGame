@@ -1,4 +1,4 @@
-from Actor.BadActorGroup import *
+from Space.BadActorSpace import *
 from Actor.BadActor import *
 from Data.AllData import *
 def room_reader():

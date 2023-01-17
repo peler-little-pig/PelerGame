@@ -3,14 +3,16 @@ from Lib.Math.Math import *
 
 
 class BaseEgg(object):
-    def __init__(self, left: float, top: float, width: float, height: float) -> None:
+    def __init__(self, left: float, top: float, width: float, height: float, x, y, whose) -> None:
         self.rect = pygame.rect.Rect(left, top, width, height)
 
-        degree,self.dir = get_degree(left,top,EventData.mouse_x,EventData.mouse_y)
+        degree, self.dir = get_degree(left, top, x, y)
 
         self.egg_image = pygame.image.load('./Res/image/egg/egg.png').convert_alpha()
         self.egg_image = pygame.transform.rotate(self.egg_image, degree)
         self.speed = 10
+
+        self.whose = whose
 
     def draw(self):
         self.rect = self.egg_image.get_rect(center=self.rect.center)
@@ -36,12 +38,25 @@ class BaseEgg(object):
         return is_hit_wall(self.rect)
 
     def is_hit_bad_actor(self):
-        for bad_actor in ShareData.bad_actor_group.bad_actors():
-            if self.rect.colliderect(bad_actor):
-                if bad_actor.is_alive():
-                    bad_actor.blood -= 3
-                    return True
-                return False
+        if self.whose == SpecalData.GOOD_ACTOR:
+            for bad_actor in ShareData.bad_actor_group.bad_actors():
+                if self.rect.colliderect(bad_actor):
+                    if bad_actor.is_alive():
+                        bad_actor.blood -= 3
+                        return True
+            return False
+        else:
+            return False
+
+    def is_hit_good_actor(self):
+        if self.whose == SpecalData.BAD_ACTOR:
+            if self.rect.colliderect(ShareData.good_actor):
+                if ShareData.good_actor.is_alive():
+                    ShareData.good_actor.blood_info_bar.value -= 1
+                return True
+            return False
+        else:
+            return False
 
     def is_fly_away(self):
         return self.rect.x > ConstData.WINDOW_WIDTH + ConstData.DRAW_AREA_ADD
@@ -49,4 +64,5 @@ class BaseEgg(object):
     def is_should_delete(self):
         return self.is_fly_away() \
                or self.is_hit_wall() \
-               or self.is_hit_bad_actor()
+               or self.is_hit_bad_actor() \
+               or self.is_hit_good_actor()

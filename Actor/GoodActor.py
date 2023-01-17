@@ -4,6 +4,7 @@ from InfoBar.ProtectionInfoBar import *
 from InfoBar.EnergyInfoBar import *
 from Data.AllData import *
 
+
 class GoodActor(BaseActor):
     def __init__(self):
         super().__init__(ConstData.WINDOW_WIDTH / 2 - 25, ConstData.WINDOW_HEIGHT / 2 - 35,
@@ -28,17 +29,21 @@ class GoodActor(BaseActor):
         super().draw()
 
     def process(self):
-        if EventData.is_mouse_down:
-            if self.energy_info_bar.value > 0:
-                self.thing.fire()
+        if self.is_alive():
+            if EventData.is_mouse_down:
+                if self.energy_info_bar.value > 0:
+                    self.thing.fire(EventData.mouse_x,EventData.mouse_y,SpecalData.GOOD_ACTOR)
 
-        super().process()
-        self.thing.rotate()
-        self.blood_info_bar.process()
-        self.protection_info_bar.process()
-        self.energy_info_bar.process()
+            super().process()
+            self.thing.rotate(EventData.mouse_x,EventData.mouse_y)
+            self.blood_info_bar.process()
+            self.protection_info_bar.process()
+            self.energy_info_bar.process()
 
-        if EventData.is_move_left:
-            self.image = self.left_image
-        if EventData.is_move_right:
-            self.image = self.right_image
+            if EventData.is_move_left:
+                self.image = self.left_image
+            if EventData.is_move_right:
+                self.image = self.right_image
+
+    def is_alive(self):
+        return self.blood_info_bar.value > 0

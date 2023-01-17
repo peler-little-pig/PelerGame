@@ -3,14 +3,18 @@ import random
 from Compute.SpaceCompute import *
 from Data.AllData import *
 
+
 class BadActor(BaseActor):
     def __init__(self, x, y):
         super().__init__(x, y, *ConstData.NORMAL_ACTOR_SIZE_TUPLE)
         self.move_x = 0
         self.move_y = 0
 
-        self.WAIT = 130
-        self.wait = 0
+        self.walk_around_WAIT = 130
+        self.walk_around_wait = 0
+
+        self.fire_to_good_WAIT = random.randint(60,150)
+        self.fire_to_good_wait = 0
 
         self.blood = 15
 
@@ -24,24 +28,33 @@ class BadActor(BaseActor):
         else:
             ConstData.surface.blit(self.dead_image, self)
 
+    def fire_to_good(self):
+        if self.fire_to_good_wait == 0:
+            self.thing.fire(*ShareData.good_actor.center,SpecalData.BAD_ACTOR)
+            self.fire_to_good_wait = self.fire_to_good_WAIT
+        else:
+            self.fire_to_good_wait -= 1
+
     def walk_around(self):
-        if self.wait == 0:
+        if self.walk_around_wait == 0:
             self.move_x = random.randint(-1, 1)
             self.move_y = random.randint(-1, 1)
-            self.wait = self.WAIT
+            self.walk_around_wait = self.walk_around_WAIT
         else:
-            self.wait -= 1
+            self.walk_around_wait -= 1
 
         if is_hit_wall(self):
             self.move_x = -self.move_x
             self.move_y = -self.move_y
-            self.wait = 0
+            self.walk_around_wait = 0
         self.move_ip(self.move_x, self.move_y)
 
     def process(self):
         if self.is_alive():
             super().process()
+            self.thing.rotate(*ShareData.good_actor.center)
             self.walk_around()
+            self.fire_to_good()
 
         if EventData.is_move_up:
             self.move_ip(0, ConstData.MOVE_SPEED)

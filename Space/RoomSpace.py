@@ -3,9 +3,7 @@ from typing import List
 from Block.CornerBlock import CornerBlock
 from Block.DoorBlock import DoorBlock
 from Space.BaseSpace import *
-from Block.GroundBlock import *
 from Data.AllData import *
-
 
 class RoomSpace(BaseSpace):
     def __init__(self, name):

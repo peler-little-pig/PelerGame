@@ -1,6 +1,3 @@
-import pygame
-import math
-from Data.AllData import *
 from Compute.SpaceCompute import *
 from Lib.Math.Math import *
 
@@ -11,7 +8,7 @@ class BaseEgg(object):
 
         degree,self.dir = get_degree(left,top,EventData.mouse_x,EventData.mouse_y)
 
-        self.egg_image = pygame.image.load('Res/image/egg/egg.png').convert_alpha()
+        self.egg_image = pygame.image.load('./Res/image/egg/egg.png').convert_alpha()
         self.egg_image = pygame.transform.rotate(self.egg_image, degree)
         self.speed = 10
 

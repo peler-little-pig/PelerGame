@@ -3,7 +3,6 @@ from Block.CornerBlock import CornerBlock
 from Space.BaseSpace import *
 from Data.AllData import *
 
-
 class HeightCrossSpace(BaseSpace):
     def __init__(self, name):
         super().__init__(name)

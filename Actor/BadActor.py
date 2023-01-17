@@ -1,13 +1,11 @@
-from typing import overload
-
 from Actor.BaseActor import *
 import random
 from Compute.SpaceCompute import *
-
+from Data.AllData import *
 
 class BadActor(BaseActor):
-    def __init__(self,x,y):
-        super().__init__(x,y, *ConstData.NORMAL_ACTOR_SIZE_TUPLE)
+    def __init__(self, x, y):
+        super().__init__(x, y, *ConstData.NORMAL_ACTOR_SIZE_TUPLE)
         self.move_x = 0
         self.move_y = 0
 
@@ -16,15 +14,15 @@ class BadActor(BaseActor):
 
         self.blood = 15
 
-        self.alive_image = pygame.image.load('Res/image/bad_actor/bad_actor_alive.png').convert_alpha()
-        self.dead_image = pygame.image.load('Res/image/bad_actor/bad_actor_dead.png').convert_alpha()
+        self.alive_image = pygame.image.load('./Res/image/bad_actor/bad_actor_alive.png').convert_alpha()
+        self.dead_image = pygame.image.load('./Res/image/bad_actor/bad_actor_dead.png').convert_alpha()
 
     def draw(self):
         if self.is_alive():
             ConstData.surface.blit(self.alive_image, self)
             super().draw()
         else:
-            ConstData.surface.blit(self.dead_image,self)
+            ConstData.surface.blit(self.dead_image, self)
 
     def walk_around(self):
         if self.wait == 0:

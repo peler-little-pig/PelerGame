@@ -1,5 +1,4 @@
 from Thing.BaseThing import *
-from Data.AllData import *
 
 
 class BaseActor(pygame.rect.Rect):

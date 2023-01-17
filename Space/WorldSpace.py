@@ -1,10 +1,5 @@
-from typing import List
-
-from Space.BaseSpace import *
-from Data.AllData import *
 from Space.RoomSpace import *
-from Space.WidthCrossSpace import *
-from Space.HeightCrossSpace import *
+from Data.AllData import *
 
 class WorldSpace(BaseSpace):
     def __init__(self, name):

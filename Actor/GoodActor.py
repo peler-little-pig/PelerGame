@@ -1,9 +1,8 @@
 from Actor.BaseActor import *
-import pygame
 from InfoBar.BloodInfoBar import *
 from InfoBar.ProtectionInfoBar import *
 from InfoBar.EnergyInfoBar import *
-
+from Data.AllData import *
 
 class GoodActor(BaseActor):
     def __init__(self):

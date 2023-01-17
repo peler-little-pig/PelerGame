@@ -1,7 +1,6 @@
 import pygame
 from Data.AllData import *
 
-
 class BaseBlock(pygame.rect.Rect):
     def __init__(self, left: float, top: float) -> None:
         super().__init__(left, top, *ConstData.BLOCK_SIZE_TUPLE)

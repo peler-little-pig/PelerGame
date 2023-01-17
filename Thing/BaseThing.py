@@ -1,8 +1,7 @@
 from typing import List
 from Egg.BaseEgg import *
-from Data.AllData import *
 import pygame
-
+from Data.AllData import *
 
 class BaseThing():
     def __init__(self, left: float, top: float, width: float, height: float) -> None:

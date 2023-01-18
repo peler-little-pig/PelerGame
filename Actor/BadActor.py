@@ -13,7 +13,7 @@ class BadActor(BaseActor):
         self.walk_around_WAIT = 130
         self.walk_around_wait = 0
 
-        self.fire_to_good_WAIT = random.randint(60,150)
+        self.fire_to_good_WAIT = random.randint(30,60)
         self.fire_to_good_wait = self.fire_to_good_WAIT
 
         self.blood = 15

@@ -1,6 +1,8 @@
 from Space.BadActorSpace import *
 from Actor.BadActor import *
 from Data.AllData import *
+
+
 def room_reader():
     info = []
     for area in ShareData.world.area_list:
@@ -20,7 +22,7 @@ def create_bad_actor(bad_actor_list: list, room: RoomSpace):
 
 
 def bad_actor_group_loader():
-    bad_actor_group = BadActorGroup()
+    bad_actor_group = BadActorSpace()
     room_list = room_reader()
     for room in room_list:
         bad_actor_group.group[room] = []

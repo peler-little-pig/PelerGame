@@ -1,0 +1,6 @@
+(
+('./Map/01/home.proom',('home',())),
+('./Map/01/test.pwidthcross',('cross',('home','right'))),
+('./Map/01/top_door.proom',('cross6',('cross','right'))),
+('./Map/01/test.pinfo',('',()))
+)

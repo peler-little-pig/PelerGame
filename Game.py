@@ -1,11 +1,7 @@
-import pygame
 from pygame.locals import *
-from Data.AllData import *
 from Actor.GoodActor import *
-from Lib.MapLoader.SpaceLoader import *
-from Lib.MapLoader.BadActorLoader import *
+from Lib.MapLoader.MapLoader import *
 import sys
-import os
 
 
 class Game(object):
@@ -14,11 +10,12 @@ class Game(object):
 
         self.good_actor = GoodActor()
         ShareData.good_actor = self.good_actor
-        self.world = world_loader('./Map/00/test.pworld')
-        ShareData.world = self.world
-        self.bad_actor = bad_actor_group_loader()
-        ShareData.bad_actor_group = self.bad_actor
+        self.map = map_loader()
+        self.map_index = 0
+        ShareData.world = self.map[self.map_index][0]
+        ShareData.bad_actor_group = self.map[self.map_index][1]
 
+        ShareData.game = self
 
     def init(self):
         pygame.init()
@@ -62,13 +59,13 @@ class Game(object):
                 EventData.mouse_x, EventData.mouse_y = event.pos
 
     def process(self):
-        self.world.process()
-        self.bad_actor.process()
+        self.map[self.map_index][0].process()
+        self.map[self.map_index][1].process()
         self.good_actor.process()
 
     def draw(self):
-        self.world.draw()
-        self.bad_actor.draw()
+        self.map[self.map_index][0].draw()
+        self.map[self.map_index][1].draw()
         self.good_actor.draw()
 
     def loop(self):
@@ -81,6 +78,12 @@ class Game(object):
 
             pygame.display.update()
             ConstData.fps_clock.tick(ConstData.FPS)
+
+    def next_world(self):
+        self.map_index += 1
+        print(self.map_index)
+        ShareData.world = self.map[self.map_index][0]
+        ShareData.bad_actor_group = self.map[self.map_index][1]
 
     def exit(self):
         pygame.quit()

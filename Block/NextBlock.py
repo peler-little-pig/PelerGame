@@ -14,4 +14,4 @@ class NextBlock(BaseBlock):
 
     def process(self):
         if self.colliderect(ShareData.good_actor):
-            print('aaaaa')
+            ShareData.game.next_world()

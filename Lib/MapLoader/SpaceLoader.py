@@ -5,8 +5,6 @@ from Space.WidthCrossSpace import *
 from Space.HeightCrossSpace import *
 from Block.NextBlock import *
 from Data.AllData import *
-import os
-import sys
 
 
 def room_loader(file: str, input_x=0, input_y=0, name=''):

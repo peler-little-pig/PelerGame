@@ -33,6 +33,8 @@ def room_loader(file: str, input_x=0, input_y=0, name=''):
                     room.base_block_list.append(GroundBlock(x, y))
                 elif s == 'N':
                     room.base_block_list.append(NextBlock(x, y))
+                elif s == '-':
+                    room.blocking_block_list.append(BlockingBlock(x,y))
                 x += ConstData.BLOCK_SIZE
             y += ConstData.BLOCK_SIZE
             x = X

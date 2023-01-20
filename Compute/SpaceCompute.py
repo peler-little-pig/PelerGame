@@ -4,6 +4,7 @@ from Space.HeightCrossSpace import *
 import pygame
 from Data.AllData import *
 
+
 def is_hit_wall(rect: pygame.rect.Rect):
     area = active_area(rect)
     if type(area) == RoomSpace:
@@ -47,3 +48,11 @@ def active_area(rect: pygame.rect.Rect):
                     or rect.left < area.corner_block_list[0].left
                     or rect.right > area.corner_block_list[1].right):
                 return area
+
+
+def is_hit_blocking_block(rect: pygame.rect.Rect, area):
+    if type(area) == RoomSpace:
+        for block in area.blocking_block_list:
+            if rect.colliderect(block):
+                return True
+    return False

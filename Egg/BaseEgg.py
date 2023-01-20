@@ -61,8 +61,12 @@ class BaseEgg(object):
     def is_fly_away(self):
         return self.rect.x > ConstData.WINDOW_WIDTH + ConstData.DRAW_AREA_ADD
 
+    def is_hit_blocking_block(self):
+        return is_hit_blocking_block(self.rect, active_area(self.rect))
+
     def is_should_delete(self):
         return self.is_fly_away() \
                or self.is_hit_wall() \
+               or self.is_hit_good_actor() \
                or self.is_hit_bad_actor() \
-               or self.is_hit_good_actor()
+               or self.is_hit_blocking_block()

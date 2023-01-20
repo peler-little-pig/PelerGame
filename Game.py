@@ -17,6 +17,8 @@ class Game(object):
 
         ShareData.game = self
 
+        self.nexted = False
+
     def init(self):
         pygame.init()
 
@@ -79,11 +81,15 @@ class Game(object):
             pygame.display.update()
             ConstData.fps_clock.tick(ConstData.FPS)
 
+            self.nexted = False
+
     def next_world(self):
-        self.map_index += 1
-        print(self.map_index)
-        ShareData.world = self.map[self.map_index][0]
-        ShareData.bad_actor_group = self.map[self.map_index][1]
+        if not self.nexted:
+            self.map_index += 1
+            print(self.map_index)
+            ShareData.world = self.map[self.map_index][0]
+            ShareData.bad_actor_group = self.map[self.map_index][1]
+            self.nexted = True
 
     def exit(self):
         pygame.quit()

@@ -13,7 +13,7 @@ class BadActor(BaseActor):
         self.walk_around_WAIT = 130
         self.walk_around_wait = 0
 
-        self.fire_to_good_WAIT = random.randint(30,60)
+        self.fire_to_good_WAIT = random.randint(30, 60)
         self.fire_to_good_wait = self.fire_to_good_WAIT
 
         self.blood = 15
@@ -30,7 +30,7 @@ class BadActor(BaseActor):
 
     def fire_to_good(self):
         if self.fire_to_good_wait == 0:
-            self.thing.fire(*ShareData.good_actor.center,SpecalData.BAD_ACTOR)
+            self.thing.fire(*ShareData.good_actor.center, SpecalData.BAD_ACTOR)
             self.fire_to_good_wait = self.fire_to_good_WAIT
         else:
             self.fire_to_good_wait -= 1
@@ -43,7 +43,7 @@ class BadActor(BaseActor):
         else:
             self.walk_around_wait -= 1
 
-        if is_hit_wall(self):
+        if is_hit_wall(self) or is_hit_blocking_block(self,active_area(self)):
             self.move_x = -self.move_x
             self.move_y = -self.move_y
             self.walk_around_wait = 0

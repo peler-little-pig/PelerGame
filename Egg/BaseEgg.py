@@ -64,9 +64,19 @@ class BaseEgg(object):
     def is_hit_blocking_block(self):
         return is_hit_blocking_block(self.rect, active_area(self.rect))
 
+    def is_hit_box_block(self):
+        area = active_area(self.rect)
+        if type(area) == RoomSpace:
+            for block in area.box_block_list:
+                if self.rect.colliderect(block):
+                    block.blood -= 3
+                    return True
+        return False
+
     def is_should_delete(self):
         return self.is_fly_away() \
                or self.is_hit_wall() \
                or self.is_hit_good_actor() \
                or self.is_hit_bad_actor() \
-               or self.is_hit_blocking_block()
+               or self.is_hit_blocking_block() \
+               or self.is_hit_box_block()

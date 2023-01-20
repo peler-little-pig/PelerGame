@@ -43,7 +43,8 @@ class BadActor(BaseActor):
         else:
             self.walk_around_wait -= 1
 
-        if is_hit_wall(self) or is_hit_blocking_block(self,active_area(self)):
+        if is_hit_wall(self) or is_hit_blocking_block(self, active_area(self)) \
+                or is_hit_box_block(self, active_area(self)):
             self.move_x = -self.move_x
             self.move_y = -self.move_y
             self.walk_around_wait = 0

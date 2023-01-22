@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Block/BoxBlock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor/BadActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/BadActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compute/SpaceCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Compute/SpaceCompute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Egg/BaseEgg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Egg/BaseEgg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/MapLoader/BadActorLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/MapLoader/BadActorLoader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/MapLoader/SpaceLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/MapLoader/SpaceLoader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/00/four_door.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Map/00/four_door.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Space/RoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Extra/MapEditor/MainControl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Extra/MapEditor/MainWindow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Extra/MapEditor/MainWindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Extra/MapEditor/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block/BoxBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/BoxBlock.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,15 +25,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2KSPOqjPggxcAZPSAnV7xFJALVZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Map" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../music_player" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,7 +55,29 @@
       <recent name="$PROJECT_DIR$/Map/00" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PelerGame" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Extra/MapEditor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Extra/MapEditor/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PelerGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,6 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -102,7 +127,9 @@
       <workItem from="1674136792246" duration="3194000" />
       <workItem from="1674187781615" duration="2301000" />
       <workItem from="1674200019698" duration="750000" />
-      <workItem from="1674211662300" duration="3844000" />
+      <workItem from="1674211662300" duration="4237000" />
+      <workItem from="1674276951402" duration="877000" />
+      <workItem from="1674369148574" duration="523000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -132,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674213704185</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v 0.0.3 box block come!!!">
+      <created>1674215895639</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674215895639</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,13 +185,16 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="good actor can add protection autoly" />
     <MESSAGE value="some small change" />
     <MESSAGE value="peler game v0.0.1, hoo~oo~oooooo" />
     <MESSAGE value="v 0.0.2 add blocking block!" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 0.0.2 add blocking block!" />
+    <MESSAGE value="v 0.0.3 box block come!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 0.0.3 box block come!!!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674215508121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1674277789205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Extra/MapEditor" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674277358243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

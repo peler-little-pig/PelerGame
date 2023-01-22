@@ -15,7 +15,7 @@ class GoodActor(BaseActor):
 
         self.blood_max = 5
         self.protection_max = 5
-        self.energy_max = 1300
+        self.energy_max = 500
 
         self.blood_info_bar = BloodInfoBar(self.blood_max)
         self.protection_info_bar = ProtectionInfoBar(self.protection_max)

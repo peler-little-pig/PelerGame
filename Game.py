@@ -2,6 +2,7 @@ from pygame.locals import *
 from Actor.GoodActor import *
 from Lib.MapLoader.MapLoader import *
 import sys
+from Lib.Logo.logo import *
 
 
 class Game(object):
@@ -90,6 +91,18 @@ class Game(object):
             ShareData.world = self.map[self.map_index][0]
             ShareData.bad_actor_group = self.map[self.map_index][1]
             self.nexted = True
+
+    def logo(self):
+        fs = FSLogo('./Res/image/logo/logo.png')
+        while fs.alphaIndex < 254:
+            ConstData.surface.fill((255, 255, 255))
+
+            self.event()
+
+            fs.pack()
+            fs.update()
+
+            pygame.display.update()
 
     def exit(self):
         pygame.quit()

@@ -27,6 +27,7 @@ class BaseThing():
             self.wait -= 1
 
     def draw(self):
+        # pygame.draw.rect(ConstData.surface, (0, 0, 0), self.image_rotate.get_rect(left=self.rect.left,top=self.rect.top))
         ConstData.surface.blit(self.image_rotate, self.rect)
         for egg in self.egg_list:
             egg.draw()
@@ -34,8 +35,13 @@ class BaseThing():
     def rotate(self, x, y):
         if EventData.is_mouse_move:
             self.degree, _ = get_degree(self.rect.x, self.rect.y, x, y)
-            self.image_rotate = pygame.transform.rotate(self.image, self.degree)
-            self.rect = self.image.get_rect(center=self.rect.center)
+            if -90 < self.degree < 90:
+                self.image_rotate = pygame.transform.rotate(self.image, self.degree)
+                self.rect = self.image.get_rect(center=self.rect.center)
+            else:
+                self.image_rotate = pygame.transform.rotate(self.image, 180-self.degree)
+                self.image_rotate = pygame.transform.flip(self.image_rotate,True,False)
+                self.rect = self.image.get_rect(left=self.rect.left,top=self.rect.top)
 
     def process(self):
         for i in range(len(self.egg_list)):

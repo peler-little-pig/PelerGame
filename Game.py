@@ -7,8 +7,14 @@ from Lib.Logo.logo import *
 
 class Game(object):
     def __init__(self):
-        self.init()
+        pygame.init()
 
+        ConstData.fps_clock = pygame.time.Clock()
+        ConstData.surface = pygame.display.set_mode((ConstData.WINDOW_WIDTH, ConstData.WINDOW_HEIGHT))
+
+        pygame.display.set_caption(ConstData.GAME_NAME)
+
+    def init(self):
         self.good_actor = GoodActor()
         ShareData.good_actor = self.good_actor
         self.map = map_loader()
@@ -19,14 +25,6 @@ class Game(object):
         ShareData.game = self
 
         self.nexted = False
-
-    def init(self):
-        pygame.init()
-
-        ConstData.fps_clock = pygame.time.Clock()
-        ConstData.surface = pygame.display.set_mode((ConstData.WINDOW_WIDTH, ConstData.WINDOW_HEIGHT))
-
-        pygame.display.set_caption(ConstData.GAME_NAME)
 
     def event(self):
         for event in pygame.event.get():
@@ -87,7 +85,6 @@ class Game(object):
     def next_world(self):
         if not self.nexted:
             self.map_index += 1
-            print(self.map_index)
             ShareData.world = self.map[self.map_index][0]
             ShareData.bad_actor_group = self.map[self.map_index][1]
             self.nexted = True

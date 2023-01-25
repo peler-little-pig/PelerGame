@@ -1,4 +1,4 @@
-from Compute.SpaceCompute import *
+from Lib.Compute.SpaceCompute import *
 from Lib.Math.Math import *
 
 

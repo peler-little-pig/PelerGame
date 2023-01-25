@@ -1,6 +1,6 @@
 from Actor.BaseActor import *
 import random
-from Compute.SpaceCompute import *
+from Lib.Compute.SpaceCompute import *
 from Data.AllData import *
 
 

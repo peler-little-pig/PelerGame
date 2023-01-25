@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lib/BetterPygame/Function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PelerGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PelerGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor/BadActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/BadActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor/BaseActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/BaseActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compute/SpaceCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Compute/SpaceCompute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Egg/BaseEgg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Egg/BaseEgg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra/MapEditor/MainControl.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra/MapEditor/MainWindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra/MapEditor/MainWindow.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra/MapEditor/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/BetterPygame/Rect.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/BetterPygame/Rect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/00/four_door.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Map/00/four_door.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Map/00/test.pinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Map/00/test.pinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Space/RoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thing/BaseThing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thing/BaseThing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MapEditor" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -169,7 +160,7 @@
       <workItem from="1674433654202" duration="1605000" />
       <workItem from="1674474162449" duration="4265000" />
       <workItem from="1674487933563" duration="3000" />
-      <workItem from="1674649765022" duration="1891000" />
+      <workItem from="1674649765022" duration="2832000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -227,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674386362860</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="better blocking block and box block hitting event checker,GREAT!">
+      <created>1674651840653</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674651840653</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,11 +253,12 @@
     <MESSAGE value="add README" />
     <MESSAGE value="v0.0.4 better map" />
     <MESSAGE value="add logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logo" />
+    <MESSAGE value="better blocking block and box block hitting event checker,GREAT!" />
+    <option name="LAST_COMMIT_MESSAGE" value="better blocking block and box block hitting event checker,GREAT!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PelerGame$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1674477043579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Extra/MapEditor" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674651655818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674652463944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

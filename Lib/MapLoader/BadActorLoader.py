@@ -1,4 +1,4 @@
-from Space.BadActorSpace import *
+from Group.BadActorGroup import *
 from Actor.BadActor import *
 from Data.AllData import *
 
@@ -32,7 +32,7 @@ def create_bad_actor(bad_actor_list: list, room: RoomSpace):
 
 
 def bad_actor_group_loader(world):
-    bad_actor_group = BadActorSpace()
+    bad_actor_group = BadActorGroup()
     room_list = room_reader(world)
     for room in room_list:
         bad_actor_group.group[room] = []

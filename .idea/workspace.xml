@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lib/DebugInfo/info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/GUI/Label.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/file/next_block/next_block.kra" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/image/next_block/next_block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/GUI/quick_start.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/GUI/quick_theme.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/GUI/resizing_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor/BadActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/BadActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor/GoodActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/GoodActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Block/BoxBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/BoxBlock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block/NextBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/NextBlock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Coin/BaseCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/BaseCoin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Coin/EnergyCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/EnergyCoin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Coin/MoneyCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/MoneyCoin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/ShareData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ShareData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/Base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/Button.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/BetterPygame/Rect.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/BetterPygame/Rect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Space/RoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/logo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +178,9 @@
       <workItem from="1674649765022" duration="2832000" />
       <workItem from="1674652606033" duration="312000" />
       <workItem from="1674692880458" duration="3329000" />
-      <workItem from="1674708746583" duration="2384000" />
+      <workItem from="1674708746583" duration="2523000" />
+      <workItem from="1674715850048" duration="755000" />
+      <workItem from="1674741271164" duration="380000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -267,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674696663872</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="coins can fly!!!">
+      <created>1674711219263</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674711219263</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,11 +305,12 @@
     <MESSAGE value="prepare to make coin" />
     <MESSAGE value="add blocking_block.png box_block.png and start BaseCoin.py" />
     <MESSAGE value="order the Compute part &#10;write some code for coin" />
-    <option name="LAST_COMMIT_MESSAGE" value="order the Compute part &#10;write some code for coin" />
+    <MESSAGE value="coins can fly!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="coins can fly!!!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PelerGame$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1674477043579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Extra/MapEditor" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674711140846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674741650833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

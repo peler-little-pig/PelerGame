@@ -4,6 +4,7 @@ from Coin.EnergyCoin import EnergyCoin
 from Lib.MapLoader.MapLoader import *
 import sys
 from Lib.Logo.logo import *
+from Lib.DebugInfo.info import *
 from Group.CoinGroup import *
 
 
@@ -18,8 +19,7 @@ class Game(object):
 
     def init(self):
         self.coin_gruop = CoinGroup()
-        self.coin_gruop.append(EnergyCoin(500, 100))
-
+        ShareData.coin_group = self.coin_gruop
         self.good_actor = GoodActor()
         ShareData.good_actor = self.good_actor
         self.map = map_loader()

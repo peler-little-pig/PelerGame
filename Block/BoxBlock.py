@@ -8,6 +8,7 @@ class BoxBlock(BaseBlock):
         super().__init__(left, top)
         self.image = pygame.image.load('./Res/image/box_block/box_block.png').convert()
         self.blood = 3
+        self.is_coin_gived = False
 
     def draw(self):
         # if self.is_need_draw():

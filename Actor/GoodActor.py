@@ -15,7 +15,7 @@ class GoodActor(BaseActor):
 
         self.blood_max = 5
         self.protection_max = 5
-        self.energy_max = 500
+        self.energy_max = 180
 
         self.blood_info_bar = BloodInfoBar(self.blood_max)
         self.protection_info_bar = ProtectionInfoBar(self.protection_max)
@@ -39,10 +39,10 @@ class GoodActor(BaseActor):
         if self.is_alive():
             if EventData.is_mouse_down:
                 if self.energy_info_bar.value > 0:
-                    self.thing.fire(EventData.mouse_x,EventData.mouse_y,SpecalData.GOOD_ACTOR)
+                    self.thing.fire(EventData.mouse_x, EventData.mouse_y, SpecalData.GOOD_ACTOR)
 
             super().process()
-            self.thing.rotate(EventData.mouse_x,EventData.mouse_y)
+            self.thing.rotate(EventData.mouse_x, EventData.mouse_y)
             self.blood_info_bar.process()
             self.protection_info_bar.process()
             self.energy_info_bar.process()
@@ -57,7 +57,7 @@ class GoodActor(BaseActor):
     def is_alive(self):
         return self.blood_info_bar.value > 0
 
-    def get_hurt(self,hurt):
+    def get_hurt(self, hurt):
         if self.protection_info_bar.value != 0:
             if self.protection_info_bar.value >= hurt:
                 self.protection_info_bar.value -= hurt
@@ -65,6 +65,12 @@ class GoodActor(BaseActor):
                 self.protection_info_bar.value = 0
         else:
             self.blood_info_bar.value -= hurt
+
+    def add_energy(self, value):
+        if self.energy_info_bar.value + value > self.energy_max:
+            self.energy_info_bar.value = self.energy_max
+        else:
+            self.energy_info_bar.value += value
 
     def add_protection(self):
         if self.add_protection_wait == 0:

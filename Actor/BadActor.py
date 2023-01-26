@@ -25,6 +25,8 @@ class BadActor(BaseActor):
         self.alive_image = pygame.image.load('./Res/image/bad_actor/bad_actor_alive.png').convert_alpha()
         self.dead_image = pygame.image.load('./Res/image/bad_actor/bad_actor_dead.png').convert_alpha()
 
+        self.is_coin_gived = False
+
     def draw(self):
         if self.is_alive():
             ConstData.surface.blit(self.alive_image, self)
@@ -61,8 +63,16 @@ class BadActor(BaseActor):
                 self.thing.rotate(*ShareData.good_actor.center)
                 self.walk_around()
                 self.fire_to_good()
+            else:
+                self.give_coin()
 
         follow_move(self)
+
+    def give_coin(self):
+        if not self.is_coin_gived:
+            ShareData.coin_group.append(EnergyCoin(self.centerx, self.centery))
+            # ShareData.coin_group.append(MoneyCoin(self.left, self.top))
+            self.is_coin_gived = True
 
     def move_ip(self, x: float, y: float) -> None:
         super().move_ip(x, y)

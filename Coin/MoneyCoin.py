@@ -10,3 +10,6 @@ class MoneyCoin(BaseCoin):
 
     def draw(self):
         ConstData.surface.blit(self.image, self)
+
+    def process(self):
+        super().process()

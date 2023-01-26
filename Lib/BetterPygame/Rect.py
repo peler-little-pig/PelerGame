@@ -21,5 +21,5 @@ def colliderect_left(rect1: pygame.rect.Rect, rect2: pygame.rect.Rect):
 
 def colliderect_right(rect1: pygame.rect.Rect, rect2: pygame.rect.Rect):
     if rect1.colliderect(rect2):
-        return rect2.right <= rect1.left <= rect2.right
+        return rect2.right - 3 <= rect1.left <= rect2.right
     return False

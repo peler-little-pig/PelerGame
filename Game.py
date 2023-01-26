@@ -1,8 +1,10 @@
 from pygame.locals import *
 from Actor.GoodActor import *
+from Coin.EnergyCoin import EnergyCoin
 from Lib.MapLoader.MapLoader import *
 import sys
 from Lib.Logo.logo import *
+from Group.CoinGroup import *
 
 
 class Game(object):
@@ -15,13 +17,15 @@ class Game(object):
         pygame.display.set_caption(ConstData.GAME_NAME)
 
     def init(self):
+        self.coin_gruop = CoinGroup()
+        self.coin_gruop.append(EnergyCoin(500, 100))
+
         self.good_actor = GoodActor()
         ShareData.good_actor = self.good_actor
         self.map = map_loader()
         self.map_index = 0
         ShareData.world = self.map[self.map_index][0]
         ShareData.bad_actor_group = self.map[self.map_index][1]
-
         ShareData.game = self
 
         self.nexted = False
@@ -63,11 +67,13 @@ class Game(object):
         self.map[self.map_index][0].process()
         self.map[self.map_index][1].process()
         self.good_actor.process()
+        self.coin_gruop.process()
 
     def draw(self):
         self.map[self.map_index][0].draw()
         self.map[self.map_index][1].draw()
         self.good_actor.draw()
+        self.coin_gruop.draw()
 
     def loop(self):
         while True:

@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Res/file/blocking_block/blocking_block.kra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/file/box_block/box_block.kra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/file/energy_coin/energy_coin.kra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/file/money_coin/money_coin.kra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/image/blocking_block/blocking_block.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/image/box_block/box_block.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/image/energy_coin/energy_coin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/image/money_coin/money_coin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/Compute/BlockCompute.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/Compute/MoveCompute.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Block/BlockingBlcok.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/BlockingBlcok.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Block/BoxBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/BoxBlock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/MapLoader/BadActorLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/MapLoader/BadActorLoader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Space/BadActorSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Group/BadActorSpace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coin/BaseCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/BaseCoin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coin/EnergyCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/EnergyCoin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coin/MoneyCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/MoneyCoin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actor/BadActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/BadActor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coin/BaseCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/BaseCoin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coin/MoneyCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/MoneyCoin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egg/BaseEgg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Egg/BaseEgg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group/CoinGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Group/CoinGroup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/Compute/SpaceCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Compute/SpaceCompute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +56,7 @@
       <recent name="$PROJECT_DIR$/Map" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Group" />
       <recent name="$PROJECT_DIR$/Lib/MapLoader" />
       <recent name="$PROJECT_DIR$/Map/00" />
     </key>
@@ -171,7 +167,7 @@
       <workItem from="1674487933563" duration="3000" />
       <workItem from="1674649765022" duration="2832000" />
       <workItem from="1674652606033" duration="312000" />
-      <workItem from="1674692880458" duration="1776000" />
+      <workItem from="1674692880458" duration="3136000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -243,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674652916952</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add blocking_block.png box_block.png and start BaseCoin.py">
+      <created>1674695454430</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674695454430</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,11 +276,12 @@
     <MESSAGE value="add logo" />
     <MESSAGE value="better blocking block and box block hitting event checker,GREAT!" />
     <MESSAGE value="prepare to make coin" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepare to make coin" />
+    <MESSAGE value="add blocking_block.png box_block.png and start BaseCoin.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add blocking_block.png box_block.png and start BaseCoin.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PelerGame$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1674477043579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Extra/MapEditor" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674694819213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674696481720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

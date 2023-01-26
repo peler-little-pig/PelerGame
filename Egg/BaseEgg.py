@@ -1,4 +1,6 @@
 from Lib.Compute.SpaceCompute import *
+from Lib.Compute.BlockCompute import *
+from Lib.Compute.MoveCompute import *
 from Lib.Math.Math import *
 
 
@@ -23,14 +25,7 @@ class BaseEgg(object):
         self.rect.y = self.rect.y + self.dir[1] * self.speed
 
     def process(self):
-        if EventData.is_move_up:
-            self.rect.move_ip(0, ConstData.MOVE_SPEED)
-        if EventData.is_move_down:
-            self.rect.move_ip(0, -ConstData.MOVE_SPEED)
-        if EventData.is_move_left:
-            self.rect.move_ip(ConstData.MOVE_SPEED, 0)
-        if EventData.is_move_right:
-            self.rect.move_ip(-ConstData.MOVE_SPEED, 0)
+        follow_move(self.rect)
 
         self.update()
 

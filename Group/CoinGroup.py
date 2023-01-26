@@ -1,7 +1,9 @@
 from typing import List
 
+from Coin.BaseCoin import BaseCoin
 
-class CoinGroup(List):
+
+class CoinGroup(List[BaseCoin]):
     def __init__(self):
         super().__init__()
 
@@ -10,5 +12,12 @@ class CoinGroup(List):
             coin.draw()
 
     def process(self):
+        self.delete()
         for coin in self:
             coin.process()
+
+    def delete(self):
+        for i in range(len(self)):
+            if self[i].is_should_delete:
+                del self[i]
+                break

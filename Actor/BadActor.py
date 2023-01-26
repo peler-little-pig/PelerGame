@@ -1,7 +1,11 @@
 from Actor.BaseActor import *
 import random
 from Lib.Compute.SpaceCompute import *
+from Lib.Compute.BlockCompute import *
+from Lib.Compute.MoveCompute import *
 from Data.AllData import *
+from Coin.EnergyCoin import *
+from Coin.MoneyCoin import *
 
 
 class BadActor(BaseActor):
@@ -58,14 +62,7 @@ class BadActor(BaseActor):
                 self.walk_around()
                 self.fire_to_good()
 
-        if EventData.is_move_up:
-            self.move_ip(0, ConstData.MOVE_SPEED)
-        if EventData.is_move_down:
-            self.move_ip(0, -ConstData.MOVE_SPEED)
-        if EventData.is_move_left:
-            self.move_ip(ConstData.MOVE_SPEED, 0)
-        if EventData.is_move_right:
-            self.move_ip(-ConstData.MOVE_SPEED, 0)
+        follow_move(self)
 
     def move_ip(self, x: float, y: float) -> None:
         super().move_ip(x, y)

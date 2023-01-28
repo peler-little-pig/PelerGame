@@ -113,7 +113,8 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
                     width_cross: WidthCrossSpace = world.search(width_cross_name)
                     if state == 'top':
                         room = room_loader(d, 0, 0, info[0])
-                        x = width_cross.corner_block_list[0].left - BlockData.BLOCK_SIZE * 2
+                        x = width_cross.corner_block_list[0].left - room.bottom_door_block_list[0].left +\
+                            BlockData.BLOCK_SIZE
                         y = width_cross.corner_block_list[0].top - \
                             room.corner_block_list[0].top - room.corner_block_list[2].bottom
                         for block in room.mix():
@@ -122,7 +123,8 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
 
                     elif state == 'bottom':
                         room = room_loader(d, 0, 0, info[0])
-                        x = width_cross.corner_block_list[0].left - BlockData.BLOCK_SIZE * 2
+                        x = width_cross.corner_block_list[0].left - room.bottom_door_block_list[0].left +\
+                            BlockData.BLOCK_SIZE
                         y = width_cross.corner_block_list[2].bottom
                         for block in room.mix():
                             block.x += x
@@ -132,7 +134,8 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
                         room = room_loader(d, 0, 0, info[0])
                         x = width_cross.corner_block_list[0].left - \
                             room.corner_block_list[1].right - room.corner_block_list[0].left
-                        y = width_cross.corner_block_list[0].top - BlockData.BLOCK_SIZE
+                        y = width_cross.corner_block_list[0].top - room.right_door_block_list[0].top \
+                            + BlockData.BLOCK_SIZE
                         for block in room.mix():
                             block.x += x
                             block.y += y

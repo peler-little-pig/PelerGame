@@ -161,7 +161,7 @@ class RoomSpace(BaseSpace):
                 break
 
     def give_coin(self, box_block):
-        if not box_block.is_coin_gived:
+        if not box_block.is_coin_given:
             ShareData.coin_group.append(EnergyCoin(box_block.centerx, box_block.centery))
             # ShareData.coin_group.append(MoneyCoin(self.left, self.top))
-            box_block.is_coin_gived = True
+            box_block.is_coin_given = True

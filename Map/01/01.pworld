@@ -1,6 +1,12 @@
 (
 ('./Map/01/home.proom',('home',())),
-('./Map/01/test.pwidthcross',('cross',('home','right'))),
-('./Map/01/top_door.proom',('cross6',('cross','right'))),
+('./Map/01/test.pheightcross',('c1',('home','top'))),
+('./Map/01/four_door.proom',('r1',('c1','top'))),
+('./Map/01/test.pwidthcross',('c2',('r1','left'))),
+('./Map/01/test.pwidthcross',('c3',('r1','right'))),
+('./Map/01/left_door.proom',('r2',('c3','right'))),
+('./Map/01/right_door.proom',('r3',('c2','left'))),
+('./Map/01/test.pheightcross',('c4',('r1','top'))),
+('./Map/01/bottom_door.proom',('r4',('c4','top'))),
 ('./Map/01/test.pinfo',('',()))
 )

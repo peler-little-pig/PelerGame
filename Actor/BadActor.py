@@ -25,7 +25,7 @@ class BadActor(BaseActor):
         self.alive_image = pygame.image.load('./Res/image/bad_actor/bad_actor_alive.png').convert_alpha()
         self.dead_image = pygame.image.load('./Res/image/bad_actor/bad_actor_dead.png').convert_alpha()
 
-        self.is_coin_gived = False
+        self.is_coin_given = False
 
     def draw(self):
         if self.is_alive():
@@ -58,6 +58,7 @@ class BadActor(BaseActor):
         self.move_ip(self.move_x, self.move_y)
 
     def process(self):
+        # print(self.thing.rect_rotate)
         if active_area(self) == active_area(ShareData.good_actor):
             if self.is_alive():
                 super().process()
@@ -70,10 +71,10 @@ class BadActor(BaseActor):
         follow_move(self)
 
     def give_coin(self):
-        if not self.is_coin_gived:
+        if not self.is_coin_given:
             ShareData.coin_group.append(EnergyCoin(self.centerx, self.centery))
             # ShareData.coin_group.append(MoneyCoin(self.left, self.top))
-            self.is_coin_gived = True
+            self.is_coin_given = True
 
     def move_ip(self, x: float, y: float) -> None:
         super().move_ip(x, y)

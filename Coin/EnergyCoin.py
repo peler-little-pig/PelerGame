@@ -10,7 +10,7 @@ class EnergyCoin(BaseCoin):
         self.speed = 7
 
     def draw(self):
-        ConstData.surface.blit(self.image, self)
+        GameData.surface.blit(self.image, self)
 
     def process(self):
         super().process()

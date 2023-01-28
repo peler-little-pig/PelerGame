@@ -94,22 +94,22 @@ class RoomSpace(BaseSpace):
     def move_up(self):
         # if self.can_move_up(ShareData.good_actor):
         for block in self.mix():
-            block.move_ip(0, ConstData.MOVE_SPEED)
+            block.move_ip(0, ActorData.MOVE_SPEED)
 
     def move_down(self):
         # if self.can_move_down(ShareData.good_actor):
         for block in self.mix():
-            block.move_ip(0, -ConstData.MOVE_SPEED)
+            block.move_ip(0, -ActorData.MOVE_SPEED)
 
     def move_left(self):
         # if self.can_move_left(ShareData.good_actor):
         for block in self.mix():
-            block.move_ip(ConstData.MOVE_SPEED, 0)
+            block.move_ip(ActorData.MOVE_SPEED, 0)
 
     def move_right(self):
         # if self.can_move_right(ShareData.good_actor):
         for block in self.mix():
-            block.move_ip(-ConstData.MOVE_SPEED, 0)
+            block.move_ip(-ActorData.MOVE_SPEED, 0)
 
     def is_in_this_space(self):
         if not (ShareData.good_actor.top < self.corner_block_list[0].top

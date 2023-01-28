@@ -9,7 +9,7 @@ class CornerBlock(BaseBlock):
 
     def draw(self):
         # if self.is_need_draw():
-            ConstData.surface.blit(self.image, self)
+            GameData.surface.blit(self.image, self)
 
     def can_move_up(self, top: float):
         return self.bottom <= top

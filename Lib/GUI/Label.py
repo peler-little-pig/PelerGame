@@ -12,4 +12,4 @@ class Label(object):
 
     def draw(self):
         image_text = self.font.render(self.text, True, self.color)
-        ConstData.surface.blit(image_text,(self.x,self.y))
+        GameData.surface.blit(image_text,(self.x,self.y))

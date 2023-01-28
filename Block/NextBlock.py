@@ -9,7 +9,7 @@ class NextBlock(BaseBlock):
 
     def draw(self):
         # if self.is_need_draw():
-            ConstData.surface.blit(self.image, self)
+            GameData.surface.blit(self.image, self)
         # pass
 
     def process(self):

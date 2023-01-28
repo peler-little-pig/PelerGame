@@ -10,7 +10,7 @@ from Coin.MoneyCoin import *
 
 class BadActor(BaseActor):
     def __init__(self, x, y):
-        super().__init__(x, y, *ConstData.NORMAL_ACTOR_SIZE_TUPLE)
+        super().__init__(x, y, *ActorData.SIZE_TUPLE)
         self.move_x = 0
         self.move_y = 0
 
@@ -29,15 +29,15 @@ class BadActor(BaseActor):
 
     def draw(self):
         if self.is_alive():
-            ConstData.surface.blit(self.alive_image, self)
+            GameData.surface.blit(self.alive_image, self)
             super().draw()
         else:
-            ConstData.surface.blit(self.dead_image, self)
+            GameData.surface.blit(self.dead_image, self)
 
     def fire_to_good(self):
         # if is_close(self, ShareData.good_actor, 500):
             if self.fire_to_good_wait == 0:
-                self.thing.fire(*ShareData.good_actor.center, SpecalData.BAD_ACTOR)
+                self.thing.fire(*ShareData.good_actor.center, SpecialData.BAD_ACTOR)
                 self.fire_to_good_wait = self.fire_to_good_WAIT
             else:
                 self.fire_to_good_wait -= 1

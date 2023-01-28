@@ -7,8 +7,8 @@ from Data.AllData import *
 
 class GoodActor(BaseActor):
     def __init__(self):
-        super().__init__(ConstData.WINDOW_WIDTH / 2 - 25, ConstData.WINDOW_HEIGHT / 2 - 35,
-                         *ConstData.NORMAL_ACTOR_SIZE_TUPLE)
+        super().__init__(GameData.WINDOW_WIDTH / 2 - 25, GameData.WINDOW_HEIGHT / 2 - 35,
+                         *ActorData.SIZE_TUPLE)
         self.right_image = pygame.image.load('./Res/image/good_actor/good_actor.png').convert_alpha()
         self.left_image = pygame.transform.flip(self.right_image, True, False)
         self.image = self.right_image
@@ -25,7 +25,7 @@ class GoodActor(BaseActor):
         self.add_protection_wait = 0
 
     def draw(self):
-        ConstData.surface.blit(self.image, self)
+        GameData.surface.blit(self.image, self)
         self.blood_info_bar.draw()
         self.protection_info_bar.draw()
         self.energy_info_bar.draw()
@@ -35,7 +35,7 @@ class GoodActor(BaseActor):
         if self.is_alive():
             if EventData.is_mouse_down:
                 if self.energy_info_bar.value > 0:
-                    self.thing.fire(EventData.mouse_x, EventData.mouse_y, SpecalData.GOOD_ACTOR)
+                    self.thing.fire(EventData.mouse_x, EventData.mouse_y, SpecialData.GOOD_ACTOR)
 
             super().process()
             self.thing.rotate(EventData.mouse_x, EventData.mouse_y)

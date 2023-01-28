@@ -3,5 +3,4 @@ class ShareData(staticmethod):
     bad_actor_group = None
     good_actor = None
     world = None
-
     coin_group = None

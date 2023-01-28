@@ -36,15 +36,15 @@ def active_area(rect: pygame.rect.Rect):
             if not (rect.top < area.corner_block_list[0].top
                     or rect.bottom > area.corner_block_list[2].bottom
                     or rect.left < area.corner_block_list[0].left -
-                    ConstData.NORMAL_ACTOR_SIZE_TUPLE[0]
+                    ActorData.SIZE_TUPLE[0]
                     or rect.right > area.corner_block_list[1].right +
-                    ConstData.NORMAL_ACTOR_SIZE_TUPLE[
+                    ActorData.SIZE_TUPLE[
                         0]):
                 return area
         elif type(area) == HeightCrossSpace:
-            if not (rect.top < area.corner_block_list[0].top - ConstData.NORMAL_ACTOR_SIZE_TUPLE[1]
+            if not (rect.top < area.corner_block_list[0].top - ActorData.SIZE_TUPLE[1]
                     or rect.bottom > area.corner_block_list[2].bottom +
-                    ConstData.NORMAL_ACTOR_SIZE_TUPLE[1]
+                    ActorData.SIZE_TUPLE[1]
                     or rect.left < area.corner_block_list[0].left
                     or rect.right > area.corner_block_list[1].right):
                 return area

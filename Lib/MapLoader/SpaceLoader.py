@@ -37,8 +37,8 @@ def room_loader(file: str, input_x=0, input_y=0, name=''):
                     room.blocking_block_list.append(BlockingBlock(x, y))
                 elif s == '=':
                     room.box_block_list.append(BoxBlock(x, y))
-                x += ConstData.BLOCK_SIZE
-            y += ConstData.BLOCK_SIZE
+                x += BlockData.BLOCK_SIZE
+            y += BlockData.BLOCK_SIZE
             x = X
 
     return room
@@ -60,8 +60,8 @@ def width_cross_loader(file: str, input_x=0, input_y=0, name=''):
                     width_cross.base_block_list.append(WallBlock(x, y))
                 elif s == '@':
                     width_cross.base_block_list.append(GroundBlock(x, y))
-                x += ConstData.BLOCK_SIZE
-            y += ConstData.BLOCK_SIZE
+                x += BlockData.BLOCK_SIZE
+            y += BlockData.BLOCK_SIZE
             x = X
 
     return width_cross
@@ -83,8 +83,8 @@ def height_cross_loader(file: str, input_x=0, input_y=0, name=''):
                     height_cross.base_block_list.append(WallBlock(x, y))
                 elif s == '@':
                     height_cross.base_block_list.append(GroundBlock(x, y))
-                x += ConstData.BLOCK_SIZE
-            y += ConstData.BLOCK_SIZE
+                x += BlockData.BLOCK_SIZE
+            y += BlockData.BLOCK_SIZE
             x = X
 
     return height_cross
@@ -113,7 +113,7 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
                     width_cross: WidthCrossSpace = world.search(width_cross_name)
                     if state == 'top':
                         room = room_loader(d, 0, 0, info[0])
-                        x = width_cross.corner_block_list[0].left - ConstData.BLOCK_SIZE * 2
+                        x = width_cross.corner_block_list[0].left - BlockData.BLOCK_SIZE * 2
                         y = width_cross.corner_block_list[0].top - \
                             room.corner_block_list[0].top - room.corner_block_list[2].bottom
                         for block in room.mix():
@@ -122,7 +122,7 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
 
                     elif state == 'bottom':
                         room = room_loader(d, 0, 0, info[0])
-                        x = width_cross.corner_block_list[0].left - ConstData.BLOCK_SIZE * 2
+                        x = width_cross.corner_block_list[0].left - BlockData.BLOCK_SIZE * 2
                         y = width_cross.corner_block_list[2].bottom
                         for block in room.mix():
                             block.x += x
@@ -132,7 +132,7 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
                         room = room_loader(d, 0, 0, info[0])
                         x = width_cross.corner_block_list[0].left - \
                             room.corner_block_list[1].right - room.corner_block_list[0].left
-                        y = width_cross.corner_block_list[0].top - ConstData.BLOCK_SIZE
+                        y = width_cross.corner_block_list[0].top - BlockData.BLOCK_SIZE
                         for block in room.mix():
                             block.x += x
                             block.y += y
@@ -141,7 +141,7 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
                         room = room_loader(d, 0, 0, info[0])
                         x = width_cross.corner_block_list[1].right
                         y = width_cross.corner_block_list[1].top - room.left_door_block_list[0].top \
-                            + ConstData.BLOCK_SIZE
+                            + BlockData.BLOCK_SIZE
                         for block in room.mix():
                             block.x += x
                             block.y += y
@@ -156,7 +156,7 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
                     room: RoomSpace = world.search(room_name)
                     if state == 'top':
                         height_cross = height_cross_loader(d, 0, 0, info[0])
-                        x = room.top_door_block_list[0].left - ConstData.BLOCK_SIZE
+                        x = room.top_door_block_list[0].left - BlockData.BLOCK_SIZE
                         y = room.top_door_block_list[0].top - \
                             height_cross.corner_block_list[0].top - height_cross.corner_block_list[2].bottom
                         for block in height_cross.mix():
@@ -165,7 +165,7 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
                         world.area_list.append(height_cross)
 
                     elif state == 'bottom':
-                        x = room.bottom_door_block_list[0].left - ConstData.BLOCK_SIZE
+                        x = room.bottom_door_block_list[0].left - BlockData.BLOCK_SIZE
                         y = room.bottom_door_block_list[0].bottom
                         height_cross = height_cross_loader(d, x, y, info[0])
                         world.area_list.append(height_cross)
@@ -174,7 +174,7 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
                         width_cross = width_cross_loader(d, 0, 0, info[0])
                         x = room.left_door_block_list[0].left - \
                             width_cross.corner_block_list[1].right - width_cross.corner_block_list[0].left
-                        y = room.left_door_block_list[0].top - ConstData.BLOCK_SIZE
+                        y = room.left_door_block_list[0].top - BlockData.BLOCK_SIZE
                         for block in width_cross.mix():
                             block.x += x
                             block.y += y
@@ -182,7 +182,7 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
 
                     elif state == 'right':
                         x = room.right_door_block_list[0].right
-                        y = room.right_door_block_list[0].top - ConstData.BLOCK_SIZE
+                        y = room.right_door_block_list[0].top - BlockData.BLOCK_SIZE
                         width_cross = width_cross_loader(d, x, y, info[0])
                         world.area_list.append(width_cross)
 

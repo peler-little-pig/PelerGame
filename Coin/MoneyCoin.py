@@ -10,7 +10,7 @@ class MoneyCoin(BaseCoin):
         self.speed = 5
 
     def draw(self):
-        ConstData.surface.blit(self.image, self)
+        GameData.surface.blit(self.image, self)
 
     def process(self):
         super().process()

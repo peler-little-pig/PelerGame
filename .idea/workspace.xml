@@ -2,20 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lib/BetterPygame/Surface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/Compute/DistanceCompute.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/ActorData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/BlockData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/InfoBarData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Actor/BadActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/BadActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor/BaseActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/BaseActor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Actor/GoodActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/GoodActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coin/BaseCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/BaseCoin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block/BaseBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/BaseBlock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block/BlockingBlcok.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/BlockingBlcok.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block/BoxBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/BoxBlock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block/CornerBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/CornerBlock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block/DoorBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/DoorBlock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block/GroundBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/GroundBlock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block/NextBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/NextBlock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block/WallBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/WallBlock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coin/EnergyCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/EnergyCoin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coin/MoneyCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/MoneyCoin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/AllData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AllData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ConstData.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/GameData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/GameData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ShareData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ShareData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/SpecalData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/SpecialData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Egg/BaseEgg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Egg/BaseEgg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Group/BadActorGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Group/BadActorGroup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/00/four_door.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Map/00/four_door.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/00/test.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Map/00/test.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/01/home.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Map/01/home.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoBar/BloodInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/InfoBar/BloodInfoBar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoBar/EnergyInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/InfoBar/EnergyInfoBar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoBar/ProtectionInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/InfoBar/ProtectionInfoBar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/Compute/MoveCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Compute/MoveCompute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/Compute/SpaceCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Compute/SpaceCompute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/GUI/Label.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/GUI/Label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/MapLoader/BadActorLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/MapLoader/BadActorLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/MapLoader/SpaceLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/MapLoader/SpaceLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/HeightCrossSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/HeightCrossSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/RoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/WidthCrossSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/WidthCrossSpace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Thing/BaseThing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thing/BaseThing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +207,7 @@
       <workItem from="1674741271164" duration="1909000" />
       <workItem from="1674746510988" duration="1042000" />
       <workItem from="1674782924967" duration="1493000" />
-      <workItem from="1674795983051" duration="3767000" />
+      <workItem from="1674795983051" duration="4823000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -285,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674741760050</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="thing can rotat correctly and i'm going to start order the number">
+      <created>1674866518540</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674866518540</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,11 +348,12 @@
     <MESSAGE value="order the Compute part &#10;write some code for coin" />
     <MESSAGE value="coins can fly!!!" />
     <MESSAGE value="test the pygame_gui lib and add next_block.png for next_block" />
-    <option name="LAST_COMMIT_MESSAGE" value="test the pygame_gui lib and add next_block.png for next_block" />
+    <MESSAGE value="thing can rotat correctly and i'm going to start order the number" />
+    <option name="LAST_COMMIT_MESSAGE" value="thing can rotat correctly and i'm going to start order the number" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PelerGame$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1674477043579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Extra/MapEditor" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674866224726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674866407326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

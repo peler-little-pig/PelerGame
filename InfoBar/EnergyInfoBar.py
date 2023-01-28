@@ -8,4 +8,4 @@ class EnergyInfoBar(BaseInfoBar):
 
     def draw(self):
         self.width = self.value
-        pygame.draw.rect(ConstData.surface, (0, 0, 255), self)
+        pygame.draw.rect(GameData.surface, (0, 0, 255), self)

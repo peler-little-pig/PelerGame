@@ -12,10 +12,10 @@ class Game(object):
     def __init__(self):
         pygame.init()
 
-        ConstData.fps_clock = pygame.time.Clock()
-        ConstData.surface = pygame.display.set_mode((ConstData.WINDOW_WIDTH, ConstData.WINDOW_HEIGHT))
+        GameData.fps_clock = pygame.time.Clock()
+        GameData.surface = pygame.display.set_mode((GameData.WINDOW_WIDTH, GameData.WINDOW_HEIGHT))
 
-        pygame.display.set_caption(ConstData.GAME_NAME)
+        pygame.display.set_caption(GameData.NAME)
 
     def init(self):
         self.coin_gruop = CoinGroup()
@@ -77,14 +77,14 @@ class Game(object):
 
     def loop(self):
         while True:
-            ConstData.surface.fill((200, 255, 255))
+            GameData.surface.fill((200, 255, 255))
 
             self.event()
             self.draw()
             self.process()
 
             pygame.display.update()
-            ConstData.fps_clock.tick(ConstData.FPS)
+            GameData.fps_clock.tick(GameData.FPS)
 
             self.nexted = False
 
@@ -98,7 +98,7 @@ class Game(object):
     def logo(self):
         fs = FSLogo('./Res/image/logo/logo.png')
         while fs.alphaIndex < 254:
-            ConstData.surface.fill((255, 255, 255))
+            GameData.surface.fill((255, 255, 255))
 
             self.event()
 

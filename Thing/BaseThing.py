@@ -31,8 +31,8 @@ class BaseThing():
             self.wait -= 1
 
     def draw(self):
-        # pygame.draw.rect(ConstData.surface, (0, 0, 0), self.image_rotate.get_rect(center=self.rect_rotate.center))
-        ConstData.surface.blit(self.image_rotate, self.rect_rotate)
+        # pygame.draw.rect(GameData.surface, (0, 0, 0), self.image_rotate.get_rect(center=self.rect_rotate.center))
+        GameData.surface.blit(self.image_rotate, self.rect_rotate)
         for egg in self.egg_list:
             egg.draw()
 

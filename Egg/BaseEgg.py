@@ -18,7 +18,7 @@ class BaseEgg(object):
 
     def draw(self):
         self.rect = self.egg_image.get_rect(center=self.rect.center)
-        ConstData.surface.blit(self.egg_image, self.rect)
+        GameData.surface.blit(self.egg_image, self.rect)
 
     def update(self):
         self.rect.x = self.rect.x + self.dir[0] * self.speed
@@ -33,7 +33,7 @@ class BaseEgg(object):
         return is_hit_wall(self.rect)
 
     def is_hit_bad_actor(self):
-        if self.whose == SpecalData.GOOD_ACTOR:
+        if self.whose == SpecialData.GOOD_ACTOR:
             for bad_actor in ShareData.bad_actor_group.bad_actors():
                 if self.rect.colliderect(bad_actor):
                     if bad_actor.is_alive():
@@ -44,7 +44,7 @@ class BaseEgg(object):
             return False
 
     def is_hit_good_actor(self):
-        if self.whose == SpecalData.BAD_ACTOR:
+        if self.whose == SpecialData.BAD_ACTOR:
             if self.rect.colliderect(ShareData.good_actor):
                 if ShareData.good_actor.is_alive():
                     ShareData.good_actor.get_hurt(2.5)

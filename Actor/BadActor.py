@@ -20,7 +20,7 @@ class BadActor(BaseActor):
         self.fire_to_good_WAIT = random.randint(30, 60)
         self.fire_to_good_wait = self.fire_to_good_WAIT
 
-        self.blood = 15
+        self.blood = 20
 
         self.alive_image = pygame.image.load('./Res/image/bad_actor/bad_actor_alive.png').convert_alpha()
         self.dead_image = pygame.image.load('./Res/image/bad_actor/bad_actor_dead.png').convert_alpha()
@@ -35,11 +35,12 @@ class BadActor(BaseActor):
             ConstData.surface.blit(self.dead_image, self)
 
     def fire_to_good(self):
-        if self.fire_to_good_wait == 0:
-            self.thing.fire(*ShareData.good_actor.center, SpecalData.BAD_ACTOR)
-            self.fire_to_good_wait = self.fire_to_good_WAIT
-        else:
-            self.fire_to_good_wait -= 1
+        # if is_close(self, ShareData.good_actor, 500):
+            if self.fire_to_good_wait == 0:
+                self.thing.fire(*ShareData.good_actor.center, SpecalData.BAD_ACTOR)
+                self.fire_to_good_wait = self.fire_to_good_WAIT
+            else:
+                self.fire_to_good_wait -= 1
 
     def walk_around(self):
         if self.walk_around_wait == 0:

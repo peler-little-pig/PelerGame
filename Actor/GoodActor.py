@@ -21,10 +21,6 @@ class GoodActor(BaseActor):
         self.protection_info_bar = ProtectionInfoBar(self.protection_max)
         self.energy_info_bar = EnergyInfoBar(self.energy_max)
 
-        ShareData.blood_info_bar = self.blood_info_bar
-        ShareData.protection_info_bar = self.protection_info_bar
-        ShareData.energy_info_bar = self.energy_info_bar
-
         self.add_protection_WAIT = 60
         self.add_protection_wait = 0
 

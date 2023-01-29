@@ -80,8 +80,8 @@ class Game(object):
             GameData.surface.fill((200, 255, 255))
 
             self.event()
-            self.draw()
             self.process()
+            self.draw()
 
             pygame.display.update()
             GameData.fps_clock.tick(GameData.FPS)

@@ -2,59 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Data/SpaceData.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/Creator/BadActorCreator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lib/Creator/SpaceCreator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/1.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/10.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/11.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/12.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/2.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/3.pheightcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/4.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/5.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/6.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/7.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map/00/8.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/00.pworld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/1.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/10.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/11.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/12.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/2.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/3.pheightcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/4.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/5.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/6.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/7.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/8.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/9.pheightcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Map/00/home.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/Creator/MapCreator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map/00/P.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map/00/left.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map/00/width.pwidthcross" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map/01/01.pworld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map/01/P.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map/01/left.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map/01/width.pwidthcross" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapModel/room/2/bottom_left/P.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapModel/room/2/bottom_right/P.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapModel/room/2/top_left/P.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapModel/room/2/top_right/P.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapModel/room/home/bottom.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapModel/room/home/left.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapModel/room/home/right.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapModel/room/home/top.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapModel/world/1.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Block/BaseBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/BaseBlock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Block/GroundBlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block/GroundBlock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/AllData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AllData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/GameData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/GameData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/MapLoader/BadActorLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/MapLoader/BadActorLoader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/MapLoader/SpaceLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/MapLoader/SpaceLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/Creator/SpaceCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dev/SpaceCreator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Map/00/00.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Map/00/00.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/00/four_door.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/00/home.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Map/00/home.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/00/test.pinfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/00/test.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/00/test.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/01/01.pworld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/01/bottom_door.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/01/four_door.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/01/home.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/01/left_door.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/01/right_door.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/01/test.pheightcross" beforeDir="false" afterPath="$PROJECT_DIR$/Map/00/9.pheightcross" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/01/test.pinfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/01/test.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/1.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/10.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/11.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/12.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/2.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/3.pheightcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/4.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/5.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/6.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/7.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/8.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/9.pheightcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/00/home.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Map/00/right.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/00.pworld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/1.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/10.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/11.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/12.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/2.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/3.pheightcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/4.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/5.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/6.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/7.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/8.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/9.pheightcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Map/00/home.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Map/01/right.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/a.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +91,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Map" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -106,9 +102,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Map" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Dev" />
       <recent name="$PROJECT_DIR$/Lib" />
       <recent name="$PROJECT_DIR$/Group" />
       <recent name="$PROJECT_DIR$/Lib/MapLoader" />
@@ -116,6 +114,50 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="MapCreator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PelerGame" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lib/Creator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lib/Creator/MapCreator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="a (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PelerGame" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/a.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PelerGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,28 +172,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/a.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PelerGame" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/gui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,9 +227,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.a (1)" />
         <item itemvalue="Python.a" />
+        <item itemvalue="Python.MapCreator" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.gui" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +280,9 @@
       <workItem from="1674893074096" duration="1631000" />
       <workItem from="1674953590768" duration="10000" />
       <workItem from="1674967288249" duration="2823000" />
-      <workItem from="1674989311478" duration="8735000" />
+      <workItem from="1674989311478" duration="8911000" />
+      <workItem from="1675041954116" duration="487000" />
+      <workItem from="1675054123583" duration="2450000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -380,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674873277055</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="random space but only two door a room and make the block draw fast but not fast enough. i need to think another ideas. may be threads?">
+      <created>1674998220462</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1674998220462</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,12 +447,15 @@
     <MESSAGE value="thing can rotat correctly and i'm going to start order the number" />
     <MESSAGE value="divide some data into different group and find a egg bug" />
     <MESSAGE value="v 1.0.0 hooooooooooo yeah!" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.0.0 hooooooooooo yeah!" />
+    <MESSAGE value="random space but only two door a room and make the block draw fast but not fast enough. i need to think another ideas. may be threads?" />
+    <option name="LAST_COMMIT_MESSAGE" value="random space but only two door a room and make the block draw fast but not fast enough. i need to think another ideas. may be threads?" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PelerGame$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1674477043579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Extra/MapEditor" />
-    <SUITE FILE_PATH="coverage/PelerGame$a.coverage" NAME="a Coverage Results" MODIFIED="1674997758906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/PelerGame$SpaceCreator.coverage" NAME="SpaceCreator Coverage Results" MODIFIED="1675054531448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lib/Creator" />
+    <SUITE FILE_PATH="coverage/PelerGame$a__1_.coverage" NAME="a (1) Coverage Results" MODIFIED="1675056426339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$a.coverage" NAME="a Coverage Results" MODIFIED="1675055582134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1674998048209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1675056577873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

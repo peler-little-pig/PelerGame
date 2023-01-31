@@ -6,7 +6,7 @@ import sys
 from Lib.Logo.logo import *
 from Lib.DebugInfo.info import *
 from Group.CoinGroup import *
-from Lib.Creator.MapCreator import *
+from Lib.Creator import MapCreator
 
 
 class Game(object):
@@ -17,9 +17,6 @@ class Game(object):
         GameData.surface = pygame.display.set_mode((GameData.WINDOW_WIDTH, GameData.WINDOW_HEIGHT))
 
         pygame.display.set_caption(GameData.NAME)
-
-        clean('./Map')
-        map_create('./MapModel/world', './Map', 2)
 
     def init(self):
         self.coin_gruop = CoinGroup()
@@ -33,6 +30,10 @@ class Game(object):
         ShareData.game = self
 
         self.nexted = False
+
+    def init_map(self):
+        MapCreator.clean()
+        MapCreator.map(2)
 
     def event(self):
         for event in pygame.event.get():

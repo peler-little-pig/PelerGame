@@ -15,3 +15,6 @@ class SpaceData(staticmethod):
 
     ROOM_COUNT_MAX = 10
     ROOM_COUNT_MIN = 3
+
+    WIDTH_CROSS = 'width'
+    HEIGHT_CROSS = 'height'

@@ -1,7 +1,8 @@
 (
-    ["'./MapModel/room/home/right.proom'",('home',())],
-    ["'./MapModel/cross/width.pwidthcross'",('c1',('home','right'))],
-    ["choose('./MapModel/room/2/left_right')",('r1',('c1','right'))],
-    ["'./MapModel/cross/width.pwidthcross'",('c2',('r1','right'))],
-    ["'./MapModel/room/next/left.proom'",('home',('c2','right'))],
+    ["home('right')",('home',())],
+    ["cross('width')",('c1',('home','right'))],
+    ["room('left','right')",('r1',('c1','right'))],
+    ["cross('width')",('c2',('r1','right'))],
+    ["next('left')",('next',('c2','right'))],
+    ["info('1')",('',())]
 )

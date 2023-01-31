@@ -1,34 +1,135 @@
 import random
-import os
 import shutil
+import os
+from Data.SpaceData import SpaceData as data
+
+map_path = './Map'
+map_index = '00'
+file_name_int = 0
 
 
-def choose(path):
-    files = os.listdir(path)
-    return path + '/' + random.choice(files)
+def home(door):
+    global file_name_int
+    with open('./MapModel/special/home.proom', 'r', encoding='utf-8') as f:
+        text = f.readlines()
+    if door == data.TOP:
+        text[0] = text[0].replace('D', 'T')
+    elif door == data.BOTTOM:
+        text[-1] = text[-1].replace('D', 'B')
+    elif door == data.RIGHT:
+        for i in range(len(text)):
+            if text[i][-2] == 'D':
+                text[i] = text[i][:-2] + 'R\n'
+    for i in range(len(text)):
+        text[i] = text[i].replace('D', '#')
+    file_path = f'{map_path}/{map_index}/{file_name_int}.proom'
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(text)
+    file_name_int += 1
+    return file_path
 
 
-def space_create(world_path, path, name):
-    file_list = []
-    with open(world_path, 'r', encoding='utf-8') as f:
-        data = eval(f.read())
-    for i in range(len(data)):
-        data[i][0] = eval(data[i][0])
-        file_list.append(data[i][0])
-    with open(f'{path}/{name}.pworld', 'w', encoding='utf-8') as f:
-        f.write(str(data))
-    for file in file_list:
-        shutil.copy(file, path)
+def next(door):
+    global file_name_int
+    with open('./MapModel/special/next.proom', 'r', encoding='utf-8') as f:
+        text = f.readlines()
+    if door == data.TOP:
+        text[0] = text[0].replace('D', 'T')
+    elif door == data.BOTTOM:
+        text[-1] = text[-1].replace('D', 'B')
+    elif door == data.RIGHT:
+        for i in range(len(text)):
+            if text[i][-2] == 'D':
+                text[i] = text[i][:-2] + 'R\n'
+    elif door == data.LEFT:
+        for i in range(len(text)):
+            if text[i][0] == 'D':
+                text[i] = 'L' + text[i][1:]
+    for i in range(len(text)):
+        text[i] = text[i].replace('D', '#')
+    file_path = f'{map_path}/{map_index}/{file_name_int}.proom'
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(text)
+    file_name_int += 1
+    return file_path
 
 
-def map_create(world_path, path, count):
-    for i in range(count):
-        name = '0' + str(i) if i < 10 else str(i)
-        os.mkdir(path + '/' + name)
-        space_create(world_path + '/' + random.choice(os.listdir(world_path)),
-                     path + '/' + name,
-                     name)
+def cross(type):
+    global file_name_int
+    file = ''
+    if type == data.WIDTH_CROSS:
+        file = './MapModel/cross/width.pwidthcross'
+    elif type == data.HEIGHT_CROSS:
+        file = './MapModel/cross/height.pheightcross'
+    with open(file, 'r', encoding='utf-8') as f:
+        text = f.readlines()
+    file_path = f'{map_path}/{map_index}/{file_name_int}.p{type}cross'
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(text)
+    file_name_int += 1
+    return file_path
 
-def clean(path):
-    for dir in os.listdir(path):
-        shutil.rmtree(path+'/'+dir)
+
+def room(*args):
+    global file_name_int
+    file = random.choice(os.listdir('./MapModel/room'))
+    with open(f'./MapModel/room/{file}', 'r', encoding='utf-8') as f:
+        text = f.readlines()
+    for door in args:
+        if door == data.TOP:
+            text[0] = text[0].replace('D', 'T')
+        elif door == data.BOTTOM:
+            text[-1] = text[-1].replace('D', 'B')
+        elif door == data.RIGHT:
+            for i in range(len(text)):
+                if text[i][-2] == 'D':
+                    text[i] = text[i][:-2] + 'R\n'
+        elif door == data.LEFT:
+            for i in range(len(text)):
+                if text[i][0] == 'D':
+                    text[i] = 'L' + text[i][1:]
+    for i in range(len(text)):
+        text[i] = text[i].replace('D', '#')
+    file_path = f'{map_path}/{map_index}/{file_name_int}.proom'
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(text)
+    file_name_int += 1
+    return file_path
+
+
+def info(index):
+    global file_name_int
+    file = f'./MapModel/info/{index}.pinfo'
+    with open(file, 'r', encoding='utf-8') as f:
+        text = f.readlines()
+    file_path = f'{map_path}/{map_index}/{file_name_int}.pinfo'
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(text)
+    file_name_int += 1
+    return file_path
+
+
+def world(file):
+    global file_name_int
+    with open(file, 'r', encoding='utf-8') as f:
+        content = eval(f.read())
+    for i in range(len(content)):
+        content[i][0] = eval(content[i][0])
+    file_path = f'{map_path}/{map_index}/{map_index}.pworld'
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(str(content))
+
+
+def map(number):
+    global map_index
+    for i in range(number):
+        file = random.choice(os.listdir('./MapModel/world'))
+        os.mkdir(f'{map_path}/{map_index}')
+        world(f'./MapModel/world/{file}')
+        map_index = '0' + str(int(map_index) + 1) if int(map_index) < 10 else str(int(map_index) + 1)
+
+
+def clean():
+    dirs = os.listdir('./Map')
+    for dir in dirs:
+        shutil.rmtree(f'./Map/{dir}')

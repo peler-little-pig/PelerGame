@@ -164,7 +164,7 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
                     if info[1]:
                         room_name = info[1][0]
                         state = info[1][1]
-                        room: RoomSpace = world.search(room_name)
+                        room = world.search(room_name)
                         if state == 'top':
                             height_cross = height_cross_loader(d, 0, 0, info[0])
                             x = room.top_door_block_list[0].left - BlockData.BLOCK_SIZE

@@ -33,7 +33,7 @@ class Game(object):
 
     def init_map(self):
         MapCreator.clean()
-        MapCreator.map(2)
+        MapCreator.map(5)
 
     def event(self):
         for event in pygame.event.get():

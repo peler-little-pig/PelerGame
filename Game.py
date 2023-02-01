@@ -4,7 +4,6 @@ from Coin.EnergyCoin import EnergyCoin
 from Lib.MapLoader.MapLoader import *
 import sys
 from Lib.Logo.logo import *
-from Lib.DebugInfo.info import *
 from Group.CoinGroup import *
 from Lib.Creator import MapCreator
 
@@ -67,9 +66,15 @@ class Game(object):
 
             EventData.is_mouse_move = False
             if event.type == MOUSEBUTTONDOWN:
-                EventData.is_mouse_down = True
+                if event.button == BUTTON_LEFT:
+                    EventData.is_left_mouse_down = True
+                elif event.button == BUTTON_RIGHT:
+                    EventData.is_right_mouse_down = True
             if event.type == MOUSEBUTTONUP:
-                EventData.is_mouse_down = False
+                if event.button == BUTTON_LEFT:
+                    EventData.is_left_mouse_down = False
+                elif event.button == BUTTON_RIGHT:
+                    EventData.is_right_mouse_down = False
             if event.type == MOUSEMOTION:
                 EventData.is_mouse_move = True
                 EventData.mouse_x, EventData.mouse_y = event.pos
@@ -94,6 +99,8 @@ class Game(object):
             self.process()
             self.draw()
 
+            print(GameData.fps_clock.get_fps())
+
             pygame.display.update()
             GameData.fps_clock.tick(GameData.FPS)
 
@@ -107,7 +114,7 @@ class Game(object):
             self.nexted = True
 
     def logo(self):
-        fs = FSLogo('./Res/image/logo/logo.png')
+        fs = FSLogo('./Res/Picture/image/logo/logo.png')
         while fs.alphaIndex < 254:
             GameData.surface.fill((255, 255, 255))
 

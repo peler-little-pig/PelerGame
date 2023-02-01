@@ -3,14 +3,14 @@ import shutil
 import os
 from Data.SpaceData import SpaceData as data
 
-map_path = './Map'
+map_path = './Res/Map'
 map_index = '00'
 file_name_int = 0
 
 
 def home(door):
     global file_name_int
-    with open('./MapModel/special/home.proom', 'r', encoding='utf-8') as f:
+    with open('./Res/MapModel/special/home.proom', 'r', encoding='utf-8') as f:
         text = f.readlines()
     if door == data.TOP:
         text[0] = text[0].replace('D', 'T')
@@ -31,7 +31,7 @@ def home(door):
 
 def next(door):
     global file_name_int
-    with open('./MapModel/special/next.proom', 'r', encoding='utf-8') as f:
+    with open('./Res/MapModel/special/next.proom', 'r', encoding='utf-8') as f:
         text = f.readlines()
     if door == data.TOP:
         text[0] = text[0].replace('D', 'T')
@@ -58,9 +58,9 @@ def cross(type):
     global file_name_int
     file = ''
     if type == data.WIDTH_CROSS:
-        file = './MapModel/cross/width.pwidthcross'
+        file = './Res/MapModel/cross/width.pwidthcross'
     elif type == data.HEIGHT_CROSS:
-        file = './MapModel/cross/height.pheightcross'
+        file = './Res/MapModel/cross/height.pheightcross'
     with open(file, 'r', encoding='utf-8') as f:
         text = f.readlines()
     file_path = f'{map_path}/{map_index}/{file_name_int}.p{type}cross'
@@ -72,8 +72,8 @@ def cross(type):
 
 def room(*args):
     global file_name_int
-    file = random.choice(os.listdir('./MapModel/room'))
-    with open(f'./MapModel/room/{file}', 'r', encoding='utf-8') as f:
+    file = random.choice(os.listdir('./Res/MapModel/room'))
+    with open(f'./Res/MapModel/room/{file}', 'r', encoding='utf-8') as f:
         text = f.readlines()
     for door in args:
         if door == data.TOP:
@@ -99,7 +99,7 @@ def room(*args):
 
 def info(index):
     global file_name_int
-    file = f'./MapModel/info/{index}.pinfo'
+    file = f'./Res/MapModel/info/{index}.pinfo'
     with open(file, 'r', encoding='utf-8') as f:
         text = f.readlines()
     file_path = f'{map_path}/{map_index}/{file_name_int}.pinfo'
@@ -123,13 +123,13 @@ def world(file):
 def map(number):
     global map_index
     for i in range(number):
-        file = random.choice(os.listdir('./MapModel/world'))
+        file = random.choice(os.listdir('./Res/MapModel/world'))
         os.mkdir(f'{map_path}/{map_index}')
-        world(f'./MapModel/world/{file}')
+        world(f'./Res/MapModel/world/{file}')
         map_index = '0' + str(int(map_index) + 1) if int(map_index) < 10 else str(int(map_index) + 1)
 
 
 def clean():
-    dirs = os.listdir('./Map')
+    dirs = os.listdir('./Res/Map')
     for dir in dirs:
-        shutil.rmtree(f'./Map/{dir}')
+        shutil.rmtree(f'./Res/Map/{dir}')

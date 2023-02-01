@@ -1,1 +1,0 @@
-(['./Map/02/28.proom', ('home', ())], ['./Map/02/29.pwidthcross', ('c1', ('home', 'right'))], ['./Map/02/30.proom', ('r1', ('c1', 'right'))], ['./Map/02/31.pwidthcross', ('c2', ('r1', 'right'))], ['./Map/02/32.proom', ('next', ('c2', 'right'))], ['./Map/02/33.pinfo', ('', ())])

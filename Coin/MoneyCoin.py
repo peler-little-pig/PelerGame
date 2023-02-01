@@ -6,7 +6,7 @@ from Data.AllData import *
 class MoneyCoin(BaseCoin):
     def __init__(self, left: float, top: float):
         super().__init__(left, top)
-        self.image = pygame.image.load('./Res/image/money_coin/money_coin.png').convert_alpha()
+        self.image = pygame.image.load('./Res/Picture/image/money_coin/money_coin.png').convert_alpha()
         self.speed = 5
 
     def draw(self):

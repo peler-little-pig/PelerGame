@@ -5,8 +5,8 @@ from Data.AllData import *
 class ProtectionInfoBar(BaseInfoBar):
     def __init__(self, value):
         super().__init__(10, 40, InfoBarData.SIZE_TUPLE, value)
-        self.full_image = pygame.image.load('./Res/image/protection_info_bar/full_protection.png').convert_alpha()
-        self.half_image = pygame.image.load('./Res/image/protection_info_bar/half_protection.png').convert_alpha()
+        self.full_image = pygame.image.load('./Res/Picture/image/protection_info_bar/full_protection.png').convert_alpha()
+        self.half_image = pygame.image.load('./Res/Picture/image/protection_info_bar/half_protection.png').convert_alpha()
 
     def draw(self):
         x = self.x

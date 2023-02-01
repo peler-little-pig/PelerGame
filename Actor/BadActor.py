@@ -23,8 +23,8 @@ class BadActor(BaseActor):
 
         self.blood = 20
 
-        self.alive_image = pygame.image.load('./Res/image/bad_actor/bad_actor_alive.png').convert_alpha()
-        self.dead_image = pygame.image.load('./Res/image/bad_actor/bad_actor_dead.png').convert_alpha()
+        self.alive_image = pygame.image.load('./Res/Picture/image/bad_actor/bad_actor_alive.png').convert_alpha()
+        self.dead_image = pygame.image.load('./Res/Picture/image/bad_actor/bad_actor_dead.png').convert_alpha()
 
         self.is_coin_given = False
 

@@ -6,13 +6,14 @@ from Lib.BetterPygame.Surface import *
 
 
 class BaseThing(object):
-    def __init__(self, left: float, top: float, rotate_point,length, WAIT, image_path, cost, egg_type) -> None:
+    def __init__(self, left: float, top: float, width: float, height: float, rotate_point, length, WAIT, image_path,
+                 cost, egg_type) -> None:
         self.egg_list: List[BaseEgg] = []
         self.WAIT = WAIT
         self.wait = 0
 
         self.image = pygame.image.load(image_path).convert_alpha()
-        self.rect = pygame.rect.Rect(left, top, 0, 0)
+        self.rect = pygame.rect.Rect(left, top, width, height)
         self.image_rotate = self.image
         self.rect_rotate = self.rect
         self.image_flip = pygame.transform.flip(self.image, True, False)
@@ -27,9 +28,10 @@ class BaseThing(object):
         self.length = length
 
     def fire(self, x, y, whose):
-        if ShareData.good_actor.energy_info_bar.value-self.cost >= 0:
+        if ShareData.good_actor.energy_info_bar.value - self.cost >= 0:
             if self.wait == 0:
-                egg = self.egg_type(self.rect.x + self.dir[0] * self.length, self.rect.y + self.dir[1] * self.length, 15, 10, x, y, whose)
+                egg = self.egg_type(self.rect.x + self.dir[0] * self.length, self.rect.y + self.dir[1] * self.length,
+                                    15, 10, x, y, whose)
 
                 self.egg_list.append(egg)
                 self.wait = self.WAIT
@@ -51,7 +53,7 @@ class BaseThing(object):
                                                                 self.degree)
         else:
             self.image_rotate, self.rect_rotate = rotate_at_pos(self.image_flip, self.rect_flip.topleft, (
-                self.rect_flip.width - self.rotate_point[0], self.rotate_point[1]),
+                self.rect.width - self.rotate_point[0], self.rotate_point[1]),
                                                                 180 + self.degree)
 
     def process(self):

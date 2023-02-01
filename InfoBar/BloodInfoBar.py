@@ -5,8 +5,8 @@ from Data.AllData import *
 class BloodInfoBar(BaseInfoBar):
     def __init__(self, value):
         super().__init__(10, 10, InfoBarData.SIZE_TUPLE, value)
-        self.full_image = pygame.image.load('./Res/image/blood_info_bar/full_heart.png').convert_alpha()
-        self.half_image = pygame.image.load('./Res/image/blood_info_bar/half_heart.png').convert_alpha()
+        self.full_image = pygame.image.load('./Res/Picture/image/blood_info_bar/full_heart.png').convert_alpha()
+        self.half_image = pygame.image.load('./Res/Picture/image/blood_info_bar/half_heart.png').convert_alpha()
 
     def draw(self):
         x = self.x

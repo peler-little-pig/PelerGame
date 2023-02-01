@@ -9,7 +9,7 @@ class BlockingBlock(BaseBlock):
         self.image = pygame.image.load('./Res/image/blocking_block/blocking_block.png').convert()
 
     def draw(self):
-        if self.is_need_draw():
+        # if self.is_need_draw():
             GameData.surface.blit(self.image, self)
 
 

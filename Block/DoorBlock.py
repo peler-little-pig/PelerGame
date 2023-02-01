@@ -10,7 +10,7 @@ class DoorBlock(BaseBlock):
         self.image = self.open_image
 
     def draw(self):
-        if self.is_need_draw():
+        # if self.is_need_draw():
             GameData.surface.blit(self.image, self)
 
     def open_or_close(self, is_open: bool):

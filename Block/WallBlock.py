@@ -13,7 +13,7 @@ class WallBlock(BaseBlock):
         self.image_wait = self.image_WAIT
 
     def draw(self):
-        if self.is_need_draw():
+        # if self.is_need_draw():
             GameData.surface.blit(self.image_list[self.image_tuple[self.image_index]], self)
 
     def process(self):

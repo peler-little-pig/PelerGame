@@ -8,7 +8,7 @@ class CornerBlock(BaseBlock):
         self.image = pygame.image.load('./Res/image/corner_block/corner_block.png').convert()
 
     def draw(self):
-        if self.is_need_draw():
+        # if self.is_need_draw():
             GameData.surface.blit(self.image, self)
 
     def can_move_up(self, top: float):

@@ -8,7 +8,7 @@ class NextBlock(BaseBlock):
         self.image = pygame.image.load('./Res/image/next_block/next_block.png').convert()
 
     def draw(self):
-        if self.is_need_draw():
+        # if self.is_need_draw():
             GameData.surface.blit(self.image, self)
         # pass
 

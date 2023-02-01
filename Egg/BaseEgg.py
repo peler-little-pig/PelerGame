@@ -5,14 +5,16 @@ from Lib.Math.Math import *
 
 
 class BaseEgg(object):
-    def __init__(self, left: float, top: float, width: float, height: float, x, y, whose) -> None:
+    def __init__(self, left: float, top: float, width: float, height: float, x, y, whose, image_path, speed,
+                 hurt) -> None:
         self.rect = pygame.rect.Rect(left, top, width, height)
 
         degree, self.dir = get_degree(left, top, x, y)
 
-        self.egg_image = pygame.image.load('./Res/image/egg/egg.png').convert_alpha()
+        self.egg_image = pygame.image.load(image_path).convert_alpha()
         self.egg_image = pygame.transform.rotate(self.egg_image, degree)
-        self.speed = 10
+        self.speed = speed
+        self.hurt = hurt
 
         self.whose = whose
 
@@ -37,7 +39,7 @@ class BaseEgg(object):
             for bad_actor in ShareData.bad_actor_group.bad_actors():
                 if self.rect.colliderect(bad_actor):
                     if bad_actor.is_alive():
-                        bad_actor.blood -= 3
+                        bad_actor.blood -= self.hurt
                         return True
             return False
         else:
@@ -47,7 +49,7 @@ class BaseEgg(object):
         if self.whose == SpecialData.BAD_ACTOR:
             if self.rect.colliderect(ShareData.good_actor):
                 if ShareData.good_actor.is_alive():
-                    ShareData.good_actor.get_hurt(2.5)
+                    ShareData.good_actor.get_hurt(self.hurt)
                 return True
             return False
         else:

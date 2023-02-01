@@ -3,6 +3,8 @@ from InfoBar.BloodInfoBar import *
 from InfoBar.ProtectionInfoBar import *
 from InfoBar.EnergyInfoBar import *
 from Data.AllData import *
+from Thing.HandGunThing import *
+from Thing.GunThing import *
 
 
 class GoodActor(BaseActor):
@@ -24,6 +26,10 @@ class GoodActor(BaseActor):
         self.add_protection_WAIT = 60
         self.add_protection_wait = 0
 
+        self.thing_list = [HandGunThing(self.centerx, self.centery + 10), GunThing(self.centerx, self.centery + 10)]
+        self.thing_index = 0
+        self.thing = self.thing_list[self.thing_index]
+
     def draw(self):
         GameData.surface.blit(self.image, self)
         self.blood_info_bar.draw()
@@ -34,8 +40,7 @@ class GoodActor(BaseActor):
     def process(self):
         if self.is_alive():
             if EventData.is_mouse_down:
-                if self.energy_info_bar.value > 0:
-                    self.thing.fire(EventData.mouse_x, EventData.mouse_y, SpecialData.GOOD_ACTOR)
+                self.thing.fire(EventData.mouse_x, EventData.mouse_y, SpecialData.GOOD_ACTOR)
 
             super().process()
             self.thing.rotate(EventData.mouse_x, EventData.mouse_y)
@@ -77,3 +82,17 @@ class GoodActor(BaseActor):
             self.add_protection_wait = self.add_protection_WAIT
         else:
             self.add_protection_wait -= 1
+
+    def thing_index_after(self):
+        if self.thing_index == 0:
+            self.thing_index = len(self.thing_list) - 1
+        else:
+            self.thing_index -= 1
+        self.thing = self.thing_list[self.thing_index]
+
+    def thing_index_next(self):
+        if self.thing_index == len(self.thing_list) - 1:
+            self.thing_index = 0
+        else:
+            self.thing_index += 1
+        self.thing = self.thing_list[self.thing_index]

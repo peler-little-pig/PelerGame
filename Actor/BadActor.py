@@ -6,6 +6,7 @@ from Lib.Compute.MoveCompute import *
 from Data.AllData import *
 from Coin.EnergyCoin import *
 from Coin.MoneyCoin import *
+from Thing.GunThing import *
 
 
 class BadActor(BaseActor):
@@ -27,6 +28,8 @@ class BadActor(BaseActor):
 
         self.is_coin_given = False
 
+        self.thing = GunThing(self.centerx, self.centery + 10)
+
     def draw(self):
         if self.is_alive():
             GameData.surface.blit(self.alive_image, self)
@@ -36,11 +39,11 @@ class BadActor(BaseActor):
 
     def fire_to_good(self):
         # if is_close(self, ShareData.good_actor, 500):
-            if self.fire_to_good_wait == 0:
-                self.thing.fire(*ShareData.good_actor.center, SpecialData.BAD_ACTOR)
-                self.fire_to_good_wait = self.fire_to_good_WAIT
-            else:
-                self.fire_to_good_wait -= 1
+        if self.fire_to_good_wait == 0:
+            self.thing.fire(*ShareData.good_actor.center, SpecialData.BAD_ACTOR)
+            self.fire_to_good_wait = self.fire_to_good_WAIT
+        else:
+            self.fire_to_good_wait -= 1
 
     def walk_around(self):
         if self.walk_around_wait == 0:

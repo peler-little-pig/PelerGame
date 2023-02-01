@@ -11,7 +11,7 @@ class BoxBlock(BaseBlock):
         self.is_coin_given = False
 
     def draw(self):
-        if self.is_need_draw():
+        # if self.is_need_draw():
             GameData.surface.blit(self.image, self)
 
     # pass

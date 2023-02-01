@@ -33,7 +33,7 @@ class Game(object):
 
     def init_map(self):
         MapCreator.clean()
-        MapCreator.map(5)
+        MapCreator.map(3)
 
     def event(self):
         for event in pygame.event.get():
@@ -58,6 +58,12 @@ class Game(object):
                     EventData.is_key_a_down = False
                 if event.key == K_d:
                     EventData.is_key_d_down = False
+
+            elif event.type == MOUSEWHEEL:
+                if event.y == 1:
+                    ShareData.good_actor.thing_index_after()
+                else:
+                    ShareData.good_actor.thing_index_next()
 
             EventData.is_mouse_move = False
             if event.type == MOUSEBUTTONDOWN:

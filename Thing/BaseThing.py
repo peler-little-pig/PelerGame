@@ -5,14 +5,14 @@ from Data.AllData import *
 from Lib.BetterPygame.Surface import *
 
 
-class BaseThing():
-    def __init__(self, left: float, top: float, width: float, height: float) -> None:
+class BaseThing(object):
+    def __init__(self, left: float, top: float, rotate_point,length, WAIT, image_path, cost, egg_type) -> None:
         self.egg_list: List[BaseEgg] = []
-        self.WAIT = 5
+        self.WAIT = WAIT
         self.wait = 0
 
-        self.image = pygame.image.load('./Res/image/gun/gun.png').convert_alpha()
-        self.rect = pygame.rect.Rect(left, top, width, height)
+        self.image = pygame.image.load(image_path).convert_alpha()
+        self.rect = pygame.rect.Rect(left, top, 0, 0)
         self.image_rotate = self.image
         self.rect_rotate = self.rect
         self.image_flip = pygame.transform.flip(self.image, True, False)
@@ -21,16 +21,22 @@ class BaseThing():
         self.degree = 0
         self.dir = ()
 
-    def fire(self, x, y, whose):
-        if self.wait == 0:
-            egg = BaseEgg(self.rect.x + self.dir[0] * 68, self.rect.y + self.dir[1] * 68, 15, 10, x, y, whose)
+        self.egg_type = egg_type
+        self.cost = cost
+        self.rotate_point = rotate_point
+        self.length = length
 
-            self.egg_list.append(egg)
-            self.wait = self.WAIT
-            if whose == SpecialData.GOOD_ACTOR:
-                ShareData.good_actor.energy_info_bar.value -= 1
-        else:
-            self.wait -= 1
+    def fire(self, x, y, whose):
+        if ShareData.good_actor.energy_info_bar.value-self.cost >= 0:
+            if self.wait == 0:
+                egg = self.egg_type(self.rect.x + self.dir[0] * self.length, self.rect.y + self.dir[1] * self.length, 15, 10, x, y, whose)
+
+                self.egg_list.append(egg)
+                self.wait = self.WAIT
+                if whose == SpecialData.GOOD_ACTOR:
+                    ShareData.good_actor.energy_info_bar.value -= self.cost
+            else:
+                self.wait -= 1
 
     def draw(self):
         # pygame.draw.rect(GameData.surface, (0, 0, 0), self.image_rotate.get_rect(center=self.rect_rotate.center))
@@ -41,9 +47,11 @@ class BaseThing():
     def rotate(self, x, y):
         self.degree, self.dir = get_degree(self.rect.x, self.rect.y, x, y)
         if -90 < self.degree < 90:
-            self.image_rotate, self.rect_rotate = rotate_at_pos(self.image, self.rect.topleft, (17, 17), self.degree)
+            self.image_rotate, self.rect_rotate = rotate_at_pos(self.image, self.rect.topleft, self.rotate_point,
+                                                                self.degree)
         else:
-            self.image_rotate, self.rect_rotate = rotate_at_pos(self.image_flip, self.rect_flip.topleft, (83, 17),
+            self.image_rotate, self.rect_rotate = rotate_at_pos(self.image_flip, self.rect_flip.topleft, (
+                self.rect_flip.width - self.rotate_point[0], self.rotate_point[1]),
                                                                 180 + self.degree)
 
     def process(self):
@@ -57,4 +65,4 @@ class BaseThing():
 
     def move_ip(self, x: float, y: float):
         self.rect.move_ip(x, y)
-        self.rect_flip.move_ip(x,y)
+        self.rect_flip.move_ip(x, y)

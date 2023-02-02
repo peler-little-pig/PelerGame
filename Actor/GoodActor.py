@@ -67,6 +67,7 @@ class GoodActor(BaseActor):
             self.blood_info_bar.value -= hurt
 
     def add_energy(self, value):
+        print(self.energy_max)
         if self.energy_info_bar.value + value > self.energy_max:
             self.energy_info_bar.value = self.energy_max
         else:

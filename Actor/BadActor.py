@@ -21,7 +21,7 @@ class BadActor(BaseActor):
         self.fire_to_good_WAIT = random.randint(30, 60)
         self.fire_to_good_wait = self.fire_to_good_WAIT
 
-        self.blood = 20
+        self.blood = 10
 
         self.alive_image = pygame.image.load('./Res/Picture/image/bad_actor/bad_actor_alive.png').convert_alpha()
         self.dead_image = pygame.image.load('./Res/Picture/image/bad_actor/bad_actor_dead.png').convert_alpha()

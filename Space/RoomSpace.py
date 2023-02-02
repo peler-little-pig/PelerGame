@@ -9,6 +9,7 @@ from Block.DoorBlock import DoorBlock
 from Block.GroundBlock import GroundBlock
 from Space.BaseSpace import *
 from Data.AllData import *
+from Treasure.BaseTreasure import *
 
 
 class RoomSpace(BaseSpace):
@@ -27,6 +28,9 @@ class RoomSpace(BaseSpace):
         self.is_door_need_close = False
         self.is_door_open = True
 
+        self.is_treasure_room = False
+        self.treasure = None
+
         self.bad_actor_number = 0
 
     def mix(self):
@@ -41,10 +45,25 @@ class RoomSpace(BaseSpace):
         for door in self.top_door_block_list + self.bottom_door_block_list \
                     + self.left_door_block_list + self.right_door_block_list:
             door.open_or_close(self.is_door_open)
+        if self.is_treasure_room:
+            if self.treasure is None:
+                print('sssssssss')
+                self.treasure = self.create_treasure()
+            else:
+                self.treasure.process()
+
+    def create_treasure(self):
+        width = self.corner_block_list[1].right - self.corner_block_list[0].left
+        height = self.corner_block_list[3].bottom - self.corner_block_list[0].top
+        return BaseTreasure(self.corner_block_list[0].x + (width / 2),
+                            self.corner_block_list[0].y + (height / 2),
+                            100, 50)
 
     def draw(self):
         for block in self.mix():
             block.draw()
+        if self.treasure is not None:
+            self.treasure.draw()
 
     def can_move_up(self):
         if self.is_hit_blocking_or_box_block_top():

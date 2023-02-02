@@ -1,3 +1,4 @@
+from Group.DropThingGroup import DropThingGroup
 from Group.MapGroup import MapGroup
 from Lib.MapLoader.SpaceLoader import *
 from Lib.MapLoader.BadActorLoader import *
@@ -9,5 +10,5 @@ def map_loader():
     maps = MapGroup()
     for f in folders:
         world = world_loader(f'./Res/Map/{f}/{f}.pworld')
-        maps.append([world, bad_actor_group_loader(world)])
+        maps.append(world, bad_actor_group_loader(world), DropThingGroup())
     return maps

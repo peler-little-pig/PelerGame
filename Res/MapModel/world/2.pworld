@@ -7,7 +7,7 @@
     ["cross('height')",('c3',('r2','top'))],
     ["room('left','top','right','bottom')",('r3',('c3','top'))],
     ["cross('width')",('c4',('r3','right'))],
-    ["room('left')",('r4',('c4','right'))],
+    ["treasure('left')",('r4',('c4','right'))],
     ["cross('width')",('c5',('r3','left'))],
     ["room('right')",('r5',('c5','left'))],
     ["cross('height')",('c6',('r3','top'))],

@@ -1,7 +1,0 @@
-{
-    'r1':{'bad_actor_number':'auto','is_door_need_close':True},
-    'r2':{'bad_actor_number':'auto','is_door_need_close':True},
-    'r3':{'bad_actor_number':'auto','is_door_need_close':True},
-    'r4':{'bad_actor_number':'auto','is_door_need_close':True},
-    'r5':{'bad_actor_number':'auto','is_door_need_close':True}
-}

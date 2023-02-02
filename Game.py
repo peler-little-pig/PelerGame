@@ -23,11 +23,13 @@ class Game(object):
         self.good_actor = GoodActor()
         ShareData.good_actor = self.good_actor
         self.map = map_loader()
-        ShareData.world = self.map.get_world()
-        ShareData.bad_actor_group = self.map.get_bad_actor_group()
+        ShareData.world = self.map.world()
+        ShareData.bad_actor_group = self.map.bad_actor_group()
         ShareData.game = self
 
         self.nexted = False
+
+        self.map.drop_thing_group().append(GunThing(*self.good_actor.center))
 
     def init_map(self):
         MapCreator.clean()
@@ -79,14 +81,16 @@ class Game(object):
                 EventData.mouse_x, EventData.mouse_y = event.pos
 
     def process(self):
-        self.map.get_world().process()
-        self.map.get_bad_actor_group().process()
+        self.map.world().process()
+        self.map.bad_actor_group().process()
+        self.map.drop_thing_group().process()
         self.good_actor.process()
         self.coin_gruop.process()
 
     def draw(self):
-        self.map.get_world().draw()
-        self.map.get_bad_actor_group().draw()
+        self.map.world().draw()
+        self.map.bad_actor_group().draw()
+        self.map.drop_thing_group().draw()
         self.good_actor.draw()
         self.coin_gruop.draw()
 
@@ -106,8 +110,8 @@ class Game(object):
     def next_world(self):
         if not self.nexted:
             self.map.next()
-            ShareData.world = self.map.get_world()
-            ShareData.bad_actor_group = self.map.get_bad_actor_group()
+            ShareData.world = self.map.world()
+            ShareData.bad_actor_group = self.map.bad_actor_group()
             self.nexted = True
 
     def logo(self):

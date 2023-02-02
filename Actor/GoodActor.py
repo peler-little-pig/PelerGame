@@ -26,7 +26,7 @@ class GoodActor(BaseActor):
         self.add_protection_WAIT = 60
         self.add_protection_wait = 0
 
-        self.thing_list = [HandGunThing(self.centerx, self.centery + 10), GunThing(self.centerx, self.centery + 10)]
+        self.thing_list = [HandGunThing(self.centerx, self.centery + 10), ]
         self.thing_index = 0
         self.thing = self.thing_list[self.thing_index]
 
@@ -36,12 +36,17 @@ class GoodActor(BaseActor):
         self.protection_info_bar.draw()
         self.energy_info_bar.draw()
         super().draw()
+        for thing in self.thing_list:
+            thing.draw_egg()
 
     def process(self):
         if self.is_alive():
             if EventData.is_left_mouse_down:
                 self.thing.fire(EventData.mouse_x, EventData.mouse_y, SpecialData.GOOD_ACTOR)
-            super().process()
+
+            for thing in self.thing_list:
+                thing.process()
+
             self.thing.rotate(EventData.mouse_x, EventData.mouse_y)
             self.blood_info_bar.process()
             self.protection_info_bar.process()
@@ -67,7 +72,6 @@ class GoodActor(BaseActor):
             self.blood_info_bar.value -= hurt
 
     def add_energy(self, value):
-        print(self.energy_max)
         if self.energy_info_bar.value + value > self.energy_max:
             self.energy_info_bar.value = self.energy_max
         else:

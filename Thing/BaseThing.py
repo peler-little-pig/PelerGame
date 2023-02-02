@@ -43,6 +43,9 @@ class BaseThing(object):
     def draw(self):
         # pygame.draw.rect(GameData.surface, (0, 0, 0), self.image_rotate.get_rect(center=self.rect_rotate.center))
         GameData.surface.blit(self.image_rotate, self.rect_rotate)
+        self.draw_egg()
+
+    def draw_egg(self):
         for egg in self.egg_list:
             egg.draw()
 

@@ -1,10 +1,11 @@
 from Actor.GoodActor import *
-from Lib.MapLoader.MapLoader import *
+from MapLoader.MapLoader import *
 import sys
-from Lib.Logo.logo import *
+from Logo.logo import *
 from Group.CoinGroup import *
-from Lib.Creator import MapCreator
-from Lib.GUI.Manager import *
+from Creator import MapCreator
+from GUI.Manager import Manager
+from Screen.StartSceen import *
 
 
 class Game(object):
@@ -93,6 +94,20 @@ class Game(object):
             if event.type == MOUSEMOTION:
                 EventData.is_mouse_move = True
                 EventData.mouse_x, EventData.mouse_y = event.pos
+
+    def start_screen(self):
+        screen = StartScreen()
+        while screen.is_running:
+            GameData.surface.fill((0, 0, 0))
+            GameData.UI_MANAGER.draw_ui(GameData.surface)
+            for event in pygame.event.get():
+                GameData.UI_MANAGER.event(event)
+                if event.type == QUIT:
+                    self.exit()
+            GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
+            pygame.display.update()
+        GameData.UI_MANAGER.ui_list.remove(screen.title)
+        GameData.UI_MANAGER.ui_list.remove(screen.button)
 
     def process(self):
         self.map.world().process()

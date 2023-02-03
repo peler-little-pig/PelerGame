@@ -1,14 +1,13 @@
 from typing import List
 
 from Coin.EnergyCoin import EnergyCoin
-from Lib.BetterPygame.Rect import *
+from BetterPygame.Rect import *
 from Block.BoxBlock import BoxBlock
 from Block.CornerBlock import CornerBlock
 from Block.BlockingBlcok import BlockingBlock
 from Block.DoorBlock import DoorBlock
 from Block.GroundBlock import GroundBlock
 from Space.BaseSpace import *
-from Data.AllData import *
 from Treasure.BaseTreasure import *
 
 

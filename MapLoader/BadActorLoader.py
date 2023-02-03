@@ -1,4 +1,4 @@
-from Lib.Creator.BadActorCreator import *
+from Creator.BadActorCreator import *
 
 
 def room_reader(world):

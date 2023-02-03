@@ -1,9 +1,5 @@
-import pygame
-from Data.AllData import *
-from Lib.Compute.MoveCompute import *
-
-
-# from Thing.GunThing import *
+from Compute.MoveCompute import *
+from Compute.PositionCompute import *
 
 
 class BaseTreasure(pygame.rect.Rect):
@@ -29,5 +25,6 @@ class BaseTreasure(pygame.rect.Rect):
             if self.colliderect(ShareData.good_actor):
                 if EventData.is_key_e_down:
                     self.image = self.open_image
+                    # x,y = middle(self,)
                     ShareData.drop_thing_group.append_random(self.x, self.y)
                     self.is_open = True

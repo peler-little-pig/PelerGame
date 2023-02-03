@@ -1,7 +1,7 @@
-from Lib.Compute.SpaceCompute import *
-from Lib.Compute.BlockCompute import *
-from Lib.Compute.MoveCompute import *
-from Lib.Math.Math import *
+from Compute.SpaceCompute import *
+from Compute.BlockCompute import *
+from Compute.MoveCompute import *
+from Math.Math import *
 
 
 class BaseEgg(object):

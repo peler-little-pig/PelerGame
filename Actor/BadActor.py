@@ -1,11 +1,6 @@
 from Actor.BaseActor import *
 import random
-from Lib.Compute.SpaceCompute import *
-from Lib.Compute.BlockCompute import *
-from Lib.Compute.MoveCompute import *
-from Data.AllData import *
 from Coin.EnergyCoin import *
-from Coin.MoneyCoin import *
 from Thing.GunThing import *
 
 

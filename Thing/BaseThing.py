@@ -1,8 +1,7 @@
 from typing import List
 from Egg.BaseEgg import *
-import pygame
 from Data.AllData import *
-from Lib.BetterPygame.Surface import *
+from BetterPygame.Surface import *
 
 
 class BaseThing(object):

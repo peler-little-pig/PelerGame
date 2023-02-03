@@ -3,6 +3,7 @@ from InfoBar.BloodInfoBar import *
 from InfoBar.ProtectionInfoBar import *
 from InfoBar.EnergyInfoBar import *
 from Data.AllData import *
+from Speak.BaseSpeak import BaseSpeak
 from Thing.HandGunThing import *
 from Thing.GunThing import *
 from Treasure import BaseTreasure
@@ -34,6 +35,8 @@ class GoodActor(BaseActor):
         self.drop_thing_WAIT = 60
         self.drop_thing_wait = 0
 
+        self.speak = BaseSpeak(self)
+
     def draw(self):
         GameData.surface.blit(self.image, self)
         self.blood_info_bar.draw()
@@ -46,6 +49,7 @@ class GoodActor(BaseActor):
     def process(self):
         if self.is_alive():
             if EventData.is_left_mouse_down:
+                # self.speak.begin_say('hello',120)
                 self.thing.fire(EventData.mouse_x, EventData.mouse_y, SpecialData.GOOD_ACTOR)
 
             for thing in self.thing_list:
@@ -55,6 +59,7 @@ class GoodActor(BaseActor):
             self.blood_info_bar.process()
             self.protection_info_bar.process()
             self.energy_info_bar.process()
+            self.speak.process()
 
             self.add_protection()
             self.drop_thing()
@@ -109,6 +114,7 @@ class GoodActor(BaseActor):
         else:
             self.thing_index -= 1
         self.thing = self.thing_list[self.thing_index]
+        # self.speak.begin_say(str(type(self.thing)),60)
 
     def thing_index_next(self):
         if self.thing_index >= len(self.thing_list) - 1:
@@ -116,3 +122,4 @@ class GoodActor(BaseActor):
         else:
             self.thing_index += 1
         self.thing = self.thing_list[self.thing_index]
+        # self.speak.begin_say(str(type(self.thing)), 60)

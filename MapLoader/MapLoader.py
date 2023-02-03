@@ -1,7 +1,7 @@
 from Group.DropThingGroup import DropThingGroup
 from Group.MapGroup import MapGroup
-from Lib.MapLoader.SpaceLoader import *
-from Lib.MapLoader.BadActorLoader import *
+from MapLoader.SpaceLoader import *
+from MapLoader.BadActorLoader import *
 import os
 
 

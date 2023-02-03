@@ -1,6 +1,5 @@
 from Block.BaseBlock import *
 import pygame
-import Lib.BetterPygame.Rect as BRect
 
 
 class BlockingBlock(BaseBlock):

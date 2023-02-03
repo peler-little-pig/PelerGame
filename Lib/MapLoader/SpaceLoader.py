@@ -130,7 +130,6 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
 
                         elif state == 'bottom':
                             room = room_loader(d, 0, 0, info[0])
-                            print(room.name)
                             x = width_cross.corner_block_list[0].left - room.top_door_block_list[0].left + \
                                 BlockData.BLOCK_SIZE
                             y = width_cross.corner_block_list[2].bottom

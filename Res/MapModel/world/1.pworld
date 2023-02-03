@@ -1,8 +1,10 @@
 (
     ["home('right')",('home',())],
     ["cross('width')",('c1',('home','right'))],
-    ["room('left','right')",('r1',('c1','right'))],
+    ["room('left','right','bottom')",('r1',('c1','right'))],
     ["cross('width')",('c2',('r1','right'))],
     ["next('left')",('next',('c2','right'))],
+    ["cross('height')",('c3',('r1','bottom'))],
+    ["treasure('top')",('r2',('c3','bottom'))],
     ["info('1')",('',())]
 )

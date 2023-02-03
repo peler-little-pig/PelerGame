@@ -5,6 +5,7 @@ from InfoBar.EnergyInfoBar import *
 from Data.AllData import *
 from Thing.HandGunThing import *
 from Thing.GunThing import *
+from Treasure import BaseTreasure
 
 
 class GoodActor(BaseActor):
@@ -26,9 +27,12 @@ class GoodActor(BaseActor):
         self.add_protection_WAIT = 60
         self.add_protection_wait = 0
 
-        self.thing_list = [HandGunThing(self.centerx, self.centery + 10), ]
+        self.thing_list = [HandGunThing(self.centerx, self.centery + 10)]
         self.thing_index = 0
         self.thing = self.thing_list[self.thing_index]
+
+        self.drop_thing_WAIT = 60
+        self.drop_thing_wait = 0
 
     def draw(self):
         GameData.surface.blit(self.image, self)
@@ -53,11 +57,23 @@ class GoodActor(BaseActor):
             self.energy_info_bar.process()
 
             self.add_protection()
+            self.drop_thing()
 
             if EventData.is_move_left:
                 self.image = self.left_image
             if EventData.is_move_right:
                 self.image = self.right_image
+
+    def drop_thing(self):
+        if self.drop_thing_wait == 0:
+            if EventData.is_key_q_down:
+                if len(self.thing_list) > 1:
+                    ShareData.drop_thing_group.append(self.thing)
+                    del self.thing_list[self.thing_index]
+                    self.thing_index_next()
+                self.drop_thing_wait = self.drop_thing_WAIT
+        else:
+            self.drop_thing_wait -= 1
 
     def is_alive(self):
         return self.blood_info_bar.value > 0
@@ -95,7 +111,7 @@ class GoodActor(BaseActor):
         self.thing = self.thing_list[self.thing_index]
 
     def thing_index_next(self):
-        if self.thing_index == len(self.thing_list) - 1:
+        if self.thing_index >= len(self.thing_list) - 1:
             self.thing_index = 0
         else:
             self.thing_index += 1

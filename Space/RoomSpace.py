@@ -47,7 +47,6 @@ class RoomSpace(BaseSpace):
             door.open_or_close(self.is_door_open)
         if self.is_treasure_room:
             if self.treasure is None:
-                print('sssssssss')
                 self.treasure = self.create_treasure()
             else:
                 self.treasure.process()

@@ -25,6 +25,7 @@ class Game(object):
         self.map = map_loader()
         ShareData.world = self.map.world()
         ShareData.bad_actor_group = self.map.bad_actor_group()
+        ShareData.drop_thing_group = self.map.drop_thing_group()
         ShareData.game = self
 
         self.nexted = False
@@ -48,6 +49,10 @@ class Game(object):
                     EventData.is_key_a_down = True
                 if event.key == K_d:
                     EventData.is_key_d_down = True
+                if event.key == K_q:
+                    EventData.is_key_q_down = True
+                if event.key == K_e:
+                    EventData.is_key_e_down = True
 
             elif event.type == KEYUP:
                 if event.key == K_w:
@@ -58,6 +63,10 @@ class Game(object):
                     EventData.is_key_a_down = False
                 if event.key == K_d:
                     EventData.is_key_d_down = False
+                if event.key == K_q:
+                    EventData.is_key_q_down = False
+                if event.key == K_e:
+                    EventData.is_key_e_down = False
 
             elif event.type == MOUSEWHEEL:
                 if event.y == 1:
@@ -112,6 +121,7 @@ class Game(object):
             self.map.next()
             ShareData.world = self.map.world()
             ShareData.bad_actor_group = self.map.bad_actor_group()
+            ShareData.drop_thing_group = self.map.drop_thing_group()
             self.nexted = True
 
     def logo(self):

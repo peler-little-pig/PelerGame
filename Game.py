@@ -1,11 +1,10 @@
-from pygame.locals import *
 from Actor.GoodActor import *
-from Coin.EnergyCoin import EnergyCoin
 from Lib.MapLoader.MapLoader import *
 import sys
 from Lib.Logo.logo import *
 from Group.CoinGroup import *
 from Lib.Creator import MapCreator
+from Lib.GUI.Manager import *
 
 
 class Game(object):
@@ -14,6 +13,7 @@ class Game(object):
 
         GameData.fps_clock = pygame.time.Clock()
         GameData.surface = pygame.display.set_mode((GameData.WINDOW_WIDTH, GameData.WINDOW_HEIGHT))
+        GameData.UI_MANAGER = Manager()
 
         pygame.display.set_caption(GameData.NAME)
 
@@ -38,6 +38,7 @@ class Game(object):
 
     def event(self):
         for event in pygame.event.get():
+            GameData.UI_MANAGER.event(event)
             if event.type == QUIT:
                 self.exit()
             elif event.type == KEYDOWN:
@@ -74,6 +75,10 @@ class Game(object):
                 else:
                     ShareData.good_actor.thing_index_next()
 
+            # elif event.type == pygame_gui.UI_BUTTON_PRESSED:
+            #     if event.ui_element == self.hello_button:
+            #         print('HelloWorld')
+
             EventData.is_mouse_move = False
             if event.type == MOUSEBUTTONDOWN:
                 if event.button == BUTTON_LEFT:
@@ -102,6 +107,7 @@ class Game(object):
         self.map.drop_thing_group().draw()
         self.good_actor.draw()
         self.coin_gruop.draw()
+        GameData.UI_MANAGER.draw_ui(GameData.surface)
 
     def loop(self):
         while True:
@@ -111,8 +117,9 @@ class Game(object):
             self.process()
             self.draw()
 
+            GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
             pygame.display.update()
-            GameData.fps_clock.tick(GameData.FPS)
+            # GameData.fps_clock.tick(GameData.FPS)
 
             self.nexted = False
 

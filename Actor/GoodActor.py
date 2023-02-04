@@ -68,6 +68,8 @@ class GoodActor(BaseActor):
                 self.image = self.left_image
             if EventData.is_move_right:
                 self.image = self.right_image
+        else:
+            ShareData.game.is_game_running = False
 
     def drop_thing(self):
         if self.drop_thing_wait == 0:

@@ -5,6 +5,7 @@ from Logo.logo import *
 from Group.CoinGroup import *
 from Creator import MapCreator
 from GUI.Manager import Manager
+from Screen.EndSceen import EndScreen
 from Screen.StartSceen import *
 
 
@@ -30,6 +31,8 @@ class Game(object):
         ShareData.game = self
 
         self.nexted = False
+        self.is_game_running = True
+        self.is_restart = False
 
         self.map.drop_thing_group().append(GunThing(*self.good_actor.center))
 
@@ -103,6 +106,18 @@ class Game(object):
             GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
             pygame.display.update()
 
+    def end_screen(self):
+        screen = EndScreen()
+        while screen.is_running:
+            GameData.surface.fill((0, 0, 0))
+            GameData.UI_MANAGER.draw_ui(GameData.surface)
+            for event in pygame.event.get():
+                GameData.UI_MANAGER.event(event)
+                if event.type == QUIT:
+                    self.exit()
+            GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
+            pygame.display.update()
+
     def process(self):
         self.map.world().process()
         self.map.bad_actor_group().process()
@@ -119,7 +134,7 @@ class Game(object):
         GameData.UI_MANAGER.draw_ui(GameData.surface)
 
     def loop(self):
-        while True:
+        while self.is_game_running:
             GameData.surface.fill((200, 255, 255))
 
             self.event()

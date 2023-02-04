@@ -8,3 +8,13 @@ if __name__ == '__main__':
     game.init()
     game.start_screen()
     game.loop()
+    game.end_screen()
+    while game.is_restart:
+        game = Game()
+        # game.logo()
+        game.init_map()
+        game.init()
+        game.start_screen()
+        game.loop()
+        game.end_screen()
+

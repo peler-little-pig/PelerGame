@@ -76,10 +76,6 @@ class Game(object):
                 else:
                     ShareData.good_actor.thing_index_next()
 
-            # elif event.type == pygame_gui.UI_BUTTON_PRESSED:
-            #     if event.ui_element == self.hello_button:
-            #         print('HelloWorld')
-
             EventData.is_mouse_move = False
             if event.type == MOUSEBUTTONDOWN:
                 if event.button == BUTTON_LEFT:
@@ -106,8 +102,6 @@ class Game(object):
                     self.exit()
             GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
             pygame.display.update()
-        GameData.UI_MANAGER.ui_list.remove(screen.title)
-        GameData.UI_MANAGER.ui_list.remove(screen.button)
 
     def process(self):
         self.map.world().process()

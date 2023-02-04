@@ -8,7 +8,6 @@ import pygame_gui
 class Manager(pygame_gui.UIManager):
     def __init__(self):
         super().__init__((GameData.WINDOW_WIDTH, GameData.WINDOW_HEIGHT))
-        self.ui_list = []
 
     def draw(self):
         super().draw_ui(GameData.surface)
@@ -19,5 +18,5 @@ class Manager(pygame_gui.UIManager):
     def event(self, event):
         super().process_events(event)
 
-        for ui in self.ui_list:
+        for ui in self.ui_group.sprites()[1:]:
             ui.event(event)

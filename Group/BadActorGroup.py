@@ -18,6 +18,7 @@ class BadActorGroup(object):
         for key in self.group.keys():
             if self.is_all_dead(self.group[key]):
                 key.is_door_open = True
+                key.is_end = True
         for bad_actor in self.bad_actors():
             bad_actor.process()
 

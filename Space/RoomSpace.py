@@ -9,6 +9,7 @@ from Block.DoorBlock import DoorBlock
 from Block.GroundBlock import GroundBlock
 from Space.BaseSpace import *
 from Treasure.BaseTreasure import *
+from Treasure.EnergyTreasure import EnergyTreasure
 
 
 class RoomSpace(BaseSpace):
@@ -26,9 +27,11 @@ class RoomSpace(BaseSpace):
 
         self.is_door_need_close = False
         self.is_door_open = True
+        self.is_end = False
 
         self.is_treasure_room = False
         self.treasure = None
+        self.is_give_treasure = False
 
         self.bad_actor_number = 0
 
@@ -44,18 +47,33 @@ class RoomSpace(BaseSpace):
         for door in self.top_door_block_list + self.bottom_door_block_list \
                     + self.left_door_block_list + self.right_door_block_list:
             door.open_or_close(self.is_door_open)
+
         if self.is_treasure_room:
             if self.treasure is None:
-                self.treasure = self.create_treasure()
+                self.treasure = self.create_thing_treasure()
             else:
                 self.treasure.process()
+        else:
+            # print(self.bad_actor_number)
+            # print(self.is_door_open)
+            if self.is_give_treasure:
+                if self.treasure is None:
+                    if self.is_end:
+                        self.treasure = self.create_energy_treasure()
+                else:
+                    self.treasure.process()
 
-    def create_treasure(self):
+    def create_thing_treasure(self):
         width = self.corner_block_list[1].right - self.corner_block_list[0].left
         height = self.corner_block_list[3].bottom - self.corner_block_list[0].top
         return BaseTreasure(self.corner_block_list[0].x + (width / 2),
                             self.corner_block_list[0].y + (height / 2),
                             100, 50)
+
+    def create_energy_treasure(self):
+        x = self.corner_block_list[0].right + 100
+        y = self.corner_block_list[0].bottom + 100
+        return EnergyTreasure(x, y, 100, 50)
 
     def draw(self):
         for block in self.mix():

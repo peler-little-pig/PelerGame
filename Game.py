@@ -58,6 +58,8 @@ class Game(object):
                     EventData.is_key_q_down = True
                 if event.key == K_e:
                     EventData.is_key_e_down = True
+                if event.key == K_f:
+                    EventData.is_key_f_down = True
 
             elif event.type == KEYUP:
                 if event.key == K_w:
@@ -72,6 +74,8 @@ class Game(object):
                     EventData.is_key_q_down = False
                 if event.key == K_e:
                     EventData.is_key_e_down = False
+                if event.key == K_f:
+                    EventData.is_key_f_down = False
 
             elif event.type == MOUSEWHEEL:
                 if event.y == 1:

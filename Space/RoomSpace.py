@@ -159,30 +159,42 @@ class RoomSpace(BaseSpace):
             return False
 
     def is_hit_blocking_or_box_block_top(self):
-        for block in self.blocking_block_list + self.box_block_list:
-            if colliderect_bottom(ShareData.good_actor, block):
-                return False
+        if ShareData.good_actor.is_block_by_the_block:
+            for block in self.blocking_block_list + self.box_block_list:
+                if colliderect_bottom(ShareData.good_actor, block):
+                    return False
+            else:
+                return True
         else:
             return True
 
     def is_hit_blocking_or_box_block_bottom(self):
-        for block in self.blocking_block_list + self.box_block_list:
-            if colliderect_top(ShareData.good_actor, block):
-                return False
+        if ShareData.good_actor.is_block_by_the_block:
+            for block in self.blocking_block_list + self.box_block_list:
+                if colliderect_top(ShareData.good_actor, block):
+                    return False
+            else:
+                return True
         else:
             return True
 
     def is_hit_blocking_or_box_block_left(self):
-        for block in self.blocking_block_list + self.box_block_list:
-            if colliderect_right(ShareData.good_actor, block):
-                return False
+        if ShareData.good_actor.is_block_by_the_block:
+            for block in self.blocking_block_list + self.box_block_list:
+                if colliderect_right(ShareData.good_actor, block):
+                    return False
+            else:
+                return True
         else:
             return True
 
     def is_hit_blocking_or_box_block_right(self):
-        for block in self.blocking_block_list + self.box_block_list:
-            if colliderect_left(ShareData.good_actor, block):
-                return False
+        if ShareData.good_actor.is_block_by_the_block:
+            for block in self.blocking_block_list + self.box_block_list:
+                if colliderect_left(ShareData.good_actor, block):
+                    return False
+            else:
+                return True
         else:
             return True
 

@@ -5,6 +5,7 @@ class EventData(staticmethod):
     is_key_d_down = False
     is_key_q_down = False
     is_key_e_down = False
+    is_key_f_down = False
 
     is_mouse_move = False
     is_left_mouse_down = False

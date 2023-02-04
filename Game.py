@@ -6,6 +6,7 @@ from Group.CoinGroup import *
 from Creator import MapCreator
 from GUI.Manager import Manager
 from Screen.EndSceen import EndScreen
+from Screen.PauseSceen import PauseScreen
 from Screen.StartSceen import *
 
 
@@ -33,6 +34,7 @@ class Game(object):
         self.nexted = False
         self.is_game_running = True
         self.is_restart = False
+        self.is_pause_screen = False
 
         self.map.drop_thing_group().append(GunThing(*self.good_actor.center))
 
@@ -60,6 +62,9 @@ class Game(object):
                     EventData.is_key_e_down = True
                 if event.key == K_f:
                     EventData.is_key_f_down = True
+                #####################################33
+                if event.key == K_SPACE:
+                    self.is_pause_screen = True
 
             elif event.type == KEYUP:
                 if event.key == K_w:
@@ -100,25 +105,44 @@ class Game(object):
 
     def start_screen(self):
         screen = StartScreen()
+        GameData.surface.fill((0, 0, 0))
         while screen.is_running:
-            GameData.surface.fill((0, 0, 0))
             GameData.UI_MANAGER.draw_ui(GameData.surface)
             for event in pygame.event.get():
                 GameData.UI_MANAGER.event(event)
                 if event.type == QUIT:
                     self.exit()
+                if event.type == KEYDOWN:
+                    screen.start_game()
             GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
             pygame.display.update()
 
+    def pause_screen(self):
+        if self.is_pause_screen:
+            screen = PauseScreen()
+            while screen.is_running:
+                GameData.UI_MANAGER.draw_ui(GameData.surface)
+                for event in pygame.event.get():
+                    GameData.UI_MANAGER.event(event)
+                    if event.type == QUIT:
+                        self.exit()
+                    if event.type == KEYDOWN:
+                        screen.continue_game()
+                GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
+                pygame.display.update()
+            self.is_pause_screen = False
+
     def end_screen(self):
         screen = EndScreen()
+        GameData.surface.fill((0, 0, 0))
         while screen.is_running:
-            GameData.surface.fill((0, 0, 0))
             GameData.UI_MANAGER.draw_ui(GameData.surface)
             for event in pygame.event.get():
                 GameData.UI_MANAGER.event(event)
                 if event.type == QUIT:
                     self.exit()
+                if event.type == KEYDOWN:
+                    screen.restart_game()
             GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
             pygame.display.update()
 
@@ -144,6 +168,8 @@ class Game(object):
             self.event()
             self.process()
             self.draw()
+
+            self.pause_screen()
 
             GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
             pygame.display.update()

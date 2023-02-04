@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/InfoBar/SkillInfoBar.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/00/0.proom" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/00/00.pworld" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/00/1.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/00/10.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/00/11.pheightcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/00/12.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/00/13.pinfo" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/00/3.pwidthcross" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/00/4.proom" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/00/5.pheightcross" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/00/6.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/00/7.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/00/8.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/00/9.pwidthcross" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/00/7.pinfo" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/01/01.pworld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/01/10.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/01/11.pwidthcross" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/01/12.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/01/13.pheightcross" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/01/14.proom" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/01/15.pwidthcross" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/01/16.proom" afterDir="false" />
@@ -29,63 +26,61 @@
       <change afterPath="$PROJECT_DIR$/Res/Map/01/18.proom" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/01/19.pheightcross" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/01/20.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/01/21.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/01/22.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/01/23.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/01/24.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/01/25.pheightcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/01/26.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/01/27.pinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/01/21.pinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/01/8.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/01/9.pwidthcross" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/02/02.pworld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/02/22.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/02/23.pwidthcross" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/02/24.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/02/25.pwidthcross" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/02/26.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/02/27.pheightcross" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Res/Map/02/28.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/02/29.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/02/30.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/02/31.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/02/32.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/02/33.pheightcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/02/34.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/02/35.pinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Picture/file/good_actor/good_actor.kra-autosave.kra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Picture/file/good_actor/skill.kra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Picture/image/good_actor/skill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/Map/02/29.pinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screen/PauseSceen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor/GoodActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/GoodActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/EventData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/EventData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/06/06.pworld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/06/72.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/06/73.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/06/74.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/06/75.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/06/76.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/06/77.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/06/78.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/06/79.pinfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/07/07.pworld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/07/80.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/07/81.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/07/82.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/07/83.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/07/84.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/07/85.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/07/86.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/07/87.pinfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/08.pworld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/100.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/101.pinfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/88.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/89.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/90.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/91.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/92.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/93.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/94.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/95.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/96.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/97.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/98.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/08/99.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Space/RoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/03.pworld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/30.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/31.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/32.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/33.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/34.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/35.pheightcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/36.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/37.pinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/04.pworld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/38.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/39.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/40.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/41.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/42.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/43.pheightcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/44.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/45.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/46.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/47.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/48.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/49.pheightcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/50.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/51.pinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/05.pworld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/52.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/53.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/54.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/55.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/56.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/57.pheightcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/58.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/59.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/60.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/61.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/62.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/63.pheightcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/64.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/05/65.pinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +249,7 @@
       <workItem from="1675407509906" duration="1416000" />
       <workItem from="1675413395881" duration="338000" />
       <workItem from="1675428646058" duration="3863000" />
-      <workItem from="1675469397997" duration="6673000" />
+      <workItem from="1675469397997" duration="9351000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -445,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675473413471</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="good actor skill">
+      <created>1675476941870</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1675476941870</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +467,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="some small change" />
     <MESSAGE value="peler game v0.0.1, hoo~oo~oooooo" />
     <MESSAGE value="v 0.0.2 add blocking block!" />
     <MESSAGE value="v 0.0.3 box block come!!!" />
@@ -490,7 +491,8 @@
     <MESSAGE value="start speak and screen but not success" />
     <MESSAGE value="EnergyTreasure.py" />
     <MESSAGE value="EndScreen.py and can restart the game,but the ui have no theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="EndScreen.py and can restart the game,but the ui have no theme" />
+    <MESSAGE value="good actor skill" />
+    <option name="LAST_COMMIT_MESSAGE" value="good actor skill" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -511,6 +513,6 @@
     <SUITE FILE_PATH="coverage/PelerGame$main_Test_.coverage" NAME="main(Test) Coverage Results" MODIFIED="1675335092759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/PelerGame$Docutils_Task_in_Docutils_Task_in_.coverage" NAME="Docutils Task in Docutils Task in  Coverage Results" MODIFIED="1675383861289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1675476624941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1675487891320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

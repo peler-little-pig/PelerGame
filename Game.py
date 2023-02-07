@@ -40,7 +40,7 @@ class Game(object):
 
     def init_map(self):
         MapCreator.clean()
-        MapCreator.map(3)
+        MapCreator.map(5)
 
     def event(self):
         for event in pygame.event.get():
@@ -62,7 +62,6 @@ class Game(object):
                     EventData.is_key_e_down = True
                 if event.key == K_f:
                     EventData.is_key_f_down = True
-                #####################################33
                 if event.key == K_SPACE:
                     self.is_pause_screen = True
 
@@ -102,6 +101,12 @@ class Game(object):
             if event.type == MOUSEMOTION:
                 EventData.is_mouse_move = True
                 EventData.mouse_x, EventData.mouse_y = event.pos
+
+            if event.type == WINDOWLEAVE:
+                EventData.is_left_mouse_down = False
+                EventData.is_right_mouse_down = False
+            if event.type == WINDOWFOCUSLOST or event.type == WINDOWMOVED:
+                self.is_pause_screen = True
 
     def start_screen(self):
         screen = StartScreen()

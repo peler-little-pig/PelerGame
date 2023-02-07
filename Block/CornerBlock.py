@@ -5,7 +5,7 @@ import pygame
 class CornerBlock(BaseBlock):
     def __init__(self, left: float, top: float):
         super().__init__(left, top)
-        self.image = pygame.image.load('./Res/Picture/image/corner_block/corner_block.png').convert()
+        self.image = pygame.image.load('./Res/Picture/image/corner_block/new.png').convert()
 
     def draw(self):
         # if self.is_need_draw():

@@ -5,8 +5,8 @@ import pygame
 class DoorBlock(BaseBlock):
     def __init__(self, left: float, top: float):
         super().__init__(left, top)
-        self.open_image = pygame.image.load('./Res/Picture/image/door_block/door_block_open.png').convert()
-        self.close_image = pygame.image.load('./Res/Picture/image/door_block/door_block_close.png').convert()
+        self.open_image = pygame.image.load('./Res/Picture/image/door_block/new_open.png').convert()
+        self.close_image = pygame.image.load('./Res/Picture/image/door_block/new_close.png').convert()
         self.image = self.open_image
 
     def draw(self):

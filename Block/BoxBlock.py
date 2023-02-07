@@ -5,7 +5,7 @@ import pygame
 class BoxBlock(BaseBlock):
     def __init__(self, left: float, top: float):
         super().__init__(left, top)
-        self.image = pygame.image.load('./Res/Picture/image/box_block/box_block.png').convert()
+        self.image = pygame.image.load('./Res/Picture/image/box_block/new.png').convert()
         self.blood = 5
         self.is_coin_given = False
 

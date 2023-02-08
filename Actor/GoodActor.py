@@ -1,5 +1,6 @@
 from Actor.BaseActor import *
 from InfoBar.BloodInfoBar import *
+from InfoBar.MoneyInfoBar import MoneyInfoBar
 from InfoBar.ProtectionInfoBar import *
 from InfoBar.EnergyInfoBar import *
 from Data.AllData import *
@@ -33,6 +34,7 @@ class GoodActor(BaseActor):
         self.protection_info_bar = ProtectionInfoBar(self.protection_max)
         self.energy_info_bar = EnergyInfoBar(self.energy_max)
         self.skill_info_bar = SkillInfoBar(self.skill_last_max)
+        self.money_info_bar = MoneyInfoBar(0)
 
         self.add_protection_WAIT = 60
         self.add_protection_wait = 0
@@ -54,6 +56,7 @@ class GoodActor(BaseActor):
         self.protection_info_bar.draw()
         self.energy_info_bar.draw()
         self.skill_info_bar.draw()
+        self.money_info_bar.draw()
         super().draw()
         for thing in self.thing_list:
             thing.draw_egg()
@@ -75,6 +78,7 @@ class GoodActor(BaseActor):
             self.protection_info_bar.process()
             self.energy_info_bar.process()
             self.skill_info_bar.process()
+            self.money_info_bar.process()
             self.speak.process()
 
             self.add_protection()

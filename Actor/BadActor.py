@@ -1,6 +1,7 @@
 from Actor.BaseActor import *
 import random
 from Coin.EnergyCoin import *
+from Coin.MoneyCoin import MoneyCoin
 from Thing.GunThing import *
 
 
@@ -71,7 +72,7 @@ class BadActor(BaseActor):
     def give_coin(self):
         if not self.is_coin_given:
             ShareData.coin_group.append(EnergyCoin(self.centerx, self.centery))
-            # ShareData.coin_group.append(MoneyCoin(self.left, self.top))
+            ShareData.coin_group.append(MoneyCoin(self.centerx, self.centery))
             self.is_coin_given = True
 
     def move_ip(self, x: float, y: float) -> None:

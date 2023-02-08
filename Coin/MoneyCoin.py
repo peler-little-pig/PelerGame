@@ -15,5 +15,5 @@ class MoneyCoin(BaseCoin):
     def process(self):
         super().process()
         if self.colliderect(ShareData.good_actor):
-            # ShareData.good_actor.add_energy(2)
+            ShareData.good_actor.money_info_bar.add_value(1)
             self.is_should_delete = True

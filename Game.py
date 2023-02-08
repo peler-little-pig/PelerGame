@@ -91,13 +91,17 @@ class Game(object):
             if event.type == MOUSEBUTTONDOWN:
                 if event.button == BUTTON_LEFT:
                     EventData.is_left_mouse_down = True
-                elif event.button == BUTTON_RIGHT:
+                if event.button == BUTTON_RIGHT:
                     EventData.is_right_mouse_down = True
+                if event.button == BUTTON_MIDDLE:
+                    EventData.is_middle_mouse_down = True
             if event.type == MOUSEBUTTONUP:
                 if event.button == BUTTON_LEFT:
                     EventData.is_left_mouse_down = False
-                elif event.button == BUTTON_RIGHT:
+                if event.button == BUTTON_RIGHT:
                     EventData.is_right_mouse_down = False
+                if event.button == BUTTON_MIDDLE:
+                    EventData.is_middle_mouse_down = False
             if event.type == MOUSEMOTION:
                 EventData.is_mouse_move = True
                 EventData.mouse_x, EventData.mouse_y = event.pos

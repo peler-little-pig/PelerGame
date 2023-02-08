@@ -63,7 +63,7 @@ class GoodActor(BaseActor):
             if EventData.is_left_mouse_down:
                 # self.speak.begin_say('hello',120)
                 self.thing.fire(EventData.mouse_x, EventData.mouse_y, SpecialData.GOOD_ACTOR)
-            if EventData.is_key_f_down:
+            if EventData.is_key_e_down or EventData.is_middle_mouse_down:
                 self.is_skill = True
             self.skill()
 

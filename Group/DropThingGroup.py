@@ -28,6 +28,7 @@ class DropThingGroup(List[BaseThing]):
                     ShareData.good_actor.thing_index = len(ShareData.good_actor.thing_list) - 1
                     ShareData.good_actor.thing = ShareData.good_actor.thing_list[ShareData.good_actor.thing_index]
                     del self[i]
+                    EventData.is_right_mouse_down = False
                     break
 
     def append(self, __object) -> None:

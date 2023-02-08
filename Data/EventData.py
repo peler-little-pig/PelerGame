@@ -10,6 +10,7 @@ class EventData(staticmethod):
     is_mouse_move = False
     is_left_mouse_down = False
     is_right_mouse_down = False
+    is_middle_mouse_down = False
     mouse_x = 0
     mouse_y = 0
 

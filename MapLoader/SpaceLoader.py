@@ -100,7 +100,7 @@ def info_file_reader(file: str, world: WorldSpace):
             for info in data[area_name].keys():
                 if info == 'bad_actor_number' and data[area_name][info] == 'auto':
                     size = len(world.search(area_name).mix())
-                    data[area_name][info] = random.randint(size // 50, size // 30)
+                    data[area_name][info] = random.randint(size // 70, size // 50)
                 eval(f"world.search('{area_name}').__setattr__('{info}',{data[area_name][info]})")
 
 

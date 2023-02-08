@@ -4,8 +4,8 @@ from Data.AllData import *
 
 
 class Button(pygame_gui.elements.UIButton):
-    def __init__(self, left: float, top: float, width: float, height: float, text: str):
-        super().__init__(pygame.rect.Rect(left, top, width, height), text, manager=GameData.UI_MANAGER)
+    def __init__(self, manager, left: float, top: float, width: float, height: float, text: str):
+        super().__init__(pygame.rect.Rect(left, top, width, height), text, manager=manager)
         self.click_function = None
 
     def event(self, event):

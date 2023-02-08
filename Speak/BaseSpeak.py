@@ -1,9 +1,10 @@
 from GUI.Label import *
+from GUI.Manager import Manager
 
 
 class BaseSpeak(Label):
     def __init__(self, actor):
-        super().__init__(actor.left, actor.top - 30, 500, 30, '')
+        super().__init__(Manager(),actor.left, actor.top - 30, 500, 30, '')
         self.last_WAIT = 0
         self.last_wait = 0
         self.text_vert_alignment = 'left'

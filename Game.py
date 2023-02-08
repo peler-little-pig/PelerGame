@@ -16,7 +16,6 @@ class Game(object):
 
         GameData.fps_clock = pygame.time.Clock()
         GameData.surface = pygame.display.set_mode((GameData.WINDOW_WIDTH, GameData.WINDOW_HEIGHT))
-        GameData.UI_MANAGER = Manager()
 
         pygame.display.set_caption(GameData.NAME)
 
@@ -44,7 +43,6 @@ class Game(object):
 
     def event(self):
         for event in pygame.event.get():
-            GameData.UI_MANAGER.event(event)
             if event.type == QUIT:
                 self.exit()
             elif event.type == KEYDOWN:
@@ -116,44 +114,46 @@ class Game(object):
         screen = StartScreen()
         GameData.surface.fill((0, 0, 0))
         while screen.is_running:
-            GameData.UI_MANAGER.draw_ui(GameData.surface)
+            screen.manager.draw()
             for event in pygame.event.get():
-                GameData.UI_MANAGER.event(event)
+                screen.manager.event(event)
                 if event.type == QUIT:
                     self.exit()
                 if event.type == KEYDOWN:
                     screen.start_game()
-            GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
+            screen.manager.process()
             pygame.display.update()
 
     def pause_screen(self):
         if self.is_pause_screen:
             screen = PauseScreen()
             while screen.is_running:
-                GameData.UI_MANAGER.draw_ui(GameData.surface)
+                screen.manager.draw()
                 for event in pygame.event.get():
-                    GameData.UI_MANAGER.event(event)
+                    screen.manager.event(event)
                     if event.type == QUIT:
                         self.exit()
                     if event.type == KEYDOWN:
                         screen.continue_game()
-                GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
+                screen.manager.process()
                 pygame.display.update()
-            self.is_pause_screen = False
+        self.is_pause_screen = False
+
 
     def end_screen(self):
         screen = EndScreen()
         GameData.surface.fill((0, 0, 0))
         while screen.is_running:
-            GameData.UI_MANAGER.draw_ui(GameData.surface)
+            screen.manager.draw()
             for event in pygame.event.get():
-                GameData.UI_MANAGER.event(event)
+                screen.manager.event(event)
                 if event.type == QUIT:
                     self.exit()
                 if event.type == KEYDOWN:
                     screen.restart_game()
-            GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
+            screen.manager.process()
             pygame.display.update()
+
 
     def process(self):
         self.map.world().process()
@@ -162,13 +162,14 @@ class Game(object):
         self.good_actor.process()
         self.coin_gruop.process()
 
+
     def draw(self):
         self.map.world().draw()
         self.map.bad_actor_group().draw()
         self.map.drop_thing_group().draw()
         self.good_actor.draw()
         self.coin_gruop.draw()
-        GameData.UI_MANAGER.draw_ui(GameData.surface)
+
 
     def loop(self):
         while self.is_game_running:
@@ -180,11 +181,11 @@ class Game(object):
 
             self.pause_screen()
 
-            GameData.UI_MANAGER.update(GameData.fps_clock.tick(60) / 1000)
             pygame.display.update()
-            # GameData.fps_clock.tick(GameData.FPS)
+            GameData.fps_clock.tick(GameData.FPS)
 
             self.nexted = False
+
 
     def next_world(self):
         if not self.nexted:
@@ -193,6 +194,7 @@ class Game(object):
             ShareData.bad_actor_group = self.map.bad_actor_group()
             ShareData.drop_thing_group = self.map.drop_thing_group()
             self.nexted = True
+
 
     def logo(self):
         fs = FSLogo('./Res/Picture/image/logo/logo.png')
@@ -205,6 +207,7 @@ class Game(object):
             fs.update()
 
             pygame.display.update()
+
 
     def exit(self):
         pygame.quit()

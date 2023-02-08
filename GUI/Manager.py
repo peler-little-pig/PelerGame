@@ -6,8 +6,8 @@ import pygame_gui
 
 
 class Manager(pygame_gui.UIManager):
-    def __init__(self):
-        super().__init__((GameData.WINDOW_WIDTH, GameData.WINDOW_HEIGHT))
+    def __init__(self,theme_path=None):
+        super().__init__((GameData.WINDOW_WIDTH, GameData.WINDOW_HEIGHT),theme_path)
 
     def draw(self):
         super().draw_ui(GameData.surface)

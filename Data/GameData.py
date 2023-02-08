@@ -6,4 +6,3 @@ class GameData(staticmethod):
     WINDOW_WIDTH = 1024
     WINDOW_HEIGHT = 576
     DRAW_AREA_ADD = 100
-    UI_MANAGER = None

@@ -137,7 +137,7 @@ class GoodActor(BaseActor):
         else:
             self.thing_index -= 1
         self.thing = self.thing_list[self.thing_index]
-        self.speak.begin_say(self.thing.name,60)
+        self.speak.begin_say(self.thing.name+'aaa',60)
 
     def thing_index_next(self):
         if self.thing_index >= len(self.thing_list) - 1:
@@ -145,7 +145,7 @@ class GoodActor(BaseActor):
         else:
             self.thing_index += 1
         self.thing = self.thing_list[self.thing_index]
-        self.speak.begin_say(self.thing.name, 60)
+        self.speak.begin_say(self.thing.ame+'aaa', 60)
 
     def skill(self):
         if self.is_skill:

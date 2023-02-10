@@ -5,88 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Actor/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BetterPygame/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Block/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Coin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Compute/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Creator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Egg/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Group/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfoBar/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MapLoader/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Math/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/GUI_Theme/Infobar/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/GUI_Theme/Speak/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/GUI_Theme/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/02/23.pinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/03/24.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/03/25.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/03/26.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/03/27.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/03/28.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/03/29.pheightcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/03/31.pinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/04/32.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/04/33.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/04/34.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/04/35.pwidthcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/04/36.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/04/37.pheightcross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/04/38.proom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Map/04/39.pinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screen/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Space/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Speak/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thing/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Treasure/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/00/2.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/01/10.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/10.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/02.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/02.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/18.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/18.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/20.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/20.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/22.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/22.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/23.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/24.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/25.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/26.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/27.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/28.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/29.pinfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/03.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/03.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/30.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/30.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/31.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/32.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/33.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/34.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/35.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/36.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/37.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/38.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/39.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/40.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/41.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/42.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/43.pinfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/04.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/04.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/44.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/45.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/46.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/47.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/48.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/49.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/50.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/51.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/52.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/53.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/54.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/55.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/56.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/57.pinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actor/GoodActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/GoodActor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Treasure" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Res" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -261,7 +180,7 @@
       <workItem from="1675776190748" duration="3752000" />
       <workItem from="1675859821211" duration="3714000" />
       <workItem from="1676039005154" duration="1020000" />
-      <workItem from="1676040504691" duration="341000" />
+      <workItem from="1676040504691" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -494,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676040541598</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="all code/data floders turn into packages">
+      <created>1676041006667</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1676041006667</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +440,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add logo" />
     <MESSAGE value="better blocking block and box block hitting event checker,GREAT!" />
     <MESSAGE value="prepare to make coin" />
     <MESSAGE value="add blocking_block.png box_block.png and start BaseCoin.py" />
@@ -539,7 +464,8 @@
     <MESSAGE value="better player control" />
     <MESSAGE value="ui improve" />
     <MESSAGE value="can speak, but Chinese failed" />
-    <option name="LAST_COMMIT_MESSAGE" value="can speak, but Chinese failed" />
+    <MESSAGE value="all code/data floders turn into packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="all code/data floders turn into packages" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -560,6 +486,6 @@
     <SUITE FILE_PATH="coverage/PelerGame$main_Test_.coverage" NAME="main(Test) Coverage Results" MODIFIED="1675335092759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/PelerGame$Docutils_Task_in_Docutils_Task_in_.coverage" NAME="Docutils Task in Docutils Task in  Coverage Results" MODIFIED="1675383861289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676040843848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676041160117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -57,6 +57,7 @@ class GoodActor(BaseActor):
         self.energy_info_bar.draw()
         self.skill_info_bar.draw()
         self.money_info_bar.draw()
+        self.speak.draw()
         super().draw()
         for thing in self.thing_list:
             thing.draw_egg()
@@ -64,7 +65,7 @@ class GoodActor(BaseActor):
     def process(self):
         if self.is_alive():
             if EventData.is_left_mouse_down:
-                # self.speak.begin_say('hello',120)
+                self.speak.begin_say('hello',120)
                 self.thing.fire(EventData.mouse_x, EventData.mouse_y, SpecialData.GOOD_ACTOR)
             if EventData.is_key_e_down or EventData.is_middle_mouse_down:
                 self.is_skill = True
@@ -136,7 +137,7 @@ class GoodActor(BaseActor):
         else:
             self.thing_index -= 1
         self.thing = self.thing_list[self.thing_index]
-        # self.speak.begin_say(str(type(self.thing)),60)
+        self.speak.begin_say(self.thing.name,60)
 
     def thing_index_next(self):
         if self.thing_index >= len(self.thing_list) - 1:
@@ -144,7 +145,7 @@ class GoodActor(BaseActor):
         else:
             self.thing_index += 1
         self.thing = self.thing_list[self.thing_index]
-        # self.speak.begin_say(str(type(self.thing)), 60)
+        self.speak.begin_say(self.thing.name, 60)
 
     def skill(self):
         if self.is_skill:

@@ -6,7 +6,7 @@ from BetterPygame.Surface import *
 
 class BaseThing(object):
     def __init__(self, left: float, top: float, width: float, height: float, rotate_point, length, WAIT, image_path,
-                 cost, egg_type) -> None:
+                 cost, egg_type,name) -> None:
         self.egg_list: List[BaseEgg] = []
         self.WAIT = WAIT
         self.wait = 0
@@ -25,6 +25,8 @@ class BaseThing(object):
         self.cost = cost
         self.rotate_point = rotate_point
         self.length = length
+
+        self.name = name
 
     def fire(self, x, y, whose):
         if ShareData.good_actor.energy_info_bar.value - self.cost >= 0:

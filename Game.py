@@ -112,8 +112,8 @@ class Game(object):
 
     def start_screen(self):
         screen = StartScreen()
-        GameData.surface.fill((0, 0, 0))
         while screen.is_running:
+            GameData.surface.fill((0, 0, 0))
             screen.manager.draw()
             for event in pygame.event.get():
                 screen.manager.event(event)
@@ -128,6 +128,7 @@ class Game(object):
         if self.is_pause_screen:
             screen = PauseScreen()
             while screen.is_running:
+                self.draw()
                 screen.manager.draw()
                 for event in pygame.event.get():
                     screen.manager.event(event)
@@ -142,8 +143,8 @@ class Game(object):
 
     def end_screen(self):
         screen = EndScreen()
-        GameData.surface.fill((0, 0, 0))
         while screen.is_running:
+            GameData.surface.fill((0, 0, 0))
             screen.manager.draw()
             for event in pygame.event.get():
                 screen.manager.event(event)

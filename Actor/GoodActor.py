@@ -65,7 +65,6 @@ class GoodActor(BaseActor):
     def process(self):
         if self.is_alive():
             if EventData.is_left_mouse_down:
-                self.speak.begin_say('hello',120)
                 self.thing.fire(EventData.mouse_x, EventData.mouse_y, SpecialData.GOOD_ACTOR)
             if EventData.is_key_e_down or EventData.is_middle_mouse_down:
                 self.is_skill = True
@@ -145,7 +144,7 @@ class GoodActor(BaseActor):
         else:
             self.thing_index += 1
         self.thing = self.thing_list[self.thing_index]
-        self.speak.begin_say(self.thing.ame+'aaa', 60)
+        self.speak.begin_say(self.thing.name+'aaa', 60)
 
     def skill(self):
         if self.is_skill:

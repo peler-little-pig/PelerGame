@@ -8,6 +8,7 @@ from GUI.Manager import Manager
 from Screen.EndSceen import EndScreen
 from Screen.PauseSceen import PauseScreen
 from Screen.StartSceen import *
+from Screen.SystemInfoScreen import SystemInfoScreen
 
 
 class Game(object):
@@ -34,6 +35,9 @@ class Game(object):
         self.is_game_running = True
         self.is_restart = False
         self.is_pause_screen = False
+        self.is_system_info_screen = False
+
+        self._system_info_screen = SystemInfoScreen()
 
         self.map.drop_thing_group().append(GunThing(*self.good_actor.center))
 
@@ -62,6 +66,8 @@ class Game(object):
                     EventData.is_key_f_down = True
                 if event.key == K_SPACE:
                     self.is_pause_screen = True
+                if event.key == K_F1:
+                    self.is_system_info_screen = not self.is_system_info_screen
 
             elif event.type == KEYUP:
                 if event.key == K_w:
@@ -155,6 +161,10 @@ class Game(object):
             screen.manager.process()
             pygame.display.update()
 
+    def system_info_screen(self):
+        if self.is_system_info_screen:
+            self._system_info_screen.manager.draw()
+            self._system_info_screen.manager.update(0)
 
     def process(self):
         self.map.world().process()
@@ -181,6 +191,7 @@ class Game(object):
             self.draw()
 
             self.pause_screen()
+            self.system_info_screen()
 
             pygame.display.update()
             GameData.fps_clock.tick(GameData.FPS)

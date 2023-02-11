@@ -184,8 +184,8 @@ class Game(object):
             GameData.surface.fill((100, 155, 155))
 
             self.event()
-            self.process()
             self.draw()
+            self.process()
 
             self.pause_screen()
             self.system_info_screen()

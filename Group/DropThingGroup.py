@@ -20,7 +20,8 @@ class DropThingGroup(List[BaseThing]):
     def pick_up(self):
         for i in range(len(self)):
             if self[i].rect_rotate.colliderect(ShareData.good_actor):
-                ShareData.good_actor.thing_info_bar.set_thing(self[i])
+                ShareData.good_actor.drop_thing_info_bar.set_thing(self[i])
+                ShareData.good_actor.drop_thing_info_bar.draw()
                 if EventData.is_right_mouse_down:
                     thing = type(self[i])(ShareData.good_actor.centerx,ShareData.good_actor.centery + 10)
                     # thing.rect.left = ShareData.good_actor.centerx

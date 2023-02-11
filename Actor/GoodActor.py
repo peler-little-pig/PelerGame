@@ -1,5 +1,6 @@
 from Actor.BaseActor import *
 from InfoBar.BloodInfoBar import *
+from InfoBar.DropThingInfoBar import DropThingInfoBar
 from InfoBar.MoneyInfoBar import MoneyInfoBar
 from InfoBar.ProtectionInfoBar import *
 from InfoBar.EnergyInfoBar import *
@@ -44,6 +45,7 @@ class GoodActor(BaseActor):
         self.skill_info_bar = SkillInfoBar(self.skill_last_max)
         self.money_info_bar = MoneyInfoBar(0)
         self.thing_info_bar = ThingInfoBar(self.thing)
+        self.drop_thing_info_bar = DropThingInfoBar(self.thing)
 
         self.drop_thing_WAIT = 60
         self.drop_thing_wait = 0
@@ -84,8 +86,6 @@ class GoodActor(BaseActor):
             self.money_info_bar.process()
             self.thing_info_bar.process()
             self.speak.process()
-
-            self.thing_info_bar.set_thing(self.thing)
 
             self.add_protection()
             self.drop_thing()
@@ -143,6 +143,7 @@ class GoodActor(BaseActor):
             self.thing_index -= 1
         self.thing = self.thing_list[self.thing_index]
         self.speak.begin_say(self.thing.name,60)
+        self.thing_info_bar.set_thing(self.thing)
 
     def thing_index_next(self):
         if self.thing_index >= len(self.thing_list) - 1:
@@ -151,6 +152,7 @@ class GoodActor(BaseActor):
             self.thing_index += 1
         self.thing = self.thing_list[self.thing_index]
         self.speak.begin_say(self.thing.name, 60)
+        self.thing_info_bar.set_thing(self.thing)
 
     def skill(self):
         if self.is_skill:

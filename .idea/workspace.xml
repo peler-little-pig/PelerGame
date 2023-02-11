@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/InfoBar/GunInfoBar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/GUI_Theme/Infobar/gun_info_bar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Picture/file/attack/attack.kra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Picture/image/attack/attack.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/00/2.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/01/14.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/14.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/01/18.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/18.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/24.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/24.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/03.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/03.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/36.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/36.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/37.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/38.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/39.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/40.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/41.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/42.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/04.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/04.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/50.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/50.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/51.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/52.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/53.pwidthcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/54.proom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/55.pheightcross" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/56.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,11 +66,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Res/GUI_Theme/Infobar" />
       <recent name="$PROJECT_DIR$/Res/GUI_Theme/Screen" />
       <recent name="$PROJECT_DIR$/Res" />
       <recent name="$PROJECT_DIR$/Treasure" />
       <recent name="$PROJECT_DIR$/Thing" />
-      <recent name="$PROJECT_DIR$/Test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Res/GUI_Theme/Infobar" />
@@ -205,7 +182,7 @@
       <workItem from="1675859821211" duration="3714000" />
       <workItem from="1676039005154" duration="1020000" />
       <workItem from="1676040504691" duration="5483000" />
-      <workItem from="1676073449472" duration="2791000" />
+      <workItem from="1676073449472" duration="3418000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -473,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676075330699</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="start GunInfoBar.py but a little bit difficult">
+      <created>1676076517216</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1676076517216</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +477,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="coins can fly!!!" />
     <MESSAGE value="test the pygame_gui lib and add next_block.png for next_block" />
     <MESSAGE value="thing can rotat correctly and i'm going to start order the number" />
     <MESSAGE value="divide some data into different group and find a egg bug" />
@@ -518,7 +501,8 @@
     <MESSAGE value="speak final" />
     <MESSAGE value="info screen add" />
     <MESSAGE value="SystemInfoScreen.py complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="SystemInfoScreen.py complete" />
+    <MESSAGE value="start GunInfoBar.py but a little bit difficult" />
+    <option name="LAST_COMMIT_MESSAGE" value="start GunInfoBar.py but a little bit difficult" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

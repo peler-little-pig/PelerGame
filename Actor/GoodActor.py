@@ -10,6 +10,7 @@ from Thing.GunThing import *
 from Treasure import BaseTreasure
 from Compute.BlockCompute import *
 from InfoBar.SkillInfoBar import *
+from InfoBar.ThingInfoBar import *
 
 
 class GoodActor(BaseActor):
@@ -30,18 +31,19 @@ class GoodActor(BaseActor):
         self.skill_add = 0.5
         self.is_skill = False
 
-        self.blood_info_bar = BloodInfoBar(self.blood_max)
-        self.protection_info_bar = ProtectionInfoBar(self.protection_max)
-        self.energy_info_bar = EnergyInfoBar(self.energy_max)
-        self.skill_info_bar = SkillInfoBar(self.skill_last_max)
-        self.money_info_bar = MoneyInfoBar(0)
-
         self.add_protection_WAIT = 60
         self.add_protection_wait = 0
 
         self.thing_list = [HandGunThing(self.centerx, self.centery + 10)]
         self.thing_index = 0
         self.thing = self.thing_list[self.thing_index]
+
+        self.blood_info_bar = BloodInfoBar(self.blood_max)
+        self.protection_info_bar = ProtectionInfoBar(self.protection_max)
+        self.energy_info_bar = EnergyInfoBar(self.energy_max)
+        self.skill_info_bar = SkillInfoBar(self.skill_last_max)
+        self.money_info_bar = MoneyInfoBar(0)
+        self.thing_info_bar = ThingInfoBar(self.thing)
 
         self.drop_thing_WAIT = 60
         self.drop_thing_wait = 0
@@ -57,6 +59,7 @@ class GoodActor(BaseActor):
         self.energy_info_bar.draw()
         self.skill_info_bar.draw()
         self.money_info_bar.draw()
+        self.thing_info_bar.draw()
         self.speak.draw()
         super().draw()
         for thing in self.thing_list:
@@ -79,7 +82,10 @@ class GoodActor(BaseActor):
             self.energy_info_bar.process()
             self.skill_info_bar.process()
             self.money_info_bar.process()
+            self.thing_info_bar.process()
             self.speak.process()
+
+            self.thing_info_bar.set_thing(self.thing)
 
             self.add_protection()
             self.drop_thing()
@@ -136,7 +142,7 @@ class GoodActor(BaseActor):
         else:
             self.thing_index -= 1
         self.thing = self.thing_list[self.thing_index]
-        self.speak.begin_say(self.thing.name+'aaa',60)
+        self.speak.begin_say(self.thing.name,60)
 
     def thing_index_next(self):
         if self.thing_index >= len(self.thing_list) - 1:
@@ -144,7 +150,7 @@ class GoodActor(BaseActor):
         else:
             self.thing_index += 1
         self.thing = self.thing_list[self.thing_index]
-        self.speak.begin_say(self.thing.name+'aaa', 60)
+        self.speak.begin_say(self.thing.name, 60)
 
     def skill(self):
         if self.is_skill:

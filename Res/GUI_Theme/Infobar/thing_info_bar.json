@@ -1,12 +1,13 @@
 {
   "label": {
     "misc": {
-      "text_horiz_alignment": "center"
-    },
-    "font": [
+      "text_horiz_alignment": "left"
+    }
+  },
+  "font": [
     {
       "name": "montserrat",
-      "size": "16",
+      "size": "20",
       "bold": "0",
       "italic": "0",
       "regular_resource": {
@@ -15,5 +16,4 @@
       }
     }
   ]
-  }
 }

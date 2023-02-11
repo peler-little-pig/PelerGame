@@ -146,7 +146,6 @@ class Game(object):
                 pygame.display.update()
         self.is_pause_screen = False
 
-
     def end_screen(self):
         screen = EndScreen()
         while screen.is_running:
@@ -169,22 +168,20 @@ class Game(object):
     def process(self):
         self.map.world().process()
         self.map.bad_actor_group().process()
-        self.map.drop_thing_group().process()
         self.good_actor.process()
+        self.map.drop_thing_group().process()
         self.coin_gruop.process()
-
 
     def draw(self):
         self.map.world().draw()
         self.map.bad_actor_group().draw()
-        self.map.drop_thing_group().draw()
         self.good_actor.draw()
+        self.map.drop_thing_group().draw()
         self.coin_gruop.draw()
-
 
     def loop(self):
         while self.is_game_running:
-            GameData.surface.fill((200, 255, 255))
+            GameData.surface.fill((100, 155, 155))
 
             self.event()
             self.process()
@@ -198,7 +195,6 @@ class Game(object):
 
             self.nexted = False
 
-
     def next_world(self):
         if not self.nexted:
             self.map.next()
@@ -206,7 +202,6 @@ class Game(object):
             ShareData.bad_actor_group = self.map.bad_actor_group()
             ShareData.drop_thing_group = self.map.drop_thing_group()
             self.nexted = True
-
 
     def logo(self):
         fs = FSLogo('./Res/Picture/image/logo/logo.png')
@@ -219,7 +214,6 @@ class Game(object):
             fs.update()
 
             pygame.display.update()
-
 
     def exit(self):
         pygame.quit()

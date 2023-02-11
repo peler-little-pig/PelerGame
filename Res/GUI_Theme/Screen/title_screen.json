@@ -4,11 +4,11 @@
         [
             {
                 "name": "montserrat",
-                "size": "20",
+                "size": "30",
                 "bold": "0",
                 "italic": "0",
                 "regular_resource": {"package": "Res.GUI_Theme.data.fonts",
-                                     "resource": "KosugiMaru-Regular.ttf"}
+                                     "resource": "VonwaonBitmap-12px.ttf"}
             }
         ]
   }

@@ -5,31 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/GUI_Theme/Screen/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/GUI_Theme/Screen/screen.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitingore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor/GoodActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/GoodActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/GUI_Theme/Speak/base_speak.json" beforeDir="false" afterPath="$PROJECT_DIR$/Res/GUI_Theme/Speak/base_speak.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/Button.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Button.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/Label.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/GUI_Theme/Screen/info_screen.json" beforeDir="false" afterPath="$PROJECT_DIR$/Res/GUI_Theme/Screen/info_screen.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/2.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/01/10.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/10.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/01/12.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/12.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/01/14.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/14.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/00/6.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/6.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/01/01.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/01.pworld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/01/16.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/16.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/01/18.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/18.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/24.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/24.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/01/20.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/20.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/01/21.pinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/02.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/02.pworld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/22.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/23.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/24.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/25.pwidthcross" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/26.proom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/27.pheightcross" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/02/28.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/28.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/30.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/30.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/02/32.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/32.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/34.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/34.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/35.pinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/35.pinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/03/38.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/38.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/40.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/40.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/42.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/42.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/03/46.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/46.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/52.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/52.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/50.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/50.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/04/54.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/54.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/56.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/56.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/60.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/60.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen/BaseScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screen/BaseScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen/SystemInfoScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screen/SystemInfoScreen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Res/GUI_Theme/Screen" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -204,7 +206,8 @@
       <workItem from="1675776190748" duration="3752000" />
       <workItem from="1675859821211" duration="3714000" />
       <workItem from="1676039005154" duration="1020000" />
-      <workItem from="1676040504691" duration="2006000" />
+      <workItem from="1676040504691" duration="5483000" />
+      <workItem from="1676073449472" duration="1710000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -451,7 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676041247594</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="speak final">
+      <created>1676043016080</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1676043016080</updated>
+    </task>
+    <task id="LOCAL-00037" summary="info screen add">
+      <created>1676046469925</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1676046469925</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,8 +488,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="prepare to make coin" />
-    <MESSAGE value="add blocking_block.png box_block.png and start BaseCoin.py" />
     <MESSAGE value="order the Compute part &#10;write some code for coin" />
     <MESSAGE value="coins can fly!!!" />
     <MESSAGE value="test the pygame_gui lib and add next_block.png for next_block" />
@@ -496,7 +511,9 @@
     <MESSAGE value="can speak, but Chinese failed" />
     <MESSAGE value="all code/data floders turn into packages" />
     <MESSAGE value="can speak chinese,but just few words,cause the font not good enough.I'll use another font later" />
-    <option name="LAST_COMMIT_MESSAGE" value="can speak chinese,but just few words,cause the font not good enough.I'll use another font later" />
+    <MESSAGE value="speak final" />
+    <MESSAGE value="info screen add" />
+    <option name="LAST_COMMIT_MESSAGE" value="info screen add" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -517,6 +534,6 @@
     <SUITE FILE_PATH="coverage/PelerGame$main_Test_.coverage" NAME="main(Test) Coverage Results" MODIFIED="1675335092759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/PelerGame$Docutils_Task_in_Docutils_Task_in_.coverage" NAME="Docutils Task in Docutils Task in  Coverage Results" MODIFIED="1675383861289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676042872899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676075049158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

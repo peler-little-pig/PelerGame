@@ -1,7 +1,12 @@
 {
-  "label": {
+  "@left": {
     "misc": {
       "text_horiz_alignment": "left"
+    }
+  },
+  "@right": {
+    "misc": {
+      "text_horiz_alignment": "right"
     }
   }
 }

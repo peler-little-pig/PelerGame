@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/InfoBar/DropThingInfoBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor/GoodActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/GoodActor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Group/DropThingGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Group/DropThingGroup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoBar/ThingInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/InfoBar/ThingInfoBar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/00.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/00.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/2.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/4.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/4.proom" afterDir="false" />
@@ -19,11 +15,15 @@
       <change beforePath="$PROJECT_DIR$/Res/Map/01/16.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/16.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/01/18.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/18.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/01/20.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/20.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/01/21.pinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/21.pinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/24.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/24.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/26.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/26.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/02/02.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/02.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/02/28.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/28.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/03.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/03.pworld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/36.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/36.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/03/38.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/38.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/40.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/40.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/03/42.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/42.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/04.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/04.pworld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/04/50.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/50.proom" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +198,7 @@
       <workItem from="1676039005154" duration="1020000" />
       <workItem from="1676040504691" duration="5483000" />
       <workItem from="1676073449472" duration="10160000" />
-      <workItem from="1676122940763" duration="877000" />
+      <workItem from="1676122940763" duration="1237000" />
     </task>
     <task id="LOCAL-00001" summary="good actor can add protection autoly">
       <created>1673966197376</created>
@@ -494,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676116593535</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="add DropThingInfoBar.py">
+      <created>1676124037890</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1676124037890</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v 1.0.0 hooooooooooo yeah!" />
     <MESSAGE value="random space but only two door a room and make the block draw fast but not fast enough. i need to think another ideas. may be threads?" />
     <MESSAGE value="give up the random map create, do the random choose first" />
     <MESSAGE value="random map completed!!!" />
@@ -539,7 +545,8 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="add thing_info_bar" />
     <MESSAGE value="add LICENSE.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add LICENSE.md" />
+    <MESSAGE value="add DropThingInfoBar.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add DropThingInfoBar.py" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -560,6 +567,6 @@
     <SUITE FILE_PATH="coverage/PelerGame$main_Test_.coverage" NAME="main(Test) Coverage Results" MODIFIED="1675335092759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/PelerGame$Docutils_Task_in_Docutils_Task_in_.coverage" NAME="Docutils Task in Docutils Task in  Coverage Results" MODIFIED="1675383861289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676123816793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676124177953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -24,9 +24,9 @@ class DropThingGroup(List[BaseThing]):
                 ShareData.good_actor.drop_thing_info_bar.draw()
                 ShareData.good_actor.speak.begin_say(f'{self[i].name}?真是一件好武器',10)
                 if EventData.is_right_mouse_down:
-                    thing = type(self[i])(ShareData.good_actor.centerx,ShareData.good_actor.centery + 10)
-                    # thing.rect.left = ShareData.good_actor.centerx
-                    # thing.rect.top = ShareData.good_actor.centery + 10
+                    thing = self[i]
+                    thing.rect.left = ShareData.good_actor.centerx
+                    thing.rect.top = ShareData.good_actor.centery + 10
                     ShareData.good_actor.thing_list.append(thing)
                     ShareData.good_actor.thing_index = len(ShareData.good_actor.thing_list) - 1
                     ShareData.good_actor.thing = ShareData.good_actor.thing_list[ShareData.good_actor.thing_index]

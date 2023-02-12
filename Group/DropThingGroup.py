@@ -27,6 +27,7 @@ class DropThingGroup(List[BaseThing]):
                     thing = self[i]
                     thing.rect.left = ShareData.good_actor.centerx
                     thing.rect.top = ShareData.good_actor.centery + 10
+                    thing.rect_flip = thing.image_flip.get_rect(topleft=thing.rect.topleft)
                     ShareData.good_actor.thing_list.append(thing)
                     ShareData.good_actor.thing_index = len(ShareData.good_actor.thing_list) - 1
                     ShareData.good_actor.thing = ShareData.good_actor.thing_list[ShareData.good_actor.thing_index]

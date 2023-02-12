@@ -23,6 +23,7 @@ class BaseGoodActor(BaseActor):
         self.right_image = self.normal_image
         self.left_image = pygame.transform.flip(self.right_image, True, False)
         self.image = self.right_image
+        self.skill_rect = self.skill_image.get_rect(center=self.center)
 
         self.blood_max = 5
         self.protection_max = 5
@@ -55,6 +56,8 @@ class BaseGoodActor(BaseActor):
         self.is_block_by_the_block = True
 
     def draw(self):
+        if self.is_skill:
+            GameData.surface.blit(self.skill_image,self.skill_rect)
         GameData.surface.blit(self.image, self)
         self.blood_info_bar.draw()
         self.protection_info_bar.draw()
@@ -126,6 +129,12 @@ class BaseGoodActor(BaseActor):
         else:
             self.energy_info_bar.value += value
 
+    def add_blood(self, value):
+        if self.blood_info_bar.value + value > self.blood_max:
+            self.blood_info_bar.value = self.blood_max
+        else:
+            self.blood_info_bar.value += value
+
     def add_protection(self):
         if self.add_protection_wait == 0:
             if self.protection_info_bar.value + 1 > self.protection_max:
@@ -142,7 +151,7 @@ class BaseGoodActor(BaseActor):
         else:
             self.thing_index -= 1
         self.thing = self.thing_list[self.thing_index]
-        self.speak.begin_say(self.thing.name,60)
+        self.speak.begin_say(self.thing.name, 60)
         self.thing_info_bar.set_thing(self.thing)
 
     def thing_index_next(self):
@@ -157,16 +166,10 @@ class BaseGoodActor(BaseActor):
     def skill(self):
         if self.is_skill:
             if self.skill_info_bar.value > 0:
-                self.right_image = self.skill_image
-                self.left_image = pygame.transform.flip(self.right_image, True, False)
-                self.image = self.right_image
                 self.is_block_by_the_block = False
                 self.skill_info_bar.value -= 1
             else:
                 self.is_skill = False
-                self.right_image = self.normal_image
-                self.left_image = pygame.transform.flip(self.right_image, True, False)
-                self.image = self.right_image
                 self.is_block_by_the_block = True
         else:
             if self.skill_info_bar.value + self.skill_add > self.skill_last_max:

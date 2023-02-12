@@ -11,6 +11,7 @@ from Screen.EndSceen import EndScreen
 from Screen.PauseSceen import PauseScreen
 from Screen.StartSceen import *
 from Screen.SystemInfoScreen import SystemInfoScreen
+from Thing.BloodDrinkThing import BloodDrinkThing
 
 
 class Game(object):
@@ -44,6 +45,7 @@ class Game(object):
         self._system_info_screen = SystemInfoScreen()
 
         # self.hire_group.append(BaseHireActor(*ShareData.good_actor.center))
+        ShareData.drop_thing_group.append(BloodDrinkThing(*self.good_actor.center))
 
     def init_map(self):
         MapCreator.clean()

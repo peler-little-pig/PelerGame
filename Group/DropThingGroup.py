@@ -38,6 +38,6 @@ class DropThingGroup(List[BaseThing]):
         super().append(__object)
 
     def append_random(self, center):
-        thing = random.choice(thing_list)(0,0)
+        thing = random.choice(thing_list)(0, 0)
         thing.rect.center = center
         super().append(thing)

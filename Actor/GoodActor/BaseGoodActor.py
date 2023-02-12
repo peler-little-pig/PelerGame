@@ -14,7 +14,7 @@ from InfoBar.SkillInfoBar import *
 from InfoBar.ThingInfoBar import *
 
 
-class GoodActor(BaseActor):
+class BaseGoodActor(BaseActor):
     def __init__(self):
         super().__init__(GameData.WINDOW_WIDTH / 2 - 25, GameData.WINDOW_HEIGHT / 2 - 35,
                          *ActorData.SIZE_TUPLE)

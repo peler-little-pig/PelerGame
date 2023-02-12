@@ -5,7 +5,7 @@ from Coin.MoneyCoin import MoneyCoin
 from Thing.GunThing import *
 
 
-class BadActor(BaseActor):
+class BaseBadActor(BaseActor):
     def __init__(self, x, y):
         super().__init__(x, y, *ActorData.SIZE_TUPLE)
         self.move_x = 0
@@ -14,7 +14,7 @@ class BadActor(BaseActor):
         self.walk_around_WAIT = 130
         self.walk_around_wait = 0
 
-        self.fire_to_good_WAIT = random.randint(30, 60)
+        self.fire_to_good_WAIT = random.randint(60, 100)
         self.fire_to_good_wait = self.fire_to_good_WAIT
 
         self.blood = 10

@@ -17,8 +17,8 @@ class BaseTreasure(pygame.rect.Rect):
         GameData.surface.blit(self.image, self)
 
     def process(self):
-        self.open()
         follow_move(self)
+        self.open()
 
     def open(self):
         if not self.is_open:

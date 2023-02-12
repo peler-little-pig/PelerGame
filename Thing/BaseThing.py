@@ -6,7 +6,7 @@ from BetterPygame.Surface import *
 
 class BaseThing(object):
     def __init__(self, left: float, top: float, width: float, height: float, rotate_point, length, WAIT, image_path,
-                 cost, egg_type,name) -> None:
+                 cost, egg_type, name) -> None:
         self.egg_list: List[BaseEgg] = []
         self.WAIT = WAIT
         self.wait = 0
@@ -72,3 +72,9 @@ class BaseThing(object):
     def move_ip(self, x: float, y: float):
         self.rect.move_ip(x, y)
         self.rect_flip.move_ip(x, y)
+
+    def move_to(self, x: int, y: int):
+        self.rect.left = x
+        self.rect.top = y
+        self.rect_flip.left = x
+        self.rect_flip.top = y

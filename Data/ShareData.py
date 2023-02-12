@@ -5,3 +5,4 @@ class ShareData(staticmethod):
     world = None
     coin_group = None
     drop_thing_group = None
+    hire_group = None

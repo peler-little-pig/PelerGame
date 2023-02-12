@@ -1,4 +1,6 @@
-from Actor.GoodActor import *
+from Actor.GoodActor.BaseGoodActor import *
+from Actor.HireActor.BaseHireActor import BaseHireActor
+from Group.HireActorGroup import HireActorGroup
 from MapLoader.MapLoader import *
 import sys
 from Logo.logo import *
@@ -23,7 +25,9 @@ class Game(object):
     def init(self):
         self.coin_gruop = CoinGroup()
         ShareData.coin_group = self.coin_gruop
-        self.good_actor = GoodActor()
+        self.hire_group = HireActorGroup()
+        ShareData.hire_group = self.hire_group
+        self.good_actor = BaseGoodActor()
         ShareData.good_actor = self.good_actor
         self.map = map_loader()
         ShareData.world = self.map.world()
@@ -39,7 +43,7 @@ class Game(object):
 
         self._system_info_screen = SystemInfoScreen()
 
-        self.map.drop_thing_group().append(GunThing(*self.good_actor.center))
+        self.hire_group.append(BaseHireActor(*ShareData.good_actor.center))
 
     def init_map(self):
         MapCreator.clean()
@@ -171,10 +175,12 @@ class Game(object):
         self.good_actor.process()
         self.map.drop_thing_group().process()
         self.coin_gruop.process()
+        self.hire_group.process()
 
     def draw(self):
         self.map.world().draw()
         self.map.bad_actor_group().draw()
+        self.hire_group.draw()
         self.good_actor.draw()
         self.map.drop_thing_group().draw()
         self.coin_gruop.draw()

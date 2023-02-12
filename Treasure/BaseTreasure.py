@@ -26,6 +26,6 @@ class BaseTreasure(pygame.rect.Rect):
                 if EventData.is_right_mouse_down:
                     self.image = self.open_image
                     # x,y = middle(self,)
-                    ShareData.drop_thing_group.append_random(self.x, self.y)
+                    ShareData.drop_thing_group.append_random(self.center)
                     self.is_open = True
                     EventData.is_right_mouse_down = False

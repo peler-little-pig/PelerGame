@@ -53,7 +53,7 @@ class BaseBadActor(BaseActor):
                 or is_hit_box_block(self, active_area(self)):
             self.move_x = -self.move_x
             self.move_y = -self.move_y
-            self.walk_around_wait = 0
+            # self.walk_around_wait = 0
         self.move_ip(self.move_x, self.move_y)
 
     def process(self):

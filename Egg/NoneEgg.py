@@ -1,4 +1,4 @@
-from Egg.BaseEgg import *
+from Egg.BaseEgg import BaseEgg
 
 
 class NoneEgg(BaseEgg):

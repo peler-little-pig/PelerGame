@@ -1,5 +1,4 @@
 from typing import List
-
 from Coin.EnergyCoin import EnergyCoin
 from BetterPygame.Rect import *
 from Block.BoxBlock import BoxBlock
@@ -33,6 +32,9 @@ class RoomSpace(BaseSpace):
         self.treasure = None
         self.is_give_treasure = False
 
+        self.is_sell_room = False
+        self.sell = None
+
         self.bad_actor_number = 0
 
     def mix(self):
@@ -48,14 +50,19 @@ class RoomSpace(BaseSpace):
                     + self.left_door_block_list + self.right_door_block_list:
             door.open_or_close(self.is_door_open)
 
+        # TODO
+        # if self.is_sell_room:
+        #     if self.sell is None:
+        #         self.sell = self.create_sell()
+        #     else:
+        #         self.sell.process()
+
         if self.is_treasure_room:
             if self.treasure is None:
                 self.treasure = self.create_thing_treasure()
             else:
                 self.treasure.process()
         else:
-            # print(self.bad_actor_number)
-            # print(self.is_door_open)
             if self.is_give_treasure:
                 if self.treasure is None:
                     if self.is_end:
@@ -70,6 +77,13 @@ class RoomSpace(BaseSpace):
                             self.corner_block_list[0].y + (height / 2),
                             100, 50)
 
+    # TODO
+    # def create_sell(self):
+    #     width = self.corner_block_list[1].right - self.corner_block_list[0].left
+    #     height = self.corner_block_list[3].bottom - self.corner_block_list[0].top
+    #     return BaseSellActor(self.corner_block_list[0].x + (width / 2),
+    #                         self.corner_block_list[0].y + (height / 2))
+
     def create_energy_treasure(self):
         x = self.corner_block_list[0].right + 100
         y = self.corner_block_list[0].bottom + 100
@@ -80,6 +94,8 @@ class RoomSpace(BaseSpace):
             block.draw()
         if self.treasure is not None:
             self.treasure.draw()
+        if self.sell is not None:
+            self.sell.draw()
 
     def can_move_up(self):
         if self.is_hit_blocking_or_box_block_top():

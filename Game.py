@@ -1,6 +1,8 @@
 from Actor.GoodActor.BaseGoodActor import *
 from Actor.HireActor.BaseHireActor import BaseHireActor
+from Actor.SellActor.BaseSellActor import BaseSellActor
 from Group.HireActorGroup import HireActorGroup
+from Group.SellActorGroup import SellActorGroup
 from MapLoader.MapLoader import *
 import sys
 from Logo.logo import *
@@ -12,6 +14,7 @@ from Screen.PauseSceen import PauseScreen
 from Screen.StartSceen import *
 from Screen.SystemInfoScreen import SystemInfoScreen
 from Thing.BloodDrinkThing import BloodDrinkThing
+from Thing.EnergyDrinkThing import EnergyDrinkThing
 
 
 class Game(object):
@@ -28,6 +31,8 @@ class Game(object):
         ShareData.coin_group = self.coin_gruop
         # self.hire_group = HireActorGroup()
         # ShareData.hire_group = self.hire_group
+        self.sell_group = SellActorGroup()
+        ShareData.sell_group = self.sell_group
         self.good_actor = BaseGoodActor()
         ShareData.good_actor = self.good_actor
         self.map = map_loader()
@@ -46,6 +51,9 @@ class Game(object):
 
         # self.hire_group.append(BaseHireActor(*ShareData.good_actor.center))
         ShareData.drop_thing_group.append(BloodDrinkThing(*self.good_actor.center))
+        ShareData.drop_thing_group.append(EnergyDrinkThing(*self.good_actor.center))
+
+        self.sell_group.append(BaseSellActor(500,300))
 
     def init_map(self):
         MapCreator.clean()
@@ -178,14 +186,16 @@ class Game(object):
         self.map.drop_thing_group().process()
         self.coin_gruop.process()
         # self.hire_group.process()
+        self.sell_group.process()
 
     def draw(self):
         self.map.world().draw()
         self.map.bad_actor_group().draw()
         # self.hire_group.draw()
-        self.good_actor.draw()
         self.map.drop_thing_group().draw()
         self.coin_gruop.draw()
+        self.sell_group.draw()
+        self.good_actor.draw()
 
     def loop(self):
         while self.is_game_running:

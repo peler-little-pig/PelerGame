@@ -22,7 +22,7 @@ class DropThingGroup(List[BaseThing]):
             if self[i].rect_rotate.colliderect(ShareData.good_actor):
                 ShareData.good_actor.drop_thing_info_bar.set_thing(self[i])
                 ShareData.good_actor.drop_thing_info_bar.draw()
-                ShareData.good_actor.speak.begin_say(f'{self[i].name}?真是一件好武器',10)
+                ShareData.good_actor.speak.begin_say(f'{self[i].name}?真是个好东西',10)
                 if EventData.is_right_mouse_down:
                     thing = self[i]
                     thing.rect.left = ShareData.good_actor.centerx

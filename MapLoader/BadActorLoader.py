@@ -4,7 +4,7 @@ from Creator.BadActorCreator import *
 def room_reader(world):
     info = []
     for area in world.area_list:
-        if type(area) == RoomSpace:
+        if type(area) == BadActorRoomSpace:
             info.append(area)
     return info
 

@@ -1,4 +1,4 @@
-from Space.RoomSpace import RoomSpace
+from Space.RoomSpace.BadActorRoomSpace import BadActorRoomSpace
 from Space.WidthCrossSpace import *
 from Space.HeightCrossSpace import *
 import pygame
@@ -7,7 +7,7 @@ from Data.AllData import *
 
 def is_hit_wall(rect: pygame.rect.Rect):
     area = active_area(rect)
-    if type(area) == RoomSpace:
+    if type(area) == BadActorRoomSpace:
         return (rect.top < area.corner_block_list[0].bottom
                 or rect.bottom > area.corner_block_list[2].top
                 or rect.left < area.corner_block_list[0].right
@@ -26,7 +26,7 @@ def is_hit_wall(rect: pygame.rect.Rect):
 
 def active_area(rect: pygame.rect.Rect):
     for area in ShareData.world.area_list:
-        if type(area) == RoomSpace:
+        if type(area) == BadActorRoomSpace:
             if not (rect.top < area.corner_block_list[0].top
                     or rect.bottom > area.corner_block_list[2].bottom
                     or rect.left < area.corner_block_list[0].left

@@ -60,7 +60,7 @@ class BaseEgg(object):
 
     def is_hit_box_block(self):
         area = active_area(self.rect)
-        if type(area) == RoomSpace:
+        if type(area) == BadActorRoomSpace:
             for block in area.box_block_list:
                 if self.rect.colliderect(block):
                     block.blood -= 3

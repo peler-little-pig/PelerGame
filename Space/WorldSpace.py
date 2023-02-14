@@ -1,4 +1,4 @@
-from Space.RoomSpace import *
+from Space.RoomSpace.BadActorRoomSpace import *
 from Data.AllData import *
 
 class WorldSpace(BaseSpace):

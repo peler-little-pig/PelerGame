@@ -3,7 +3,7 @@ from Actor.BadActor.BaseBadActor import *
 from Data.AllData import *
 
 
-def create_bad_actor(bad_actor_list: list, room: RoomSpace):
+def create_bad_actor(bad_actor_list: list, room: BadActorRoomSpace):
     bad_actor_number = room.bad_actor_number
     for i in range(bad_actor_number):
         x = random.randint(room.corner_block_list[0].right + 30,

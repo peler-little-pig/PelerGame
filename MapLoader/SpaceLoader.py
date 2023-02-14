@@ -11,7 +11,7 @@ from Data.AllData import *
 
 
 def room_loader(file: str, input_x=0, input_y=0, name=''):
-    room = RoomSpace(name)
+    room = BadActorRoomSpace(name)
 
     X = input_x
     x = input_x

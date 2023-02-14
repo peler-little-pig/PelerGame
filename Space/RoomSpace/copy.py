@@ -11,7 +11,7 @@ from Treasure.BaseTreasure import *
 from Treasure.EnergyTreasure import EnergyTreasure
 
 
-class RoomSpace(BaseSpace):
+class BaseRoomSpace(BaseSpace):
     def __init__(self, name):
         super().__init__(name)
 

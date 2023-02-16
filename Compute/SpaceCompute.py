@@ -1,4 +1,6 @@
 from Space.RoomSpace.BadActorRoomSpace import BadActorRoomSpace
+# from Space.RoomSpace.SellActorRoomSpace import SellActorRoomSpace
+# from Space.RoomSpace.TreasureRoomSpace import TreasureRoomSpace
 from Space.WidthCrossSpace import *
 from Space.HeightCrossSpace import *
 import pygame
@@ -7,12 +9,7 @@ from Data.AllData import *
 
 def is_hit_wall(rect: pygame.rect.Rect):
     area = active_area(rect)
-    if type(area) == BadActorRoomSpace:
-        return (rect.top < area.corner_block_list[0].bottom
-                or rect.bottom > area.corner_block_list[2].top
-                or rect.left < area.corner_block_list[0].right
-                or rect.right > area.corner_block_list[1].left)
-    elif type(area) == WidthCrossSpace:
+    if type(area) == WidthCrossSpace:
         return (rect.top < area.corner_block_list[0].bottom
                 or rect.bottom > area.corner_block_list[2].top
                 or rect.left < area.corner_block_list[0].left
@@ -20,6 +17,11 @@ def is_hit_wall(rect: pygame.rect.Rect):
     elif type(area) == HeightCrossSpace:
         return (rect.top < area.corner_block_list[0].top
                 or rect.bottom > area.corner_block_list[2].bottom
+                or rect.left < area.corner_block_list[0].right
+                or rect.right > area.corner_block_list[1].left)
+    else:
+        return (rect.top < area.corner_block_list[0].bottom
+                or rect.bottom > area.corner_block_list[2].top
                 or rect.left < area.corner_block_list[0].right
                 or rect.right > area.corner_block_list[1].left)
 

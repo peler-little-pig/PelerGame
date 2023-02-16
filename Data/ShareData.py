@@ -7,3 +7,4 @@ class ShareData(staticmethod):
     drop_thing_group = None
     hire_group = None
     sell_group = None
+    treasure_group = None

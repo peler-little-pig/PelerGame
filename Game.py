@@ -38,7 +38,7 @@ class Game(object):
         ShareData.bad_actor_group = self.map.bad_actor_group()
         ShareData.drop_thing_group = self.map.drop_thing_group()
         ShareData.sell_group = self.map.sell_actor_group()
-        print(ShareData.sell_group)
+        ShareData.treasure_group = self.map.treasure_group()
         ShareData.game = self
 
         self.nexted = False
@@ -187,6 +187,7 @@ class Game(object):
         self.coin_gruop.process()
         # self.hire_group.process()
         self.map.sell_actor_group().process()
+        # self.map.treasure_group().process()
 
     def draw(self):
         self.map.world().draw()
@@ -195,6 +196,7 @@ class Game(object):
         self.map.drop_thing_group().draw()
         self.coin_gruop.draw()
         self.map.sell_actor_group().draw()
+        # self.map.treasure_group().process()
         self.good_actor.draw()
 
     def loop(self):
@@ -220,6 +222,7 @@ class Game(object):
             ShareData.bad_actor_group = self.map.bad_actor_group()
             ShareData.drop_thing_group = self.map.drop_thing_group()
             ShareData.sell_group = self.map.sell_actor_group()
+            ShareData.treasure_group = self.map.treasure_group()
             self.nexted = True
 
     def logo(self):

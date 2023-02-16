@@ -4,7 +4,10 @@ import pygame
 class BaseSpace(object):
     def __init__(self, name):
         super().__init__()
-        self.name:str = name
+        self.name: str = name
+
+    def init(self, *args):
+        ...
 
     def mix(self, **kwargs) -> list:
         ...

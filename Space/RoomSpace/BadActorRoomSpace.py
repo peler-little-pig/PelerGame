@@ -9,7 +9,6 @@ class BadActorRoomSpace(BaseRoomSpace):
         self.box_block_list: List[BoxBlock] = []
 
         self.is_door_need_close = False
-        self.is_door_open = True
         self.is_end = False
         self.is_give_treasure = False
         self.treasure = None

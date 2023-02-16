@@ -2,6 +2,8 @@ import random
 import sys
 
 from Block.WallBlock import WallBlock
+from Space.RoomSpace.SellActorRoomSpace import SellActorRoomSpace
+from Space.RoomSpace.TreasureRoomSpace import TreasureRoomSpace
 from Space.WorldSpace import *
 from Block.GroundBlock import *
 from Space.WidthCrossSpace import *
@@ -11,7 +13,12 @@ from Data.AllData import *
 
 
 def room_loader(file: str, input_x=0, input_y=0, name=''):
-    room = BadActorRoomSpace(name)
+    if file[-13:] == 'ptreasureroom':
+        room = TreasureRoomSpace(name)
+    elif file[-9:] == 'psellroom':
+        room = SellActorRoomSpace(name)
+    else:
+        room = BadActorRoomSpace(name)
 
     X = input_x
     x = input_x
@@ -112,95 +119,89 @@ def world_loader(file: str, input_x=0, input_y=0, name=''):
         for _d in data:
             d = _d[0]
             info = _d[1]
-            try:
-                if d[-4:] == 'room':
-                    if info[1]:
-                        width_cross_name = info[1][0]
-                        state = info[1][1]
-                        width_cross: WidthCrossSpace = world.search(width_cross_name)
-                        if state == 'top':
-                            room = room_loader(d, 0, 0, info[0])
-                            x = width_cross.corner_block_list[0].left - room.bottom_door_block_list[0].left + \
-                                BlockData.BLOCK_SIZE
-                            y = width_cross.corner_block_list[0].top - \
-                                room.corner_block_list[0].top - room.corner_block_list[2].bottom
-                            for block in room.mix():
-                                block.x += x
-                                block.y += y
+            if d[-4:] == 'room':
+                if info[1]:
+                    width_cross_name = info[1][0]
+                    state = info[1][1]
+                    width_cross: WidthCrossSpace = world.search(width_cross_name)
+                    if state == 'top':
+                        room = room_loader(d, 0, 0, info[0])
+                        x = width_cross.corner_block_list[0].left - room.bottom_door_block_list[0].left + \
+                            BlockData.BLOCK_SIZE
+                        y = width_cross.corner_block_list[0].top - \
+                            room.corner_block_list[0].top - room.corner_block_list[2].bottom
+                        for block in room.mix():
+                            block.x += x
+                            block.y += y
 
-                        elif state == 'bottom':
-                            room = room_loader(d, 0, 0, info[0])
-                            x = width_cross.corner_block_list[0].left - room.top_door_block_list[0].left + \
-                                BlockData.BLOCK_SIZE
-                            y = width_cross.corner_block_list[2].bottom
-                            for block in room.mix():
-                                block.x += x
-                                block.y += y
+                    elif state == 'bottom':
+                        room = room_loader(d, 0, 0, info[0])
+                        x = width_cross.corner_block_list[0].left - room.top_door_block_list[0].left + \
+                            BlockData.BLOCK_SIZE
+                        y = width_cross.corner_block_list[2].bottom
+                        for block in room.mix():
+                            block.x += x
+                            block.y += y
 
-                        elif state == 'left':
-                            room = room_loader(d, 0, 0, info[0])
-                            x = width_cross.corner_block_list[0].left - \
-                                room.corner_block_list[1].right - room.corner_block_list[0].left
-                            y = width_cross.corner_block_list[0].top - room.right_door_block_list[0].top \
-                                + BlockData.BLOCK_SIZE
-                            for block in room.mix():
-                                block.x += x
-                                block.y += y
+                    elif state == 'left':
+                        room = room_loader(d, 0, 0, info[0])
+                        x = width_cross.corner_block_list[0].left - \
+                            room.corner_block_list[1].right - room.corner_block_list[0].left
+                        y = width_cross.corner_block_list[0].top - room.right_door_block_list[0].top \
+                            + BlockData.BLOCK_SIZE
+                        for block in room.mix():
+                            block.x += x
+                            block.y += y
 
-                        elif state == 'right':
-                            room = room_loader(d, 0, 0, info[0])
-                            x = width_cross.corner_block_list[1].right
-                            y = width_cross.corner_block_list[1].top - room.left_door_block_list[0].top \
-                                + BlockData.BLOCK_SIZE
-                            for block in room.mix():
-                                block.x += x
-                                block.y += y
-                    else:
-                        room = room_loader(d, input_x, input_y, info[0])
-                    world.area_list.append(room)
+                    elif state == 'right':
+                        room = room_loader(d, 0, 0, info[0])
+                        x = width_cross.corner_block_list[1].right
+                        y = width_cross.corner_block_list[1].top - room.left_door_block_list[0].top \
+                            + BlockData.BLOCK_SIZE
+                        for block in room.mix():
+                            block.x += x
+                            block.y += y
+                else:
+                    room = room_loader(d, input_x, input_y, info[0])
+                world.area_list.append(room)
 
-                elif d[-5:] == 'cross':
-                    if info[1]:
-                        room_name = info[1][0]
-                        state = info[1][1]
-                        room = world.search(room_name)
-                        if state == 'top':
-                            height_cross = height_cross_loader(d, 0, 0, info[0])
-                            x = room.top_door_block_list[0].left - BlockData.BLOCK_SIZE
-                            y = room.top_door_block_list[0].top - \
-                                height_cross.corner_block_list[0].top - height_cross.corner_block_list[2].bottom
-                            for block in height_cross.mix():
-                                block.x += x
-                                block.y += y
-                            world.area_list.append(height_cross)
+            elif d[-5:] == 'cross':
+                if info[1]:
+                    room_name = info[1][0]
+                    state = info[1][1]
+                    room = world.search(room_name)
+                    if state == 'top':
+                        height_cross = height_cross_loader(d, 0, 0, info[0])
+                        x = room.top_door_block_list[0].left - BlockData.BLOCK_SIZE
+                        y = room.top_door_block_list[0].top - \
+                            height_cross.corner_block_list[0].top - height_cross.corner_block_list[2].bottom
+                        for block in height_cross.mix():
+                            block.x += x
+                            block.y += y
+                        world.area_list.append(height_cross)
 
-                        elif state == 'bottom':
-                            x = room.bottom_door_block_list[0].left - BlockData.BLOCK_SIZE
-                            y = room.bottom_door_block_list[0].bottom
-                            height_cross = height_cross_loader(d, x, y, info[0])
-                            world.area_list.append(height_cross)
+                    elif state == 'bottom':
+                        x = room.bottom_door_block_list[0].left - BlockData.BLOCK_SIZE
+                        y = room.bottom_door_block_list[0].bottom
+                        height_cross = height_cross_loader(d, x, y, info[0])
+                        world.area_list.append(height_cross)
 
-                        elif state == 'left':
-                            width_cross = width_cross_loader(d, 0, 0, info[0])
-                            x = room.left_door_block_list[0].left - \
-                                width_cross.corner_block_list[1].right - width_cross.corner_block_list[0].left
-                            y = room.left_door_block_list[0].top - BlockData.BLOCK_SIZE
-                            for block in width_cross.mix():
-                                block.x += x
-                                block.y += y
-                            world.area_list.append(width_cross)
+                    elif state == 'left':
+                        width_cross = width_cross_loader(d, 0, 0, info[0])
+                        x = room.left_door_block_list[0].left - \
+                            width_cross.corner_block_list[1].right - width_cross.corner_block_list[0].left
+                        y = room.left_door_block_list[0].top - BlockData.BLOCK_SIZE
+                        for block in width_cross.mix():
+                            block.x += x
+                            block.y += y
+                        world.area_list.append(width_cross)
 
-                        elif state == 'right':
-                            x = room.right_door_block_list[0].right
-                            y = room.right_door_block_list[0].top - BlockData.BLOCK_SIZE
-                            width_cross = width_cross_loader(d, x, y, info[0])
-                            world.area_list.append(width_cross)
+                    elif state == 'right':
+                        x = room.right_door_block_list[0].right
+                        y = room.right_door_block_list[0].top - BlockData.BLOCK_SIZE
+                        width_cross = width_cross_loader(d, x, y, info[0])
+                        world.area_list.append(width_cross)
 
-                elif d[-4:] == 'info':
-                    info_file_reader(d, world)
-            except IndexError:
-                print(d, file=sys.stderr)
-                print(info, file=sys.stderr)
-                raise IndexError
-
+            elif d[-4:] == 'info':
+                info_file_reader(d, world)
     return world

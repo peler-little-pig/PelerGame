@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Space/RoomSpace/BadActorRoomSpace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Space/RoomSpace/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Space/RoomSpace/copy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/MapModel/special/sell.proom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Space/RoomSpace/SellActorRoomSpace.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Space/RoomSpace/TreasureRoomSpace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compute/BlockCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Compute/BlockCompute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compute/SpaceCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Compute/SpaceCompute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Creator/BadActorCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Creator/BadActorCreator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Egg/BaseEgg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Egg/BaseEgg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MapLoader/BadActorLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/MapLoader/BadActorLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Creator/MapCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Creator/MapCreator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ShareData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ShareData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group/MapGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Group/MapGroup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group/SellActorGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Group/SellActorGroup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapLoader/MapLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/MapLoader/MapLoader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapLoader/SpaceLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/MapLoader/SpaceLoader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/00.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/00.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/2.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
@@ -24,8 +25,13 @@
       <change beforePath="$PROJECT_DIR$/Res/Map/02/02.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/02.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/03/03.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/03.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/04/04.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/04.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Space/RoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace/BaseRoomSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/MapModel/info/1.pinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Res/MapModel/info/1.pinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/MapModel/world/1.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/MapModel/world/1.pworld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/BaseSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/BaseSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/RoomSpace/BadActorRoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace/BadActorRoomSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/RoomSpace/BaseRoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace/BaseRoomSpace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Space/WorldSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/WorldSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Group" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Res/MapModel/special" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,15 +85,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Res/MapModel/special" />
       <recent name="$PROJECT_DIR$/Group" />
       <recent name="$PROJECT_DIR$/Actor/SellActor" />
       <recent name="$PROJECT_DIR$/Thing" />
       <recent name="$PROJECT_DIR$/Res/GUI_Theme/Infobar" />
-      <recent name="$PROJECT_DIR$/Res/GUI_Theme/Screen" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Space/RoomSpace" />
@@ -203,14 +209,10 @@
       <workItem from="1676122940763" duration="2800000" />
       <workItem from="1676173911598" duration="10962000" />
       <workItem from="1676264980544" duration="274000" />
-      <workItem from="1676381659964" duration="2804000" />
-    </task>
-    <task id="LOCAL-00002" summary="some small change">
-      <created>1674024193120</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1674024193120</updated>
+      <workItem from="1676381659964" duration="3065000" />
+      <workItem from="1676436185524" duration="1156000" />
+      <workItem from="1676458063477" duration="2972000" />
+      <workItem from="1676523314627" duration="989000" />
     </task>
     <task id="LOCAL-00003" summary="peler game v0.0.1, hoo~oo~oooooo">
       <created>1674099432905</created>
@@ -548,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676209614956</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Rooms Based on BaseRoomSpace.py">
+      <created>1676384725807</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1676384725808</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="EnergyTreasure.py" />
     <MESSAGE value="EndScreen.py and can restart the game,but the ui have no theme" />
     <MESSAGE value="good actor skill" />
     <MESSAGE value="PauseSceen.py" />
@@ -593,17 +601,10 @@
     <MESSAGE value="fix BloodDrinkThing.py's bug" />
     <MESSAGE value="new bug found in pick up the gun" />
     <MESSAGE value="SellActor done but can't auto create in the room because of circle import" />
-    <option name="LAST_COMMIT_MESSAGE" value="SellActor done but can't auto create in the room because of circle import" />
+    <MESSAGE value="Rooms Based on BaseRoomSpace.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rooms Based on BaseRoomSpace.py" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Egg/BaseEgg.py</url>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="d" />
@@ -622,6 +623,6 @@
     <SUITE FILE_PATH="coverage/PelerGame$main_Test_.coverage" NAME="main(Test) Coverage Results" MODIFIED="1675335092759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/PelerGame$Docutils_Task_in_Docutils_Task_in_.coverage" NAME="Docutils Task in Docutils Task in  Coverage Results" MODIFIED="1675383861289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676383541161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676524302752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -7,6 +7,6 @@
     ["cross('height')",('c3',('r1','bottom'))],
     ["treasure('top')",('r2',('c3','bottom'))],
     ["cross('height')",('c4',('r1','top'))],
-    ["treasure('bottom')",('r3',('c4','top'))],
+    ["sell('bottom')",('r3',('c4','top'))],
     ["info('1')",('',())]
 )

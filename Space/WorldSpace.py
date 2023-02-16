@@ -1,6 +1,7 @@
 from Space.RoomSpace.BadActorRoomSpace import *
 from Data.AllData import *
 
+
 class WorldSpace(BaseSpace):
     def __init__(self, name):
         super().__init__(name)

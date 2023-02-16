@@ -21,6 +21,7 @@ class BaseRoomSpace(BaseSpace):
         self.bottom_door_block_list: List[DoorBlock] = []
         self.left_door_block_list: List[DoorBlock] = []
         self.right_door_block_list: List[DoorBlock] = []
+        self.is_door_open = True
 
     def mix(self):
         return self.base_block_list + self.corner_block_list \

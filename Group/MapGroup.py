@@ -15,8 +15,11 @@ class MapGroup(List):
     def drop_thing_group(self):
         return self[self.i][2]
 
+    def sell_actor_group(self):
+        return self[self.i][3]
+
     def next(self):
         self.i += 1
 
-    def append(self, world, bad_actor_group, drop_thing_group) -> None:
-        super().append([world, bad_actor_group, drop_thing_group])
+    def append(self, world, bad_actor_group, drop_thing_group, sell_actor_group) -> None:
+        super().append([world, bad_actor_group, drop_thing_group, sell_actor_group])

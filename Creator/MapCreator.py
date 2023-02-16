@@ -72,7 +72,32 @@ def treasure(door):
                 text[i] = 'L' + text[i][1:]
     for i in range(len(text)):
         text[i] = text[i].replace('D', '#')
-    file_path = f'{map_path}/{map_index}/{file_name_int}.proom'
+    file_path = f'{map_path}/{map_index}/{file_name_int}.ptreasureroom'
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(text)
+    file_name_int += 1
+    return file_path
+
+
+def sell(door):
+    global file_name_int
+    with open('./Res/MapModel/special/sell.proom', 'r', encoding='utf-8') as f:
+        text = f.readlines()
+    if door == data.TOP:
+        text[0] = text[0].replace('D', 'T')
+    elif door == data.BOTTOM:
+        text[-1] = text[-1].replace('D', 'B')
+    elif door == data.RIGHT:
+        for i in range(len(text)):
+            if text[i][-2] == 'D':
+                text[i] = text[i][:-2] + 'R\n'
+    elif door == data.LEFT:
+        for i in range(len(text)):
+            if text[i][0] == 'D':
+                text[i] = 'L' + text[i][1:]
+    for i in range(len(text)):
+        text[i] = text[i].replace('D', '#')
+    file_path = f'{map_path}/{map_index}/{file_name_int}.psellroom'
     with open(file_path, 'w', encoding='utf-8') as f:
         f.writelines(text)
     file_name_int += 1

@@ -7,8 +7,8 @@ from GUI.Manager import Manager
 class PauseScreen(object):
     def __init__(self):
         self.manager = Manager('./Res/GUI_Theme/Screen/title_screen.json')
-        self.title = Label(self.manager,0, 100, GameData.WINDOW_WIDTH, 100, 'Game Pause')
-        self.button = Button(self.manager,0, 500, GameData.WINDOW_WIDTH, 50, 'START')
+        self.title = Label(self.manager,0, 100, GameData.WINDOW_WIDTH, 100, '游戏暂停')
+        self.button = Button(self.manager,0, 500, GameData.WINDOW_WIDTH, 50, '继续游戏')
         self.button.click_function = self.continue_game
         self.is_running = True
 

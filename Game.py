@@ -13,6 +13,7 @@ from Screen.EndSceen import EndScreen
 from Screen.PauseSceen import PauseScreen
 from Screen.StartSceen import *
 from Screen.SystemInfoScreen import SystemInfoScreen
+from Screen.WinSceen import WinScreen
 from Thing.BloodDrinkThing import BloodDrinkThing
 from Thing.EnergyDrinkThing import EnergyDrinkThing
 
@@ -48,12 +49,6 @@ class Game(object):
         self.is_system_info_screen = False
 
         self._system_info_screen = SystemInfoScreen()
-
-        # self.hire_group.append(BaseHireActor(*ShareData.good_actor.center))
-        ShareData.drop_thing_group.append(BloodDrinkThing(*self.good_actor.center))
-        ShareData.drop_thing_group.append(EnergyDrinkThing(*self.good_actor.center))
-
-        ShareData.sell_group.append(BaseSellActor(500,300))
 
     def init_map(self):
         MapCreator.clean()
@@ -169,8 +164,18 @@ class Game(object):
                 screen.manager.event(event)
                 if event.type == QUIT:
                     self.exit()
-                if event.type == KEYDOWN:
-                    screen.restart_game()
+            screen.manager.process()
+            pygame.display.update()
+
+    def win_screen(self):
+        screen = WinScreen()
+        while screen.is_running:
+            GameData.surface.fill((0, 0, 0))
+            screen.manager.draw()
+            for event in pygame.event.get():
+                screen.manager.event(event)
+                if event.type == QUIT:
+                    self.exit()
             screen.manager.process()
             pygame.display.update()
 
@@ -217,13 +222,16 @@ class Game(object):
 
     def next_world(self):
         if not self.nexted:
-            self.map.next()
-            ShareData.world = self.map.world()
-            ShareData.bad_actor_group = self.map.bad_actor_group()
-            ShareData.drop_thing_group = self.map.drop_thing_group()
-            ShareData.sell_group = self.map.sell_actor_group()
-            ShareData.treasure_group = self.map.treasure_group()
-            self.nexted = True
+            if self.map.i < len(self.map) -1:
+                self.map.next()
+                ShareData.world = self.map.world()
+                ShareData.bad_actor_group = self.map.bad_actor_group()
+                ShareData.drop_thing_group = self.map.drop_thing_group()
+                ShareData.sell_group = self.map.sell_actor_group()
+                ShareData.treasure_group = self.map.treasure_group()
+                self.nexted = True
+            else:
+                self.win_screen()
 
     def logo(self):
         fs = FSLogo('./Res/Picture/image/logo/logo.png')

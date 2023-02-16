@@ -1,15 +1,30 @@
 {
   "label": {
-    "font":
-        [
-            {
-                "name": "montserrat",
-                "size": "30",
-                "bold": "0",
-                "italic": "0",
-                "regular_resource": {"package": "Res.GUI_Theme.data.fonts",
-                                     "resource": "VonwaonBitmap-12px.ttf"}
-            }
-        ]
+    "font": [
+      {
+        "name": "montserrat",
+        "size": "50",
+        "bold": "0",
+        "italic": "0",
+        "regular_resource": {
+          "package": "Res.GUI_Theme.data.fonts",
+          "resource": "VonwaonBitmap-12px.ttf"
+        }
+      }
+    ]
+  },
+  "button": {
+    "font": [
+      {
+        "name": "montserrat",
+        "size": "16",
+        "bold": "0",
+        "italic": "0",
+        "regular_resource": {
+          "package": "Res.GUI_Theme.data.fonts",
+          "resource": "VonwaonBitmap-12px.ttf"
+        }
+      }
+    ]
   }
 }

@@ -21,6 +21,5 @@ def map_loader():
             if type(area) == SellActorRoomSpace:
                 area.init(sell_actor_group)
             elif type(area) == TreasureRoomSpace:
-                print(area.name)
                 area.init(treasure_group)
     return maps

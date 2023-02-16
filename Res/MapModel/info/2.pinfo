@@ -3,5 +3,4 @@
     'r2':{'bad_actor_number':'auto','is_door_need_close':True,'is_give_treasure':True},
     'r3':{'bad_actor_number':'auto','is_door_need_close':True,'is_give_treasure':True},
     'r4':{'is_treasure_room':True},
-    'r5':{'bad_actor_number':'auto','is_door_need_close':True,'is_give_treasure':True}
 }

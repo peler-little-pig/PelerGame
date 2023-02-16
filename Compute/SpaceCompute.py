@@ -19,7 +19,7 @@ def is_hit_wall(rect: pygame.rect.Rect):
                 or rect.bottom > area.corner_block_list[2].bottom
                 or rect.left < area.corner_block_list[0].right
                 or rect.right > area.corner_block_list[1].left)
-    else:
+    elif area is not None:
         return (rect.top < area.corner_block_list[0].bottom
                 or rect.bottom > area.corner_block_list[2].top
                 or rect.left < area.corner_block_list[0].right

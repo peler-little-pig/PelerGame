@@ -5,20 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Group/TreasureGroup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screen/WinSceen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PelerGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PelerGame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Compute/SpaceCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Compute/SpaceCompute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/ShareData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ShareData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Group/MapGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Group/MapGroup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/LICENSE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapLoader/MapLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/MapLoader/MapLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/GUI_Theme/Screen/title_screen.json" beforeDir="false" afterPath="$PROJECT_DIR$/Res/GUI_Theme/Screen/title_screen.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/00/00.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/00.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/2.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/00/4.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/4.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/01/01.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/01.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/01/14.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/14.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/02/02.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/02.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/03/03.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/03.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/04/04.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/04.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Space/RoomSpace/TreasureRoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace/TreasureRoomSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/MapModel/info/2.pinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Res/MapModel/info/2.pinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/MapModel/world/2.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/MapModel/world/2.pworld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen/EndSceen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screen/EndSceen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen/PauseSceen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screen/PauseSceen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen/StartSceen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screen/StartSceen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +73,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Group" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Screen" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,18 +86,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Screen" />
       <recent name="$PROJECT_DIR$/Group" />
       <recent name="$PROJECT_DIR$/Res/MapModel/special" />
       <recent name="$PROJECT_DIR$/Actor/SellActor" />
       <recent name="$PROJECT_DIR$/Thing" />
-      <recent name="$PROJECT_DIR$/Res/GUI_Theme/Infobar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Doc" />
       <recent name="$PROJECT_DIR$/Space/RoomSpace" />
       <recent name="$PROJECT_DIR$/Actor" />
       <recent name="$PROJECT_DIR$/Actor/GoodActor" />
       <recent name="$PROJECT_DIR$/Actor/BadActor" />
-      <recent name="$PROJECT_DIR$/Res/GUI_Theme/Infobar" />
     </key>
   </component>
   <component name="RunManager">
@@ -200,14 +210,7 @@
       <workItem from="1676436185524" duration="1156000" />
       <workItem from="1676458063477" duration="2972000" />
       <workItem from="1676523314627" duration="1106000" />
-      <workItem from="1676536346841" duration="2834000" />
-    </task>
-    <task id="LOCAL-00004" summary="v 0.0.2 add blocking block!">
-      <created>1674213704185</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1674213704185</updated>
+      <workItem from="1676536346841" duration="6128000" />
     </task>
     <task id="LOCAL-00005" summary="v 0.0.3 box block come!!!">
       <created>1674215895639</created>
@@ -545,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676524417648</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="V 1.0.2 competition version!">
+      <created>1676539327224</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1676539327225</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +575,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="good actor skill" />
     <MESSAGE value="PauseSceen.py" />
     <MESSAGE value="block new theme copy from minecraft and it looks great!" />
     <MESSAGE value="better player control" />
@@ -590,7 +599,8 @@
     <MESSAGE value="SellActor done but can't auto create in the room because of circle import" />
     <MESSAGE value="Rooms Based on BaseRoomSpace.py" />
     <MESSAGE value="sell actor room and group done" />
-    <option name="LAST_COMMIT_MESSAGE" value="sell actor room and group done" />
+    <MESSAGE value="V 1.0.2 competition version!" />
+    <option name="LAST_COMMIT_MESSAGE" value="V 1.0.2 competition version!" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -611,6 +621,6 @@
     <SUITE FILE_PATH="coverage/PelerGame$main_Test_.coverage" NAME="main(Test) Coverage Results" MODIFIED="1675335092759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/PelerGame$Docutils_Task_in_Docutils_Task_in_.coverage" NAME="Docutils Task in Docutils Task in  Coverage Results" MODIFIED="1675383861289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676539241431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676556714825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -24,7 +24,7 @@ class EnergyTreasure(BaseTreasure):
             if self.colliderect(ShareData.good_actor):
                 if EventData.is_right_mouse_down:
                     self.image = self.open_image
-                    for i in range(10):
+                    for i in range(5):
                         ShareData.coin_group.append(EnergyCoin(self.left,self.top))
                     self.is_open = True
                     EventData.is_right_mouse_down = False

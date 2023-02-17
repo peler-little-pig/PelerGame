@@ -5,17 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/README_en.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Actor.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Block.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Data.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Egg.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/GUI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Game.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Group.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/InfoBar.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Logo.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Screen.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Space.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Speak.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Thing.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/Treasure.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Actor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Data.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Egg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/GUI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/InfoBar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Space.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Speak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Thing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Treasure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/flow/map.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/flow/thing&amp;egg.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/future.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/anther.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/supporter.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/00/00.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/00.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/2.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/4.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/4.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/01/01.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/01.pworld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/01/14.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/14.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/02/02.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/02.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/03/03.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/03.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/04/04.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/04.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Treasure/EnergyTreasure.py" beforeDir="false" afterPath="$PROJECT_DIR$/Treasure/EnergyTreasure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,14 +231,7 @@
       <workItem from="1676458063477" duration="2972000" />
       <workItem from="1676523314627" duration="1106000" />
       <workItem from="1676536346841" duration="7959000" />
-      <workItem from="1676626709054" duration="528000" />
-    </task>
-    <task id="LOCAL-00006" summary="add README">
-      <created>1674370269782</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1674370269783</updated>
+      <workItem from="1676626709054" duration="3804000" />
     </task>
     <task id="LOCAL-00007" summary="v0.0.4 better map">
       <created>1674370869112</created>
@@ -543,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676557136133</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="package">
+      <created>1676627534355</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1676627534356</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="block new theme copy from minecraft and it looks great!" />
     <MESSAGE value="better player control" />
     <MESSAGE value="ui improve" />
     <MESSAGE value="can speak, but Chinese failed" />
@@ -588,7 +620,8 @@
     <MESSAGE value="sell actor room and group done" />
     <MESSAGE value="V 1.0.2 competition version!" />
     <MESSAGE value="V 1.0.3 competition version. add Chinese" />
-    <option name="LAST_COMMIT_MESSAGE" value="V 1.0.3 competition version. add Chinese" />
+    <MESSAGE value="package" />
+    <option name="LAST_COMMIT_MESSAGE" value="package" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -602,7 +635,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PelerGame$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1674477043579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Extra/MapEditor" />
-    <SUITE FILE_PATH="coverage/PelerGame$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1676626967514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1676644289987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$SpaceCreator.coverage" NAME="SpaceCreator Coverage Results" MODIFIED="1675054531448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lib/Creator" />
     <SUITE FILE_PATH="coverage/PelerGame$a__1_.coverage" NAME="a (1) Coverage Results" MODIFIED="1675056426339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$test.coverage" NAME="test Coverage Results" MODIFIED="1675214223264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />

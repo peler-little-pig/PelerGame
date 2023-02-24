@@ -1,22 +1,17 @@
 - [主页](/README.md)
 ---
 - **玩家文档**
+- [硬件需求](/Player/require.md)
+- [如何在Windows系统上安装](/Player/open_windows.md)
+- [如何在MacOS/Linux上安装](/Player/open_unix.md)
 - [游戏指南](/Player/how_to_play.md)
 - [未来版本更新内容](/Player/future.md)
+---
 - **开发者文档**
-- [项目结构](/Develop/struct.md)
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
-- [Actor包UML图]
+- [项目文件结构](/Develop/struct.md)
+- [项目主要Python包UML类图](Develop/UML/index.md)
+- [重点功能流程图](Develop/flow/index.md)
+- [自定义地图](/Develop/map/README.md)
+---
+- [关于作者](/anther.md)
+- [许可证](/LICENSE.md)

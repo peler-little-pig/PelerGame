@@ -5,6 +5,8 @@
 
 本项目使用 [GPL](/LICENSE.md) 许可证。
 
+详细内容请至文档 www.peler.top/PelerGame
+
 ## 快速启动
 安装 `requirements.txt` 文件中标记的第三方库后，在项目根目录运行 `__init__.py` 即可。
 

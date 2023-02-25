@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/00/2.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/00/4.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/4.proom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/01/01.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/01.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/02/02.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/02.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/04/04.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/04.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Player/future.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Player/future.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Player/how_to_play.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Player/how_to_play.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/supporter.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/supporter.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,13 +195,8 @@
       <workItem from="1676719474971" duration="645000" />
       <workItem from="1676735622818" duration="712000" />
       <workItem from="1677252175083" duration="7000" />
-    </task>
-    <task id="LOCAL-00011" summary="add blocking_block.png box_block.png and start BaseCoin.py">
-      <created>1674695454430</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1674695454430</updated>
+      <workItem from="1677321869636" duration="941000" />
+      <workItem from="1677324997369" duration="1198000" />
     </task>
     <task id="LOCAL-00012" summary="order the Compute part &#10;write some code for coin">
       <created>1674696663872</created>
@@ -544,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677250990261</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="add supporter">
+      <created>1677321916610</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1677321916615</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="all code/data floders turn into packages" />
     <MESSAGE value="can speak chinese,but just few words,cause the font not good enough.I'll use another font later" />
     <MESSAGE value="speak final" />
     <MESSAGE value="info screen add" />
@@ -589,7 +585,8 @@
     <MESSAGE value="logo" />
     <MESSAGE value="create doc with docsify" />
     <MESSAGE value="add doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add doc" />
+    <MESSAGE value="add supporter" />
+    <option name="LAST_COMMIT_MESSAGE" value="add supporter" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

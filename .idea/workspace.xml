@@ -5,75 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/img/self.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/weixingpay.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Actor.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Block.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Data.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Egg.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/GUI.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Game.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Group.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/InfoBar.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Logo.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Screen.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Space.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Speak.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Thing.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/Treasure.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Actor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Data.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Egg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/GUI.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Game.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Group.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/InfoBar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Speak.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Thing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Treasure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/flow/map.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/flow/thing&amp;egg.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/future.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/how_to_play.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/open_unix.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/open_windows.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/README_en.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/anther.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/supporter.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Player/how_to_play.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Player/how_to_play.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Player/open_unix.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Player/open_unix.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Player/open_windows.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Player/open_windows.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/support.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/support.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/supporter.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/supporter.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +78,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PelerGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -159,7 +91,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,7 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -264,14 +196,7 @@
       <workItem from="1677321869636" duration="941000" />
       <workItem from="1677324997369" duration="1583000" />
       <workItem from="1677407726843" duration="38000" />
-      <workItem from="1677407793622" duration="663000" />
-    </task>
-    <task id="LOCAL-00013" summary="coins can fly!!!">
-      <created>1674711219263</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1674711219263</updated>
+      <workItem from="1677407793622" duration="1768000" />
     </task>
     <task id="LOCAL-00014" summary="test the pygame_gui lib and add next_block.png for next_block">
       <created>1674741760049</created>
@@ -609,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677327587375</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="add image">
+      <created>1677408474645</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1677408474646</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="can speak chinese,but just few words,cause the font not good enough.I'll use another font later" />
     <MESSAGE value="speak final" />
     <MESSAGE value="info screen add" />
     <MESSAGE value="SystemInfoScreen.py complete" />
@@ -654,7 +585,8 @@
     <MESSAGE value="create doc with docsify" />
     <MESSAGE value="add doc" />
     <MESSAGE value="add supporter" />
-    <option name="LAST_COMMIT_MESSAGE" value="add supporter" />
+    <MESSAGE value="add image" />
+    <option name="LAST_COMMIT_MESSAGE" value="add image" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

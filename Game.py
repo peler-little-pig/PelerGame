@@ -26,6 +26,8 @@ class Game(object):
         GameData.surface = pygame.display.set_mode((GameData.WINDOW_WIDTH, GameData.WINDOW_HEIGHT))
 
         pygame.display.set_caption(GameData.NAME)
+        icon = pygame.image.load('./Res/Icon/logo.ico')
+        pygame.display.set_icon(icon)
 
     def init(self):
         self.coin_gruop = CoinGroup()

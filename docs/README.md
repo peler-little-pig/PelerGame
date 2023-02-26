@@ -10,8 +10,10 @@
 
 详细内容请至文档 www.peler.top/PelerGame
 
-## 快速启动
-安装 `requirements.txt` 文件中标记的第三方库后，在项目根目录运行 `__init__.py` 即可。
+## 运行本项目
+克隆本项目，安装 `requirements.txt` 文件中标记的第三方库后，在项目根目录使用 Python3.7 以上版本运行 `__init__.py` 即可。
+
+如果您使用 Windows 系统，可使用安装包安装。[详情](/Player/open_windows.md)
 
 ## 名称
 我暂时还没想好，暂时定为 **PelerGame**。其来源为 `我的英文名+Game`。我对如何起一个好名字并不在行，所以如果你有更好的想法，欢迎投稿。
@@ -32,5 +34,5 @@
 ## 第三方库使用情况
 |名称|协议|网址|
 |-----|-----|-----|
-|pygame||
-|pygame-gui||
+|pygame|LGPL|www.pygame.org|
+|pygame-gui|MIT|https://pygame-gui.readthedocs.io/en/latest|

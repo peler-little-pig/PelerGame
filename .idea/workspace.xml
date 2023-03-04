@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/Develop/thing/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/MapModel/info/2.pinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Res/MapModel/info/2.pinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Develop/map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Develop/map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,13 +200,7 @@
       <workItem from="1677407793622" duration="3768000" />
       <workItem from="1677818782163" duration="608000" />
       <workItem from="1677856524874" duration="1397000" />
-    </task>
-    <task id="LOCAL-00016" summary="divide some data into different group and find a egg bug">
-      <created>1674867486219</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1674867486219</updated>
+      <workItem from="1677922967835" duration="996000" />
     </task>
     <task id="LOCAL-00017" summary="v 1.0.0 hooooooooooo yeah!">
       <created>1674873277055</created>
@@ -547,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677411075235</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="add doc">
+      <created>1677923026904</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1677923026905</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,12 +585,12 @@
     <MESSAGE value="package" />
     <MESSAGE value="logo" />
     <MESSAGE value="create doc with docsify" />
-    <MESSAGE value="add doc" />
     <MESSAGE value="add supporter" />
     <MESSAGE value="add image" />
     <MESSAGE value="main.py" />
     <MESSAGE value="add icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="add icon" />
+    <MESSAGE value="add doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="add doc" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

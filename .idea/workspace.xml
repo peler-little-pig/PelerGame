@@ -5,8 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/doc/.nojekyll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Actor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Data.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Egg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/GUI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/InfoBar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Space.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Speak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Thing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/image/Treasure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/UML/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/flow/drawio/map.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/flow/drawio/thing&amp;egg.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/flow/image/map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/flow/image/thing&amp;egg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/flow/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/map/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/struct.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Develop/thing/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/future.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/how_to_play.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/image/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/open_unix.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/open_windows.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/Player/require.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/SUMMARY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/_sidebar.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/anther.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/self.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/weixingpay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/support.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/supporter.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_sidebar.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,14 +259,7 @@
       <workItem from="1677407793622" duration="3768000" />
       <workItem from="1677818782163" duration="608000" />
       <workItem from="1677856524874" duration="1397000" />
-      <workItem from="1677922967835" duration="996000" />
-    </task>
-    <task id="LOCAL-00017" summary="v 1.0.0 hooooooooooo yeah!">
-      <created>1674873277055</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1674873277055</updated>
+      <workItem from="1677922967835" duration="2976000" />
     </task>
     <task id="LOCAL-00018" summary="random space but only two door a room and make the block draw fast but not fast enough. i need to think another ideas. may be threads?">
       <created>1674998220462</created>
@@ -545,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677923026905</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="add content">
+      <created>1677925295093</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1677925295093</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +624,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="SystemInfoScreen.py complete" />
     <MESSAGE value="start GunInfoBar.py but a little bit difficult" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="add thing_info_bar" />
@@ -590,7 +648,8 @@
     <MESSAGE value="main.py" />
     <MESSAGE value="add icon" />
     <MESSAGE value="add doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add doc" />
+    <MESSAGE value="add content" />
+    <option name="LAST_COMMIT_MESSAGE" value="add content" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

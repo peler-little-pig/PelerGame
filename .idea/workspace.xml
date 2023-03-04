@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="" />
+    <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/Develop/thing/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/MapModel/info/2.pinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Res/MapModel/info/2.pinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Develop/map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Develop/map/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_sidebar.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,14 +200,9 @@
       <workItem from="1677321869636" duration="941000" />
       <workItem from="1677324997369" duration="1583000" />
       <workItem from="1677407726843" duration="38000" />
-      <workItem from="1677407793622" duration="2476000" />
-    </task>
-    <task id="LOCAL-00015" summary="thing can rotat correctly and i'm going to start order the number">
-      <created>1674866518540</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1674866518540</updated>
+      <workItem from="1677407793622" duration="3768000" />
+      <workItem from="1677818782163" duration="608000" />
+      <workItem from="1677856524874" duration="1397000" />
     </task>
     <task id="LOCAL-00016" summary="divide some data into different group and find a egg bug">
       <created>1674867486219</created>
@@ -539,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677409943453</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="add icon">
+      <created>1677411075235</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1677411075235</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +567,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="info screen add" />
     <MESSAGE value="SystemInfoScreen.py complete" />
     <MESSAGE value="start GunInfoBar.py but a little bit difficult" />
     <MESSAGE value="update README.md" />
@@ -584,7 +591,8 @@
     <MESSAGE value="add supporter" />
     <MESSAGE value="add image" />
     <MESSAGE value="main.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="main.py" />
+    <MESSAGE value="add icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="add icon" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -598,7 +606,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PelerGame$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1674477043579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Extra/MapEditor" />
-    <SUITE FILE_PATH="coverage/PelerGame$__init__.coverage" NAME="main Coverage Results" MODIFIED="1677409897768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$__init__.coverage" NAME="main Coverage Results" MODIFIED="1677411057558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$SpaceCreator.coverage" NAME="SpaceCreator Coverage Results" MODIFIED="1675054531448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lib/Creator" />
     <SUITE FILE_PATH="coverage/PelerGame$a__1_.coverage" NAME="a (1) Coverage Results" MODIFIED="1675056426339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$test.coverage" NAME="test Coverage Results" MODIFIED="1675214223264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />

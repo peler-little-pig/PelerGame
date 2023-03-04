@@ -15,6 +15,7 @@
 - [项目主要Python包UML类图](Develop/UML/index.md)
 - [重点功能流程图](Develop/flow/index.md)
 - [自定义地图](/Develop/map/README.md)
+- [自定义枪械](/Develop/thing/README.md)
 ---
 - [关于作者](/anther.md)
 - [许可证](/LICENSE.md)

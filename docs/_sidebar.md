@@ -2,6 +2,7 @@
 - [***赞助者名单***](/supporter.md)
 ---
 - [主页](/README.md)
+- [为2023领航杯比赛的评委们写的文档:)](/competition/README.md)
 ---
 - **玩家文档**
 - [硬件需求](/Player/require.md)
@@ -11,6 +12,8 @@
 - [未来版本更新内容](/Player/future.md)
 ---
 - **开发者文档**
+- [概述](/Develop/README.md)
+- [我在项目构建中的思考](/Develop/design/tking.md)
 - [项目文件结构](/Develop/struct.md)
 - [项目主要Python包UML类图](Develop/UML/index.md)
 - [重点功能流程图](Develop/flow/index.md)

@@ -4,126 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/.nojekyll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Actor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Block.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Data.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Egg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/GUI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Game.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Group.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/InfoBar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Space.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Speak.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Thing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/image/Treasure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/UML/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/flow/drawio/map.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/flow/drawio/thing&amp;egg.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/flow/image/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/flow/image/thing&amp;egg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/flow/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/map/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/struct.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Develop/thing/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/future.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/how_to_play.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/image/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/open_unix.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/open_windows.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/Player/require.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/_sidebar.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/anther.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/img/self.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/img/weixingpay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/support.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_gitbook/supporter.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/.nojekyll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Actor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Data.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Egg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/GUI.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Game.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Group.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/InfoBar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Speak.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Thing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/image/Treasure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/UML/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/flow/drawio/map.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/flow/drawio/thing&amp;egg.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/flow/image/map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/flow/image/thing&amp;egg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/flow/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/map/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/struct.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Develop/thing/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/future.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/how_to_play.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/image/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/open_unix.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/open_windows.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Player/require.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/SUMMARY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/_sidebar.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/anther.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/img/self.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/img/weixingpay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/support.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/supporter.md" beforeDir="false" />
-    </list>
+    <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -318,13 +199,7 @@
       <workItem from="1677856524874" duration="1397000" />
       <workItem from="1677922967835" duration="3424000" />
       <workItem from="1677992717108" duration="707000" />
-    </task>
-    <task id="LOCAL-00019" summary="give up the random map create, do the random choose first">
-      <created>1675056656630</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1675056656630</updated>
+      <workItem from="1678023992696" duration="42000" />
     </task>
     <task id="LOCAL-00020" summary="random map completed!!!">
       <created>1675167450209</created>
@@ -662,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677933678223</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="add doc">
+      <created>1678024024456</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1678024024459</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -704,10 +586,10 @@
     <MESSAGE value="add image" />
     <MESSAGE value="main.py" />
     <MESSAGE value="add icon" />
-    <MESSAGE value="add doc" />
     <MESSAGE value="add content" />
     <MESSAGE value="fix doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix doc" />
+    <MESSAGE value="add doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="add doc" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

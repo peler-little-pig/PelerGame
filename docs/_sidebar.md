@@ -2,7 +2,6 @@
 - [***赞助者名单***](/supporter.md)
 ---
 - [主页](/README.md)
-- [为2023领航杯比赛的评委们写的文档:)](/competition/README.md)
 ---
 - **玩家文档**
 - [硬件需求](/Player/require.md)

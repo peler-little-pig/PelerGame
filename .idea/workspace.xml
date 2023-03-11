@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="" />
+    <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -200,20 +203,9 @@
       <workItem from="1677922967835" duration="3424000" />
       <workItem from="1677992717108" duration="707000" />
       <workItem from="1678023992696" duration="42000" />
-    </task>
-    <task id="LOCAL-00020" summary="random map completed!!!">
-      <created>1675167450209</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1675167450209</updated>
-    </task>
-    <task id="LOCAL-00021" summary="random map completed!!!">
-      <created>1675170702215</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1675170702215</updated>
+      <workItem from="1678110424050" duration="253000" />
+      <workItem from="1678509829162" duration="417000" />
+      <workItem from="1678520948732" duration="539000" />
     </task>
     <task id="LOCAL-00022" summary="different thing">
       <created>1675212700393</created>
@@ -544,7 +536,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678024024459</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="last commit for competition">
+      <created>1678110468456</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1678110468457</updated>
+    </task>
+    <task id="LOCAL-00070" summary="delete gitbook">
+      <created>1678110561059</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1678110561059</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,8 +570,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update README.md" />
-    <MESSAGE value="add thing_info_bar" />
     <MESSAGE value="add LICENSE.md" />
     <MESSAGE value="add DropThingInfoBar.py" />
     <MESSAGE value="good actor can speak thing's name" />
@@ -589,7 +593,9 @@
     <MESSAGE value="add content" />
     <MESSAGE value="fix doc" />
     <MESSAGE value="add doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add doc" />
+    <MESSAGE value="last commit for competition" />
+    <MESSAGE value="delete gitbook" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete gitbook" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

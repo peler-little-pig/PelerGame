@@ -15,7 +15,7 @@
 ## 运行本项目
 克隆本项目，安装 `requirements.txt` 文件中标记的第三方库后，在项目根目录使用 Python3.7 以上版本运行 `main.py` 即可。
 
-如果您使用 Windows 系统，可使用安装包安装。[详情](www.peler.top/PelerGame/#/Player/open_windows.md)
+如果您使用 Windows 系统，可使用安装包安装。[详情](https://www.peler.top/PelerGame/#/Player/open_windows.md)
 
 ## 名称
 我暂时还没想好，暂时定为 **PelerGame**。其来源为 `我的英文名+Game`。我对如何起一个好名字并不在行，所以如果你有更好的想法，欢迎投稿。
@@ -23,8 +23,8 @@
 ## 优点
 > - PelerGame 完全开源，并欢迎所有人开发。
 > - 您可以在很差的电脑上顺利运行 PelerGame。
-> - 您可以快速制作自己的地图，而不需要有任何编程知识。[详情](www.peler.top/PelerGame/#/Develop/map/README.md)
-> - 您可以方便的自定义枪械，物品和子弹。[详情](www.peler.top/PelerGame/#/Develop/thing/README.md)
+> - 您可以快速制作自己的地图，而不需要有任何编程知识。[详情](https://www.peler.top/PelerGame/#/Develop/map/README.md)
+> - 您可以方便的自定义枪械，物品和子弹。[详情](https://www.peler.top/PelerGame/#/Develop/thing/README.md)
 
 ## **特别声明**
 >因在本项目线上及线下多平台多渠道的用户体验中，许多用户对本项目是否为作者本人独自完成的真实性产生怀疑，故在此特别声明：
@@ -36,5 +36,5 @@
 ## 第三方库使用情况
 |名称|协议|网址|
 |-----|-----|-----|
-|pygame|LGPL|www.pygame.org|
+|pygame|LGPL|https://www.pygame.org|
 |pygame-gui|MIT|https://pygame-gui.readthedocs.io/en/latest|

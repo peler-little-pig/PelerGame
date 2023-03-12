@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/pfile/PelerFile" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -205,14 +204,8 @@
       <workItem from="1678023992696" duration="42000" />
       <workItem from="1678110424050" duration="253000" />
       <workItem from="1678509829162" duration="417000" />
-      <workItem from="1678520948732" duration="539000" />
-    </task>
-    <task id="LOCAL-00022" summary="different thing">
-      <created>1675212700393</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1675212700393</updated>
+      <workItem from="1678520948732" duration="875000" />
+      <workItem from="1678540928462" duration="21000" />
     </task>
     <task id="LOCAL-00023" summary="treasure complete">
       <created>1675405079700</created>
@@ -550,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678110561059</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="add doc #1">
+      <created>1678521499034</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1678521499035</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +570,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add LICENSE.md" />
     <MESSAGE value="add DropThingInfoBar.py" />
     <MESSAGE value="good actor can speak thing's name" />
     <MESSAGE value="begin HireActorGroup.py" />
@@ -595,7 +594,8 @@
     <MESSAGE value="add doc" />
     <MESSAGE value="last commit for competition" />
     <MESSAGE value="delete gitbook" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete gitbook" />
+    <MESSAGE value="add doc #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add doc #1" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

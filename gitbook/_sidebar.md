@@ -1,0 +1,24 @@
+- [***成为赞助者***](/support.md)
+- [***赞助者名单***](/supporter.md)
+---
+- [主页](/README.md)
+---
+- **玩家文档**
+- [硬件需求](/Player/require.md)
+- [如何在Windows系统上安装](/Player/open_windows.md)
+- [如何在MacOS/Linux上安装](/Player/open_unix.md)
+- [游戏指南](/Player/how_to_play.md)
+- [未来版本更新内容](/Player/future.md)
+---
+- **开发者文档**
+- [概述](/Develop/README.md)
+- [我在项目构建中的思考](/Develop/design/tking.md)
+- [项目文件结构](/Develop/struct.md)
+- [项目主要Python包UML类图](Develop/UML/index.md)
+- [重点功能流程图](Develop/flow/index.md)
+- [自定义地图](/Develop/map/README.md)
+- [自定义枪械](/Develop/thing/README.md)
+---
+- [关于作者](/anther.md)
+- [作者博客](https://www.peler.top)
+- [许可证](/LICENSE.md)

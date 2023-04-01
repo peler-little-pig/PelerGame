@@ -5,7 +5,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Actor/TreasureActor/BaseTreasureActor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Actor/TreasureActor/EnergyTreasureActor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Actor/TreasureActor/ThingTreasureActor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Actor/TreasureActor/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screen/SupportThanksScreen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/00/2.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Map/01/14.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/14.proom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/RoomSpace/BadActorRoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace/BadActorRoomSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/RoomSpace/TreasureRoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace/TreasureRoomSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/.nojekyll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Actor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Data.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Egg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/GUI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Group.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/InfoBar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Speak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Thing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/image/Treasure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/UML/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/design/tking.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/flow/drawio/map.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/flow/drawio/thing&amp;egg.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/flow/image/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/flow/image/thing&amp;egg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/flow/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/map/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/struct.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Develop/thing/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/future.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/how_to_play.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/image/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/open_unix.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/open_windows.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/Player/require.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/_sidebar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/anther.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/img/self.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/img/weixingpay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/support.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitbook/supporter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +130,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -207,13 +278,11 @@
       <workItem from="1678520948732" duration="875000" />
       <workItem from="1678540928462" duration="21000" />
       <workItem from="1678591147343" duration="812000" />
-    </task>
-    <task id="LOCAL-00024" summary="add init ui">
-      <created>1675407651705</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1675407651705</updated>
+      <workItem from="1679144156735" duration="125000" />
+      <workItem from="1679757400229" duration="2483000" />
+      <workItem from="1679807411003" duration="646000" />
+      <workItem from="1680270834293" duration="506000" />
+      <workItem from="1680326063736" duration="2282000" />
     </task>
     <task id="LOCAL-00025" summary="start speak and screen but not success">
       <created>1675432520055</created>
@@ -551,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678591362426</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="fix doc #2">
+      <created>1679144208226</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1679144208227</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +647,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add DropThingInfoBar.py" />
     <MESSAGE value="good actor can speak thing's name" />
     <MESSAGE value="begin HireActorGroup.py" />
     <MESSAGE value="fix bad_actor" />
@@ -596,7 +671,8 @@
     <MESSAGE value="delete gitbook" />
     <MESSAGE value="add doc #1" />
     <MESSAGE value="fix doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix doc" />
+    <MESSAGE value="fix doc #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix doc #2" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -618,6 +694,6 @@
     <SUITE FILE_PATH="coverage/PelerGame$main_Test_.coverage" NAME="main(Test) Coverage Results" MODIFIED="1675335092759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/PelerGame$Docutils_Task_in_Docutils_Task_in_.coverage" NAME="Docutils Task in Docutils Task in  Coverage Results" MODIFIED="1675383861289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1676556714825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1680328441454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

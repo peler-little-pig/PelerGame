@@ -8,7 +8,7 @@ from Data.AllData import *
 from Speak.BaseSpeak import BaseSpeak
 from Thing.HandGunThing import *
 from Thing.GunThing import *
-from Treasure import BaseTreasure
+from Actor.TreasureActor import BaseTreasureActor
 from Compute.BlockCompute import *
 from InfoBar.SkillInfoBar import *
 from InfoBar.ThingInfoBar import *

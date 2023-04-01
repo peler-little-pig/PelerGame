@@ -13,6 +13,7 @@ from Screen.EndSceen import EndScreen
 from Screen.PauseSceen import PauseScreen
 from Screen.StartSceen import *
 from Screen.SystemInfoScreen import SystemInfoScreen
+from Screen.SupportThanksScreen import SupportThanksScreen
 from Screen.WinSceen import WinScreen
 from Thing.BloodDrinkThing import BloodDrinkThing
 from Thing.EnergyDrinkThing import EnergyDrinkThing
@@ -49,8 +50,10 @@ class Game(object):
         self.is_restart = False
         self.is_pause_screen = False
         self.is_system_info_screen = False
+        self.is_support_screen = False
 
         self._system_info_screen = SystemInfoScreen()
+        self._support_screen = SupportThanksScreen()
 
     def init_map(self):
         MapCreator.clean()
@@ -79,6 +82,9 @@ class Game(object):
                     self.is_pause_screen = True
                 if event.key == K_F1:
                     self.is_system_info_screen = not self.is_system_info_screen
+                if event.key == K_F2:
+                    self.is_support_screen = not self.is_support_screen
+
 
             elif event.type == KEYUP:
                 if event.key == K_w:
@@ -183,6 +189,11 @@ class Game(object):
 
     def system_info_screen(self):
         if self.is_system_info_screen:
+            self._system_info_screen.manager.draw()
+            self._system_info_screen.manager.update(0)
+
+    def support_screen(self):
+        if self.is_support_screen:
             self._system_info_screen.manager.draw()
             self._system_info_screen.manager.update(0)
 

@@ -2,13 +2,13 @@ from Compute.MoveCompute import *
 from Compute.PositionCompute import *
 
 
-class BaseTreasure(pygame.rect.Rect):
-    def __init__(self, centerx, centery, width: float, height: float):
+class BaseTreasureActor(pygame.rect.Rect):
+    def __init__(self, centerx, centery, width: float, height: float, close_image_path, open_image_path):
         super().__init__(0, 0, width, height)
         self.centerx = centerx
         self.centery = centery
-        self.close_image = pygame.image.load('./Res/Picture/image/treasure/close.png').convert()
-        self.open_image = pygame.image.load('./Res/Picture/image/treasure/open.png').convert()
+        self.close_image = pygame.image.load(close_image_path).convert()
+        self.open_image = pygame.image.load(open_image_path).convert()
         self.image = self.close_image
 
         self.is_open = False
@@ -18,14 +18,13 @@ class BaseTreasure(pygame.rect.Rect):
 
     def process(self):
         follow_move(self)
-        self.open()
-
-    def open(self):
         if not self.is_open:
             if self.colliderect(ShareData.good_actor):
                 if EventData.is_right_mouse_down:
+                    self.open()
                     self.image = self.open_image
-                    # x,y = middle(self,)
-                    ShareData.drop_thing_group.append_random(self.center)
                     self.is_open = True
                     EventData.is_right_mouse_down = False
+
+    def open(self):
+        ...

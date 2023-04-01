@@ -1,3 +1,4 @@
+from Actor.TreasureActor.EnergyTreasureActor import EnergyTreasureActor
 from Space.RoomSpace.BaseRoomSpace import *
 
 
@@ -34,7 +35,7 @@ class BadActorRoomSpace(BaseRoomSpace):
     def create_energy_treasure(self):
         x = self.corner_block_list[0].right + 100
         y = self.corner_block_list[0].bottom + 100
-        return EnergyTreasure(x, y, 100, 50)
+        return EnergyTreasureActor(x, y, 100, 50)
 
     def draw(self):
         for block in self.mix():

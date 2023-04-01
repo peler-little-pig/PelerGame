@@ -1,3 +1,4 @@
+from Actor.TreasureActor.ThingTreasureActor import ThingTreasureActor
 from Space.RoomSpace.BaseRoomSpace import *
 
 
@@ -12,7 +13,7 @@ class TreasureRoomSpace(BaseRoomSpace):
     def create_thing_treasure(self):
         width = self.corner_block_list[1].right - self.corner_block_list[0].left
         height = self.corner_block_list[3].bottom - self.corner_block_list[0].top
-        return BaseTreasure(self.corner_block_list[0].x + (width / 2),
+        return ThingTreasureActor(self.corner_block_list[0].x + (width / 2),
                             self.corner_block_list[0].y + (height / 2),
                             100, 50)
 

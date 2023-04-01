@@ -1,5 +1,7 @@
-from Compute.MoveCompute import *
-from Compute.PositionCompute import *
+import pygame
+
+from Data.AllData import *
+from Lib.Compute.MoveCompute import follow_move
 
 
 class BaseTreasureActor(pygame.rect.Rect):

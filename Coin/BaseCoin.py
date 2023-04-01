@@ -1,6 +1,10 @@
-from Compute.MoveCompute import *
-from Math.Math import *
-from Compute.DistanceCompute import *
+import pygame
+
+from Lib.Compute.DistanceCompute import is_close
+from Lib.Compute.MoveCompute import follow_move
+from Lib.Math.Math import get_degree
+from Data.AllData import *
+
 
 class BaseCoin(pygame.rect.Rect):
     def __init__(self, left: float, top: float):

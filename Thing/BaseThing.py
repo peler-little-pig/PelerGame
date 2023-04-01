@@ -1,7 +1,7 @@
 from typing import List
 from Egg.BaseEgg import *
 from Data.AllData import *
-from BetterPygame.Surface import *
+from Lib.BetterPygame.Surface import rotate_at_pos
 
 
 class BaseThing(object):

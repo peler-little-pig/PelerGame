@@ -1,4 +1,7 @@
 from Actor.TreasureActor.EnergyTreasureActor import EnergyTreasureActor
+from Block.GroundBlock import GroundBlock
+from Coin.EnergyCoin import EnergyCoin
+from Lib.BetterPygame.Rect import colliderect_top, colliderect_right, colliderect_left, colliderect_bottom
 from Space.RoomSpace.BaseRoomSpace import *
 
 

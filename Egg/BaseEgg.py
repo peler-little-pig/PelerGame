@@ -1,7 +1,8 @@
-from Compute.SpaceCompute import *
-from Compute.BlockCompute import *
-from Compute.MoveCompute import *
-from Math.Math import *
+from Lib.Compute.BlockCompute import *
+from Lib.Compute.MoveCompute import follow_move
+from Lib.Compute.SpaceCompute import is_hit_wall, active_area
+from Lib.Math.Math import get_degree
+from Data.AllData import *
 
 
 class BaseEgg(object):

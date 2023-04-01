@@ -1,6 +1,6 @@
 from typing import List
 from Coin.EnergyCoin import EnergyCoin
-from BetterPygame.Rect import *
+from Lib.BetterPygame.Rect import *
 from Block.BoxBlock import BoxBlock
 from Block.CornerBlock import CornerBlock
 from Block.BlockingBlcok import BlockingBlock

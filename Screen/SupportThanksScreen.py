@@ -1,9 +1,5 @@
 from GUI.Label import *
-from GUI.Button import *
-from Data.AllData import *
 from GUI.Manager import *
-import platform
-from Compute.SpaceCompute import *
 
 
 class SupportThanksScreen(object):

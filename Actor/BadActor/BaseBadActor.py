@@ -2,6 +2,8 @@ from Actor.BaseActor import *
 import random
 from Coin.EnergyCoin import *
 from Coin.MoneyCoin import MoneyCoin
+from Lib.Compute.MoveCompute import follow_move
+from Lib.Compute.SpaceCompute import active_area
 from Thing.GunThing import *
 
 

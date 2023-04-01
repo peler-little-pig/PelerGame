@@ -6,24 +6,42 @@
   <component name="ChangeListManager">
     <list default="true" id="e09fbd2c-ce1d-4af9-946b-9e7d92c6c43b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor/GoodActor/BaseGoodActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/GoodActor/BaseGoodActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoBar/BaseInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/InfoBar/BaseInfoBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoBar/BloodInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/InfoBar/BloodInfoBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoBar/DropThingInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/InfoBar/DropThingInfoBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoBar/EnergyInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/InfoBar/EnergyInfoBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoBar/MoneyInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/InfoBar/MoneyInfoBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoBar/ProtectionInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/InfoBar/ProtectionInfoBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoBar/SkillInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/InfoBar/SkillInfoBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoBar/ThingInfoBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/InfoBar/ThingInfoBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfoBar/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/InfoBar/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/00/00.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/00.pworld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actor/BadActor/BaseBadActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/BadActor/BaseBadActor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actor/SellActor/BaseSellActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/SellActor/BaseSellActor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actor/TreasureActor/BaseTreasureActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor/TreasureActor/BaseTreasureActor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BetterPygame/Function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/BetterPygame/Function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BetterPygame/Rect.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/BetterPygame/Rect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BetterPygame/Surface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/BetterPygame/Surface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BetterPygame/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/BetterPygame/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coin/BaseCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coin/BaseCoin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compute/BlockCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Compute/BlockCompute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compute/DistanceCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Compute/DistanceCompute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compute/MoveCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Compute/MoveCompute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compute/PositionCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Compute/PositionCompute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compute/SpaceCompute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Compute/SpaceCompute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compute/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Compute/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egg/BaseEgg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Egg/BaseEgg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Screen/Logo/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Math/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logo/logo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screen/Logo/logo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapLoader/SpaceLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/MapLoader/SpaceLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math/Math.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/Math/Math.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/2.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/2.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/00/4.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/00/4.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/01/01.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/01.pworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/Map/01/14.proom" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/01/14.proom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/02/02.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/02/02.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/03/03.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/03/03.pworld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Res/Map/04/04.pworld" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Map/04/04.pworld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen/SupportThanksScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screen/SupportThanksScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen/SystemInfoScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screen/SystemInfoScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/RoomSpace/BadActorRoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace/BadActorRoomSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/RoomSpace/BaseRoomSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace/BaseRoomSpace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space/RoomSpace/copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space/RoomSpace/copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screen/Logo/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thing/BaseThing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thing/BaseThing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +106,11 @@
       <recent name="$PROJECT_DIR$/Thing" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Lib" />
+      <recent name="$PROJECT_DIR$/Screen" />
+      <recent name="$PROJECT_DIR$/GUI" />
       <recent name="$PROJECT_DIR$/Doc" />
       <recent name="$PROJECT_DIR$/Space/RoomSpace" />
-      <recent name="$PROJECT_DIR$/Actor" />
-      <recent name="$PROJECT_DIR$/Actor/GoodActor" />
-      <recent name="$PROJECT_DIR$/Actor/BadActor" />
     </key>
   </component>
   <component name="RunManager">
@@ -229,14 +247,7 @@
       <workItem from="1679757400229" duration="2483000" />
       <workItem from="1679807411003" duration="646000" />
       <workItem from="1680270834293" duration="506000" />
-      <workItem from="1680326063736" duration="2979000" />
-    </task>
-    <task id="LOCAL-00026" summary="EnergyTreasure.py">
-      <created>1675472658665</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1675472658665</updated>
+      <workItem from="1680326063736" duration="3909000" />
     </task>
     <task id="LOCAL-00027" summary="EndScreen.py and can restart the game,but the ui have no theme">
       <created>1675473413471</created>
@@ -574,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680328762355</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="move infobar packet to GUI packet">
+      <created>1680329410855</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1680329410855</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +612,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="begin HireActorGroup.py" />
     <MESSAGE value="fix bad_actor" />
     <MESSAGE value="BloodDrinkThing.py is ok,but thing_info_bar and BloodDrinkThing have some bugs" />
     <MESSAGE value="fix BloodDrinkThing.py's bug" />
@@ -619,7 +636,8 @@
     <MESSAGE value="fix doc" />
     <MESSAGE value="fix doc #2" />
     <MESSAGE value="change treasure into an actor called treasure actor for better struct" />
-    <option name="LAST_COMMIT_MESSAGE" value="change treasure into an actor called treasure actor for better struct" />
+    <MESSAGE value="move infobar packet to GUI packet" />
+    <option name="LAST_COMMIT_MESSAGE" value="move infobar packet to GUI packet" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -641,6 +659,6 @@
     <SUITE FILE_PATH="coverage/PelerGame$main_Test_.coverage" NAME="main(Test) Coverage Results" MODIFIED="1675335092759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PelerGame$gui.coverage" NAME="gui Coverage Results" MODIFIED="1674379646385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/PelerGame$Docutils_Task_in_Docutils_Task_in_.coverage" NAME="Docutils Task in Docutils Task in  Coverage Results" MODIFIED="1675383861289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1680329236845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PelerGame$main.coverage" NAME="main Coverage Results" MODIFIED="1680330164110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

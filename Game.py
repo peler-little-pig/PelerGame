@@ -1,22 +1,15 @@
 from Actor.GoodActor.BaseGoodActor import *
-from Actor.HireActor.BaseHireActor import BaseHireActor
-from Actor.SellActor.BaseSellActor import BaseSellActor
-from Group.HireActorGroup import HireActorGroup
-from Group.SellActorGroup import SellActorGroup
 from MapLoader.MapLoader import *
 import sys
-from Logo.logo import *
+from Screen.Logo.logo import *
 from Group.CoinGroup import *
 from Creator import MapCreator
-from GUI.Manager import Manager
 from Screen.EndSceen import EndScreen
 from Screen.PauseSceen import PauseScreen
 from Screen.StartSceen import *
 from Screen.SystemInfoScreen import SystemInfoScreen
 from Screen.SupportThanksScreen import SupportThanksScreen
 from Screen.WinSceen import WinScreen
-from Thing.BloodDrinkThing import BloodDrinkThing
-from Thing.EnergyDrinkThing import EnergyDrinkThing
 
 
 class Game(object):

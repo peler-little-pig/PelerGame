@@ -1,7 +1,9 @@
 from Actor.BaseActor import *
 import random
+
+from Lib.Compute.MoveCompute import follow_move
 from Speak.BaseSpeak import BaseSpeak
-from Thing.BloodDrinkThing import BloodDrinkThing, follow_move
+from Thing.BloodDrinkThing import BloodDrinkThing
 from Thing.EnergyDrinkThing import EnergyDrinkThing
 from Data.AllData import *
 

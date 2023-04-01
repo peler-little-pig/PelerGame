@@ -1,6 +1,8 @@
 import random
 import sys
 
+from Block.BlockingBlcok import BlockingBlock
+from Block.BoxBlock import BoxBlock
 from Block.WallBlock import WallBlock
 from Space.RoomSpace.SellActorRoomSpace import SellActorRoomSpace
 from Space.RoomSpace.TreasureRoomSpace import TreasureRoomSpace

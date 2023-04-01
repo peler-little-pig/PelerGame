@@ -1,17 +1,14 @@
 from Actor.BaseActor import *
-from InfoBar.BloodInfoBar import *
-from InfoBar.DropThingInfoBar import DropThingInfoBar
-from InfoBar.MoneyInfoBar import MoneyInfoBar
-from InfoBar.ProtectionInfoBar import *
-from InfoBar.EnergyInfoBar import *
-from Data.AllData import *
+from GUI.InfoBar.BloodInfoBar import *
+from GUI.InfoBar import DropThingInfoBar
+from GUI.InfoBar.MoneyInfoBar import MoneyInfoBar
+from GUI.InfoBar.DropThingInfoBar import DropThingInfoBar
+from GUI.InfoBar.EnergyInfoBar import *
+from GUI.InfoBar.ProtectionInfoBar import ProtectionInfoBar
 from Speak.BaseSpeak import BaseSpeak
 from Thing.HandGunThing import *
-from Thing.GunThing import *
-from Actor.TreasureActor import BaseTreasureActor
-from Compute.BlockCompute import *
-from InfoBar.SkillInfoBar import *
-from InfoBar.ThingInfoBar import *
+from GUI.InfoBar.SkillInfoBar import *
+from GUI.InfoBar.ThingInfoBar import *
 
 
 class BaseGoodActor(BaseActor):

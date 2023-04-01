@@ -1,6 +1,7 @@
-from InfoBar.BaseInfoBar import *
 import pygame
 from Data.AllData import *
+from GUI.InfoBar.BaseInfoBar import BaseInfoBar
+
 
 class ProtectionInfoBar(BaseInfoBar):
     def __init__(self, value):

@@ -1,6 +1,6 @@
+from GUI.InfoBar.BaseInfoBar import BaseInfoBar
 from GUI.Label import Label
 from GUI.Manager import Manager
-from InfoBar.BaseInfoBar import *
 import pygame
 from Data.AllData import *
 

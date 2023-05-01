@@ -44,7 +44,7 @@ class Game(object):
         self.is_pause_screen = False
         self.is_system_info_screen = False
         self.is_support_screen = False
-
+        
         self._system_info_screen = SystemInfoScreen()
         self._support_screen = SupportThanksScreen()
 
@@ -213,7 +213,6 @@ class Game(object):
     def loop(self):
         while self.is_game_running:
             GameData.surface.fill((100, 155, 155))
-
             self.event()
             self.draw()
             self.process()
